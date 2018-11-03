@@ -1,0 +1,86 @@
+.h-content-top button {
+    background: #BFBFBF;
+    padding: 10px 40px;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    margin-right: 40px;
+}
+
+.h-content-top input {
+    float: right;
+    height: 100% !important;
+    font-size: 20px;
+    height: 50px !important;
+    padding: 0px 20px;
+    border: 1px solid #00e9f3;
+    border-radius: 5px;
+    width: 300px;
+}
+
+ul.h-content-botttom {
+    background: #fff;
+    margin: 4vh 0;
+    padding: 2vh 2vw;
+}
+
+ul.h-content-botttom li {
+    display: flex;
+    align-items: center;
+    padding: 2vh 1vw;
+    border-bottom: 1px dashed #837F80;
+    &:last-child {
+        border: none;
+    }
+}
+
+ul.h-content-botttom img {
+    float: left;
+    width: 30%;
+}
+
+.content {
+    float: right;
+    padding-left: 4vw;
+    width: 70%;
+}
+
+.content h4 {
+    font-weight: normal;
+    font-size: 22px;
+    padding: 1vh 0 2vh;
+}
+
+.content p {
+    line-height: 30px;
+}
+
+.content span {
+    float: right;
+    color: #868686;
+    margin-top: 4vh;
+}
+
+p-paginator {
+    float: right;
+}
+
+/deep/ {
+    .ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {
+        border: none;
+        background: none;
+    }
+    .ui-paginator .ui-paginator-element.ui-paginator-first,
+    .ui-paginator .ui-paginator-element.ui-paginator-prev,
+    .ui-paginator .ui-paginator-element.ui-paginator-next,
+    .ui-paginator .ui-paginator-element.ui-paginator-last {
+        background: #00e9f3;
+        color: #FFF !important;
+    }
+    .ui-paginator-element.ui-state-default {
+        border: 1px solid #00e9f3 !important;
+        margin: 0px 5px !important;
+        border-radius: 3px !important;
+        color: #00e9f3 !important;
+    }
+}

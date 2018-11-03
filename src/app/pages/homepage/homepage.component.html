@@ -1,0 +1,59 @@
+<app-after-login-layout [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX"
+    [ifShowSignDialog]="ifShowSignDialog" class="v-homepage-container">
+    <div class="h-content-layout">
+        <div class="map">
+
+        </div>
+        <div class="ui-g productIntroduce">
+            <div class="ui-g-5 text-right"><img src="assets/images/phone.png" alt=""></div>
+            <div class="ui-g-7 detail">
+                <h3>产品介绍</h3>
+                <p>智慧建造信息平台是工程建造领域运用互联网、移动互联网、大数据、云计算技术的应用典范。通过工程建造全流程的表单在线填报、流程自动推送、手机APP施工现场电子签名、数据结构化存储等功能，实现了审批流程数字化、数据存档结构化、监督管理智能化，大幅度提高了工程建造全流程的信息化程度，降低企业成本，提高工作效率；已通过北京市住建委的科技成果鉴定，达到国内领先水平，具有良好的推广应用价值。</p>
+            </div>
+        </div>
+        <div class="publicity text-center">
+            <img src="assets/images/edit.png" alt="">
+            <h3>一站式解决资料审批和数据积累问题</h3>
+            <h6>INTELLIGENT BUILDING INFORMATION PLATFORM</h6>
+        </div>
+        <div class="projectsInformation text-center">
+            <h3>在建<span>工程</span>信息</h3>
+            <h6>CONSTRUCTION PROJECT</h6>
+            <button class="scanMore">查看更多>></button>
+            <p-carousel [value]="buildingPorjectsArr" numVisible=3>
+                <ng-template let-project pTemplate="item">
+                    <div class="ui-grid ui-grid-responsive">
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-12 detailBox">
+                                <img src="assets/images/{{project.pic}}.png">
+                                <div class="briefIntroduction">
+                                    <ul>
+                                        <li>项目名称：{{project.name}}</li>
+                                        <li>建筑规模：{{project.area}}平方米</li>
+                                        <li>工程地址：{{project.address}}</li>
+                                        <li>计划工期：{{project.planDate}}</li>
+                                        <li>监理单位：{{project.supervision}}</li>
+                                        <li>施工单位信息：{{project.builder}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scanListMore">查看更多详情</button>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+        <div class="newsBulletin text-center">
+            <h3>新<span>闻通</span>告</h3>
+            <h6>NEWS BULLETIN</h6>
+            <button class="scanMore">查看更多>></button>
+            <ul>
+                <li *ngFor="let item of newsArr">
+                    <h4>{{item.type}}</h4>
+                    <p>{{item.content}}</p>
+                    <button>查看详情</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</app-after-login-layout>

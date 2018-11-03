@@ -1,0 +1,57 @@
+<div class="v-container-layout">
+  <div class="ui-g h-top-header">
+    <div class="ui-g-6 logo"></div>
+    <div class="ui-g-6 buttons"><button class="sign" (click)="showSignDialog()">登录/注册</button><button class="exit"
+        (click)="exit()">退出登录</button><button class="downloadApp text-right">下载APP</button></div>
+  </div>
+
+  <div class="h-bottom">
+    <div class="ui-g h-bottom-header">
+      <h4 class="ui-g-5"><span></span>智慧建造信息平台<span></span></h4>
+      <ul class="ui-g-7 nav">
+        <li *ngFor="let item of navArray;index as i" (click)="navClicked(item['link'])" [ngClass]="{navClicked: ifNavClickedArr[i]}">{{item['name']}}</li>
+      </ul>
+    </div>
+    <div class="h-top-content">
+      <img src="assets/images/{{picture}}" alt="">
+      <div class="title">
+        <h4>{{ZH_TITLE}}</h4><span>{{EN_TITLE}}</span>
+      </div>
+    </div>
+    <div class="h-bottom-content">
+      <ng-content></ng-content>
+    </div>
+    <div class="footer">
+      <div class="baseMessage">
+        <div class="QR">
+          <img src="assets/images/QR.png" alt="">
+          <br><span>智慧建造信息平台</span>
+          <br><span>扫描下载官方APP</span>
+        </div>
+        <ul class="tools">
+          <li>
+            <img src="" alt="">
+            <br>
+            <i class="fa fa-envelope-o"></i>
+          </li>
+          <li>
+            <img src="assets/images/wechat.png" alt="">
+            <br>
+            <i class="fa fa-weixin"></i>
+          </li>
+          <li>
+            <img src="" alt="">
+            <br>
+            <i class="fa fa-qq"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="copyMessage">
+        <span>©2017-2020 北京天辰科技有限公司 版权所有</span>
+        <span class="centerBase">京公网安备11010602005793号</span>
+        <span>联系电话：010-62419299；18513900020&nbsp;&nbsp;邮箱：icc@iccloudy.com</span>
+      </div>
+    </div>
+  </div>
+  <!-- <app-before-login-dialog></app-before-login-dialog> -->
+</div>

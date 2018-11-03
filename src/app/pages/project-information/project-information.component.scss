@@ -1,0 +1,108 @@
+.h-content-top {
+    margin-bottom: 8vh;
+    button {
+        background: #00e9f3;
+        padding: 10px 40px;
+        color: #fff;
+        border: none;
+        font-size: 22px;
+        margin-right: 40px;
+    }
+}
+
+.h-content-top input {
+    float: right;
+    height: 100% !important;
+    font-size: 20px;
+    height: 50px !important;
+    padding: 0px 20px;
+    border: 1px solid #00e9f3;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.detailBox {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    div {
+        position: relative;
+        margin: 8px 0;
+        &:hover {
+            p {
+                visibility: visible;
+            }
+        }
+    }
+    img {
+        width: 27.5vw;
+    }
+    p {
+        height: 50px;
+        line-height: 50px;
+        background: rgba(40, 165, 179, 0.5);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        visibility: hidden;
+    }
+}
+
+/deep/ .projectInformation {
+    .h-bottom-content {
+        background: #fff !important;
+    }
+    li.ui-carousel-item.ui-widget-content.ui-corner-all {
+        width: 84vw !important;
+        border: none;
+        margin: 0;
+    }
+    .ui-carousel-viewport {
+        border: none !important;
+    }
+    .ui-carousel-header.ui-widget-header.ui-corner-all {
+        position: absolute;
+        bottom: 0px;
+        z-index: 100;
+        border: none;
+        background: none;
+    }
+    .ui-carousel-page-links {
+        display: none;
+    }
+    .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {
+        padding-bottom: 15vh;
+        display: flex;
+        justify-content: center;
+    }
+    .pi-arrow-circle-left.ui-state-disabled {
+        background: url(../../../assets/images/left.png) no-repeat;
+        transform: rotate(0deg);
+        background-size: contain;
+    }
+    .pi-arrow-circle-right.ui-state-disabled {
+        background: url(../../../assets/images/left.png) no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+    }
+    .pi-arrow-circle-left {
+        background: url(../../../assets/images/right.png) no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        width: 55px;
+        height: 55px;
+        font-size: 0px;
+        margin-right: 10px;
+    }
+    .pi-arrow-circle-right {
+        background: url(../../../assets/images/right.png) no-repeat;
+        width: 55px;
+        height: 55px;
+        background-size: contain;
+        font-size: 0px;
+        margin-left: 10px;
+    }
+}

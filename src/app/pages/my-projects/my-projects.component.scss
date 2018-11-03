@@ -1,0 +1,88 @@
+.h-content-top span {
+    color: #2cc6d8;
+}
+
+ul.h-content-botttom {
+    background: #fff;
+    margin: 4vh 0;
+}
+
+ul.h-content-botttom li.contentTitle {
+    margin: 0 !important;
+    border: 1px solid #00e9f3 !important;
+    color: #2cc6d8;
+    h4 {
+        margin: auto;
+        font-size: 30px;
+    }
+    h4 span {
+        background: #EB6100;
+        border-radius: 18px;
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 20px;
+        color: #fff;
+        margin-left: 15px;
+    }
+}
+
+ul.h-content-botttom li {
+    display: flex;
+    align-items: center;
+    margin: 0 2vw;
+    padding: 2vh 0;
+    border-bottom: 1px dashed #837F80;
+    &:last-child {
+        border: none;
+    }
+    .listDetail {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    .listMes {
+        font-size: 18px;
+        padding: 8px 0;
+        span {
+            margin-right: 5vw;
+        }
+    }
+    button {
+        color: #2cc6d8;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+p-paginator {
+    float: right;
+}
+
+/deep/ {
+    .ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {
+        border: none;
+        background: none;
+    }
+    .ui-paginator .ui-paginator-element.ui-paginator-first,
+    .ui-paginator .ui-paginator-element.ui-paginator-prev,
+    .ui-paginator .ui-paginator-element.ui-paginator-next,
+    .ui-paginator .ui-paginator-element.ui-paginator-last {
+        background: #00e9f3;
+        color: #FFF !important;
+    }
+    .ui-paginator-element.ui-state-default {
+        border: 1px solid #00e9f3 !important;
+        margin: 0px 5px !important;
+        border-radius: 3px !important;
+        color: #00e9f3 !important;
+    }
+}

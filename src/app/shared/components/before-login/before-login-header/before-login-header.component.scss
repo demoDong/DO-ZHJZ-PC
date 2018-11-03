@@ -1,0 +1,61 @@
+.h-top-header {
+    height: 7vh;
+    padding-left: 4vw;
+    &>div {
+        height: 100%;
+    }
+    .logo {
+        background: url(../../../../../assets/images/logo.png) no-repeat;
+        background-position: center left;
+        background-size: contain;
+    }
+    .buttons {
+        text-align: right;
+        padding: 0 10vw 0 0;
+    }
+    .buttons button {
+        border: none;
+        height: 100%;
+        letter-spacing: 2px;
+        font-size: 18px;
+        padding: 0px 2.5vw;
+        margin: 0px 11px;
+    }
+    button.sign {
+        background: #00e9f3;
+        color: #fff;
+    }
+}
+
+.ui-g.h-bottom-header {
+    background: #4C4C4C;
+    height: 8vh;
+    line-height: 8vh;
+    padding-left: 4vw;
+    h4 {
+        padding: 0;
+        color: #00E9FE;
+        font-size: 32px;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    h4 span {
+        display: inline-block;
+        width: 5vw;
+        background: #00e9fe;
+        height: 1px;
+        margin: 0px 15px;
+        line-height: -4vh;
+        vertical-align: middle;
+    }
+    .nav {
+        display: flex;
+        padding: 0;
+        padding-right: 10vw;
+        li {
+            flex: 1;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}

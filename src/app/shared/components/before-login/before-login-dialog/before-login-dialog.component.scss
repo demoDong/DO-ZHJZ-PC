@@ -1,0 +1,39 @@
+.dialog {
+    position: absolute;
+    top: 7vh;
+    width: 100%;
+    background: rgba(8, 8, 8, 0.3);
+}
+
+.dialogContainer {
+    width: 700px;
+    margin: auto;
+}
+
+.v-scroll-box {
+    height: 85vh;
+    padding: 2vh 0;
+    margin-top: 8vh;
+    overflow: auto;
+    display: flex;
+}
+
+.close {
+    font-size: 55px;
+    padding: 0px;
+    text-align: center;
+    height: 10vh;
+}
+
+.v-dialog-layout {
+    background: #fff;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.title {
+    background: url(../../../../../assets/images/dialogTitle.png) no-repeat;
+    width: 100%;
+    height: 20vh;
+    background-position: center center;
+}

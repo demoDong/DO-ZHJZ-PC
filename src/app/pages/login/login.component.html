@@ -1,0 +1,20 @@
+<app-before-login-header>
+</app-before-login-header>
+<app-before-login-content></app-before-login-content>
+<app-before-login-dialog>
+    <form action="">
+        <input type="text" placeholder="请输入手机号"><br>
+        <input type="password" placeholder="请输入密码"><br>
+        <button (click)="login()">登录</button>
+    </form>
+    <div class="ui-g v-tooltop">
+        <div class="ui-g-8">
+            <a routerLink="/forgetPwd" routerLinkActive="forgetPwd">忘记密码</a>
+            <span>|</span>
+            <a routerLink="/heroes" routerLinkActive="active">使用指南</a>
+        </div>
+        <div class="ui-g-4">
+            <a routerLink="/regist" routerLinkActive="active">注册新用户</a>
+        </div>
+    </div>
+</app-before-login-dialog>

@@ -1,0 +1,22 @@
+<app-after-login-layout [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" class="projectInformation">
+  <div class="h-content-layout">
+    <div class="h-content-top">
+      <button>在建项目</button>
+      <input type="text" placeholder="搜索新闻">
+    </div>
+    <p-carousel [value]="buildingPorjectsArr" numVisible=1>
+      <ng-template let-projects pTemplate="item">
+        <div class="ui-grid ui-grid-responsive">
+          <div class="ui-grid-row">
+            <div class="ui-grid-col-12 detailBox">
+              <div *ngFor="let item of projects">
+                <img src="assets/images/{{item.pic}}.png" alt="">
+                <p>{{item.name}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</app-after-login-layout>
