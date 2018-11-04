@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { TokenService } from '../../services/token.service';
+import { LinkService } from '../../services/link.service';
+import { CookieService } from '../../services/cookie.service';
 
 @Component({
     selector: 'app-page-iframe',
@@ -11,11 +14,11 @@ export class PageIframeComponent implements OnInit {
     @Input() ZH_TITLE: string;
     @Input() EN_TITLE: string;
     @Input() NAV_INDEX: number;
-    @Input() ifShowSignButton: boolean;
+    @Input() ifShowSignDialog: boolean;
+    private ifShowSignButton: boolean;
     public navArray: Array<object>;
     public ifNavClickedArr: Array<boolean>;
-    public ifShowSignDialog: boolean;
-    constructor(private router: Router) { }
+    constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
 
     ngOnInit() {
         this.navArray = [
@@ -30,11 +33,11 @@ export class PageIframeComponent implements OnInit {
         this.ifNavClickedArr.fill(false);
         this.ifNavClickedArr[this.NAV_INDEX] = true;
         this.ifShowSignDialog = false;
-        // this.ifShowSignButton = true;
+        this.token._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
+
     }
 
     navClicked(link) {
-        console.log(this.ifShowSignButton);
         if (!this.ifShowSignButton) {
             this.router.navigate([link]);
         } else {
@@ -44,7 +47,7 @@ export class PageIframeComponent implements OnInit {
                 this.ifShowSignDialog = true;
             }
         }
-
+        this.link._link = link;
     }
     closeDialog(e) {
         this.ifShowSignDialog = e;
@@ -53,11 +56,13 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignDialog = true;
     }
     clickSignButton(e) {
-        console.log(e);
         this.ifShowSignButton = e;
         this.ifShowSignDialog = e;
     }
     exit() {
+        this.cookie.setCookie('_idptickeToken', '');
+        this.token._token = '';
         this.ifShowSignButton = true;
+        this.router.navigate(['homepage']);
     }
 }

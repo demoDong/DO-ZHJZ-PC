@@ -1,4 +1,5 @@
-<app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" class="v-homepage-container">
+<app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX"
+    [ifShowSignDialog]="ifShowSignDialog" class="v-homepage-container">
     <div class="h-content-layout">
         <div class="map">
 
@@ -18,7 +19,7 @@
         <div class="projectsInformation text-center">
             <h3>在建<span>工程</span>信息</h3>
             <h6>CONSTRUCTION PROJECT</h6>
-            <button class="scanMore">查看更多>></button>
+            <button class="scanMore" (click)="scanMoreProject()">查看更多>></button>
             <p-carousel [value]="buildingPorjectsArr" numVisible=3>
                 <ng-template let-project pTemplate="item">
                     <div class="ui-grid ui-grid-responsive">
@@ -45,7 +46,7 @@
         <div class="newsBulletin text-center">
             <h3>新<span>闻通</span>告</h3>
             <h6>NEWS BULLETIN</h6>
-            <button class="scanMore">查看更多>></button>
+            <button class="scanMore" (click)="scanMoreNews()">查看更多>></button>
             <ul>
                 <li *ngFor="let item of newsArr">
                     <h4>{{item.type}}</h4>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LinkService } from '../../shared/services/link.service';
+import { TokenService } from '../../shared/services/token.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -13,7 +16,7 @@ export class HomepageComponent implements OnInit {
   public buildingPorjectsArr;
   public ifShowSignDialog: boolean;
   public newsArr;
-  constructor() {
+  constructor(private link: LinkService, private token: TokenService, private router: Router) {
     this.buildingPorjectsArr = [
       {
         name: '中关村生命科学园医药科技中心',
@@ -99,6 +102,14 @@ export class HomepageComponent implements OnInit {
     this.EN_TITLE = 'MY PROJECT';
     this.NAV_INDEX = 0;
     this.ifShowSignDialog = false;
+  }
+  scanMoreProject() {
+    this.link._link = 'projectInformation';
+    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['projectInformation']);
+  }
+  scanMoreNews() {
+    this.link._link = 'newsAnnouncement';
+    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['newsAnnouncement']);
   }
 
 
