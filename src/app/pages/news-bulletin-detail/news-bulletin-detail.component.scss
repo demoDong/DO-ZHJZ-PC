@@ -1,0 +1,21 @@
+.h-content-top span {
+    color: #2cc6d8;
+}
+
+.messageDetail {
+    padding: 5vh 15vw;
+    span {
+        color: #989595;
+        padding: 2vh 2vw;
+        display: inline-block;
+    }
+    img {
+        width: 100%;
+        margin: 5vh 0;
+    }
+    p {
+        width: 100%;
+        text-align: left;
+        line-height: 2em;
+    }
+}

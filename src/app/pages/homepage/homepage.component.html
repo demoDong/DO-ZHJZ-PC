@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="scanListMore">查看更多详情</button>
+                        <button class="scanListMore" (click)="scanProjectInformationDetail()">查看更多详情</button>
                     </div>
                 </ng-template>
             </p-carousel>
@@ -51,7 +51,7 @@
                 <li *ngFor="let item of newsArr">
                     <h4>{{item.type}}</h4>
                     <p>{{item.content}}</p>
-                    <button>查看详情</button>
+                    <button (click)="scanNewsBulletinDetail()">查看详情</button>
                 </li>
             </ul>
         </div>

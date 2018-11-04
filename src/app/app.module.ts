@@ -6,10 +6,8 @@ import { PaginatorModule } from 'primeng/paginator';
 import { CarouselModule } from 'primeng/carousel';
 import { SharedModule } from './shared/shared.module';
 
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
-import { MainComponent } from './pages/main/main.component';
 import { RegistComponent } from './pages/regist/regist.component';
 import { ForgetPwdComponent } from './pages/forget-pwd/forget-pwd.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -18,17 +16,13 @@ import { NewsAnnouncementComponent } from './pages/news-announcement/news-announ
 import { PersonalCenterComponent } from './pages/personal-center/personal-center.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ProjectInformationComponent } from './pages/project-information/project-information.component';
-
-
-
-
-
+import { NewsBulletinDetailComponent } from './pages/news-bulletin-detail/news-bulletin-detail.component';
+import { ProjectInformationDetailComponent } from './pages/project-information-detail/project-information-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainComponent,
     RegistComponent,
     ForgetPwdComponent,
     MyProjectsComponent,
@@ -37,6 +31,8 @@ import { ProjectInformationComponent } from './pages/project-information/project
     PersonalCenterComponent,
     ContactUsComponent,
     ProjectInformationComponent,
+    NewsBulletinDetailComponent,
+    ProjectInformationDetailComponent,
   ],
   imports: [
     BrowserModule,

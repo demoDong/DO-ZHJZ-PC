@@ -10,7 +10,7 @@
           <div class="ui-grid-row">
             <div class="ui-grid-col-12 detailBox">
               <div *ngFor="let item of projects">
-                <img src="assets/images/{{item.pic}}.png" alt="">
+                <img src="assets/images/{{item.pic}}.png" alt="" (click)="scanProjectInformationDetail()">
                 <p>{{item.name}}</p>
               </div>
             </div>

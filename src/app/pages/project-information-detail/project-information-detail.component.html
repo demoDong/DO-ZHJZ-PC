@@ -1,0 +1,24 @@
+<app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" class="projectInformationDetail">
+  <div class="h-content-layout ui-g">
+    <div class="ui-g-2 h-content-left">
+      <button [ngClass]="{building: isBuilding}">在建项目</button>
+      <button [ngClass]="{building: !isBuilding}">完成项目</button>
+    </div>
+    <div class="ui-g-10 h-content-right">
+      <p-carousel [value]="projectDetail['pics']" numVisible=1>
+        <ng-template let-projectPic pTemplate="item">
+          <div class="ui-grid ui-grid-responsive">
+            <div class="ui-grid-row">
+              <div class="ui-grid-col-12 detailBox">
+                <img src="assets/images/{{projectPic}}.png" alt="">
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+      <p *ngFor="let item of projectDetail['detail']">
+        {{item}}
+      </p>
+    </div>
+  </div>
+</app-page-iframe>

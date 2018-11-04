@@ -5,6 +5,9 @@
     border: none;
     font-size: 22px;
     margin-right: 40px;
+    &.companyNews {
+        background: #00e9f3 !important;
+    }
 }
 
 .h-content-top input {
@@ -37,6 +40,7 @@ ul.h-content-botttom li {
 ul.h-content-botttom img {
     float: left;
     width: 30%;
+    cursor: pointer;
 }
 
 .content {

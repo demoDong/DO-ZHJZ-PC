@@ -111,6 +111,12 @@ export class HomepageComponent implements OnInit {
     this.link._link = 'newsAnnouncement';
     this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['newsAnnouncement']);
   }
-
-
+  scanNewsBulletinDetail() {
+    this.link._link = 'newsBulletinDetail';
+    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['newsBulletinDetail']);
+  }
+  scanProjectInformationDetail() {
+    this.link._link = 'projectInformationDetail';
+    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['projectInformationDetail']);
+  }
 }

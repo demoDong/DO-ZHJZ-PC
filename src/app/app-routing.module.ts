@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
-import { MainComponent } from './pages/main/main.component';
 import { RegistComponent } from './pages/regist/regist.component';
 import { ForgetPwdComponent } from './pages/forget-pwd/forget-pwd.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -10,9 +9,10 @@ import { NewsAnnouncementComponent } from './pages/news-announcement/news-announ
 import { PersonalCenterComponent } from './pages/personal-center/personal-center.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ProjectInformationComponent } from './pages/project-information/project-information.component';
+import { NewsBulletinDetailComponent } from './pages/news-bulletin-detail/news-bulletin-detail.component';
+import { ProjectInformationDetailComponent } from './pages/project-information-detail/project-information-detail.component';
 
 const appRouters: Routes = [
-  { path: 'main', component: MainComponent },
   { path: 'login', component: LoginComponent },
   { path: 'regist', component: RegistComponent },
   { path: 'forgetPwd', component: ForgetPwdComponent },
@@ -22,6 +22,8 @@ const appRouters: Routes = [
   { path: 'personalCenter', component: PersonalCenterComponent },
   { path: 'contactUs', component: ContactUsComponent },
   { path: 'projectInformation', component: ProjectInformationComponent },
+  { path: 'newsBulletinDetail', component: NewsBulletinDetailComponent },
+  { path: 'projectInformationDetail', component: ProjectInformationDetailComponent },
   { path: '', component: HomepageComponent },
 ];
 const routerConfig: ExtraOptions = {

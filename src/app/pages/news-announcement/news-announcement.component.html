@@ -1,47 +1,17 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX">
     <div class="h-content-layout">
         <div class="h-content-top">
-            <button>公司新闻</button>
-            <button>行业新闻</button>
+            <button [ngClass]="{companyNews: isConpanyNews}">公司新闻</button>
+            <button [ngClass]="{companyNews: !isConpanyNews}">行业新闻</button>
             <input type="text" placeholder="搜索新闻">
         </div>
         <ul class="h-content-botttom">
-            <!-- <li *ngFor="let item of newsArr">
-                <img src="assets/images/newsList.png" alt="">
+            <li *ngFor="let item of newsArr">
+                <img src="assets/images/newsList.png" alt="" (click)="scanNewsBulletinDetail()">
                 <div class="content">
                     <h4>{{item['title']}}</h4>
                     <p>{{item['detail']}}</p>
                     <span>{{item['date']}}</span>
-                </div>
-            </li> -->
-            <li>
-                <img src="assets/images/newsList.png" alt="">
-                <div class="content">
-                    <h4>中关村声明科学园医药科技中心开工仪式举行</h4>
-                    <p>项目位于北京 地坛西侧，北临安德路，南临安定河西滨河路。本项目主要分为东区和西区两部分。西区包括1号楼（住
-                        宅）、5号楼（配套设施）和西区车库，西区总建筑面积67670平方米。东区包括2号楼（住宅）、3号楼（
-                        住宅）、4号楼（配套设施）、变电室和东区车库，东区总建筑面积101920平方米。幼儿园建筑面积为 2710平方米。</p>
-                    <span>2017-07-08</span>
-                </div>
-            </li>
-            <li>
-                <img src="assets/images/newsList.png" alt="">
-                <div class="content">
-                    <h4>中关村声明科学园医药科技中心开工仪式举行</h4>
-                    <p>项目位于北京 地坛西侧，北临安德路，南临安定河西滨河路。本项目主要分为东区和西区两部分。西区包括1号楼（住
-                        宅）、5号楼（配套设施）和西区车库，西区总建筑面积67670平方米。东区包括2号楼（住宅）、3号楼（
-                        住宅）、4号楼（配套设施）、变电室和东区车库，东区总建筑面积101920平方米。幼儿园建筑面积为 2710平方米。</p>
-                    <span>2017-07-08</span>
-                </div>
-            </li>
-            <li>
-                <img src="assets/images/newsList.png" alt="">
-                <div class="content">
-                    <h4>中关村声明科学园医药科技中心开工仪式举行</h4>
-                    <p>项目位于北京 地坛西侧，北临安德路，南临安定河西滨河路。本项目主要分为东区和西区两部分。西区包括1号楼（住
-                        宅）、5号楼（配套设施）和西区车库，西区总建筑面积67670平方米。东区包括2号楼（住宅）、3号楼（
-                        住宅）、4号楼（配套设施）、变电室和东区车库，东区总建筑面积101920平方米。幼儿园建筑面积为 2710平方米。</p>
-                    <span>2017-07-08</span>
                 </div>
             </li>
         </ul>

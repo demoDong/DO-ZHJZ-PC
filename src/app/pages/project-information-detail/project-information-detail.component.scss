@@ -1,65 +1,11 @@
-.h-content-top {
-    margin-bottom: 8vh;
-    button {
-        background: #00e9f3;
-        padding: 10px 40px;
-        color: #fff;
-        border: none;
-        font-size: 22px;
-        margin-right: 40px;
-    }
-}
-
-.h-content-top input {
-    float: right;
-    height: 100% !important;
-    font-size: 20px;
-    height: 50px !important;
-    padding: 0px 20px;
-    border: 1px solid #00e9f3;
-    border-radius: 5px;
-    width: 300px;
-}
-
-.detailBox {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    div {
-        position: relative;
-        margin: 8px 0;
-        &:hover {
-            p {
-                visibility: visible;
-            }
-        }
-    }
-    img {
-        width: 27.5vw;
-        cursor: pointer;
-    }
-    p {
-        height: 50px;
-        line-height: 50px;
-        background: rgba(0, 233, 243, 0.5);
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        color: #fff;
-        text-align: center;
-        font-size: 16px;
-        visibility: hidden;
-    }
-}
-
-/deep/ .projectInformation {
+/deep/ .projectInformationDetail {
     .h-bottom-content {
         background: #fff !important;
+        padding: 6vh 12vw !important;
     }
     li.ui-carousel-item.ui-widget-content.ui-corner-all {
-        width: 84vw !important;
         border: none;
-        margin: 0;
+        width: 60vw !important;
     }
     .ui-carousel-viewport {
         border: none !important;
@@ -75,9 +21,11 @@
         display: none;
     }
     .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {
-        padding-bottom: 15vh;
+        padding-bottom: 10vh;
+        margin-bottom: 5vh;
         display: flex;
         justify-content: center;
+        width: 60vw;
     }
     .pi-arrow-circle-left.ui-state-disabled {
         background: url(../../../assets/images/left.png) no-repeat;
@@ -105,5 +53,28 @@
         background-size: contain;
         font-size: 0px;
         margin-left: 10px;
+    }
+}
+
+.h-content-layout {
+    .h-content-left button {
+        display: block;
+        background: #EEEEEE;
+        color: #000;
+        padding: 10px 40px;
+        border: none;
+        outline: none;
+    }
+    button.building {
+        background: #00e9f3 !important;
+        color: #fff !important
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        width: 60vw;
+        line-height: 2em;
+        padding: 2vh 0;
     }
 }

@@ -84,7 +84,7 @@
     }
     button.scanMore {
         position: absolute;
-        right: 16vw;
+        right: 17vw;
         top: 23vh;
         background: #2cc6d8;
         border: none;
@@ -115,7 +115,7 @@
             border: none !important;
         }
         .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {
-            padding: 0px 15vw;
+            padding: 0px 17vw;
         }
         .ui-carousel-header.ui-widget-header.ui-corner-all {
             display: inline-block;
@@ -123,14 +123,13 @@
             border: none;
         }
         .ui-carousel-page-links {
-            position: absolute;
-            bottom: 0px;
-            z-index: 10;
+            display: none;
         }
         li.ui-carousel-item.ui-widget-content.ui-corner-all {
             padding: 10px !important;
             border: none;
             text-align: left;
+            width: 22vw !important;
         }
         .pi-arrow-circle-left.ui-state-disabled {
             background: url(../../../assets/images/left.png) no-repeat;
@@ -180,7 +179,7 @@
     }
     button.scanMore {
         position: absolute;
-        right: 16vw;
+        right: 17vw;
         top: 12vh;
         background: #2cc6d8;
         border: none;
@@ -193,7 +192,7 @@
         cursor: pointer;
     }
     ul {
-        padding: 5vh 15vw;
+        padding: 5vh 17vw;
         display: flex;
         li {
             padding: 0 4vw;
