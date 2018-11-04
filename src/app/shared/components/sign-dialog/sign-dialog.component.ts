@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,13 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./sign-dialog.component.scss']
 })
 export class SignDialogComponent implements OnInit {
-
+  @Output() clickSignButton: EventEmitter<any> = new EventEmitter<any>();
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
-  login() {
-    // this.router.navigate(['homepage']);
+  sign(e) {
+    e.preventDefault();
+    this.clickSignButton.emit(false);
   }
   closeDialog() { }
 }

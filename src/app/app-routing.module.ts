@@ -22,7 +22,7 @@ const appRouters: Routes = [
   { path: 'personalCenter', component: PersonalCenterComponent },
   { path: 'contactUs', component: ContactUsComponent },
   { path: 'projectInformation', component: ProjectInformationComponent },
-  { path: '', component: ProjectInformationComponent },
+  { path: '', component: HomepageComponent },
 ];
 const routerConfig: ExtraOptions = {
   useHash: true,

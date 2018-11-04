@@ -5,7 +5,7 @@
         height: 100%;
     }
     .logo {
-        background: url(../../../../../assets/images/logo.png) no-repeat;
+        background: url(../../../../assets/images/logo.png) no-repeat;
         background-position: center left;
         background-size: contain;
     }
@@ -111,7 +111,7 @@
 .footer {
     position: relative;
     height: 20vh;
-    background: url(../../../../../assets/images/bottomBG.png) no-repeat;
+    background: url(../../../../assets/images/bottomBG.png) no-repeat;
 }
 
 .copyMessage {
@@ -175,10 +175,3 @@ ul.tools li>*:first-child {
 .h-bottom::-webkit-scrollbar {
     width: 0px;
 }
-
-// .h-bottom::-webkit-scrollbar-thumb {
-    //     width: 0px;
-    // }
-    // .h-bottom::-webkit-scrollbar-track {
-    //     width: 0px;
-    // }

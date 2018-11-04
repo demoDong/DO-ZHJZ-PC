@@ -1,8 +1,8 @@
 <div class="v-container-layout">
   <div class="ui-g h-top-header">
     <div class="ui-g-6 logo"></div>
-    <div class="ui-g-6 buttons"><button class="sign" (click)="showSignDialog()">登录/注册</button><button class="exit"
-        (click)="exit()">退出登录</button><button class="downloadApp text-right">下载APP</button></div>
+    <div class="ui-g-6 buttons"><button class="sign" (click)="showSignDialog()" *ngIf="ifShowSignButton">登录/注册</button><button
+        class="exit" (click)="exit()" *ngIf="!ifShowSignButton">退出登录</button><button class="downloadApp text-right">下载APP</button></div>
   </div>
 
   <div class="h-bottom">
@@ -53,5 +53,7 @@
       </div>
     </div>
   </div>
-  <!-- <app-before-login-dialog></app-before-login-dialog> -->
 </div>
+<app-dialog-head (close)="closeDialog($event)" *ngIf="ifShowSignDialog">
+  <app-sign-dialog (clickSignButton)="clickSignButton($event)"></app-sign-dialog>
+</app-dialog-head>

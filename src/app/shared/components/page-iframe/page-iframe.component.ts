@@ -2,18 +2,19 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-after-login-layout',
-    templateUrl: './after-login-layout.component.html',
-    styleUrls: ['./after-login-layout.component.scss']
+    selector: 'app-page-iframe',
+    templateUrl: './page-iframe.component.html',
+    styleUrls: ['./page-iframe.component.scss']
 })
-export class AfterLoginLayoutComponent implements OnInit {
+export class PageIframeComponent implements OnInit {
     @Input() picture: any;
     @Input() ZH_TITLE: string;
     @Input() EN_TITLE: string;
     @Input() NAV_INDEX: number;
-    @Input() ifShowSignDialog: boolean;
+    @Input() ifShowSignButton: boolean;
     public navArray: Array<object>;
     public ifNavClickedArr: Array<boolean>;
+    public ifShowSignDialog: boolean;
     constructor(private router: Router) { }
 
     ngOnInit() {
@@ -28,14 +29,35 @@ export class AfterLoginLayoutComponent implements OnInit {
         this.ifNavClickedArr = new Array<boolean>(this.navArray.length);
         this.ifNavClickedArr.fill(false);
         this.ifNavClickedArr[this.NAV_INDEX] = true;
+        this.ifShowSignDialog = false;
+        // this.ifShowSignButton = true;
+    }
+
+    navClicked(link) {
+        console.log(this.ifShowSignButton);
+        if (!this.ifShowSignButton) {
+            this.router.navigate([link]);
+        } else {
+            if (link === 'homepage' || link === 'contactUs') {
+                this.router.navigate([link]);
+            } else {
+                this.ifShowSignDialog = true;
+            }
+        }
+
+    }
+    closeDialog(e) {
+        this.ifShowSignDialog = e;
     }
     showSignDialog() {
         this.ifShowSignDialog = true;
     }
-    navClicked(link) {
-        this.router.navigate([link]);
+    clickSignButton(e) {
+        console.log(e);
+        this.ifShowSignButton = e;
+        this.ifShowSignDialog = e;
     }
     exit() {
-        this.router.navigate(['main']);
+        this.ifShowSignButton = true;
     }
 }

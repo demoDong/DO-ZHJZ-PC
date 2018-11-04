@@ -2,11 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { BeforeLoginModule } from './shared/components/before-login/before-login.module';
-import { AfterLoginModule } from './shared/components/after-login/after-login.module';
 import { PaginatorModule } from 'primeng/paginator';
 import { CarouselModule } from 'primeng/carousel';
-
+import { SharedModule } from './shared/shared.module';
 
 
 import { AppComponent } from './app.component';
@@ -20,7 +18,7 @@ import { NewsAnnouncementComponent } from './pages/news-announcement/news-announ
 import { PersonalCenterComponent } from './pages/personal-center/personal-center.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ProjectInformationComponent } from './pages/project-information/project-information.component';
-import { SignDialogComponent } from './shared/components/sign-dialog/sign-dialog.component';
+
 
 
 
@@ -38,14 +36,12 @@ import { SignDialogComponent } from './shared/components/sign-dialog/sign-dialog
     PersonalCenterComponent,
     ContactUsComponent,
     ProjectInformationComponent,
-    SignDialogComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    BeforeLoginModule,
-    AfterLoginModule,
+    SharedModule,
     PaginatorModule,
     CarouselModule,
   ],
