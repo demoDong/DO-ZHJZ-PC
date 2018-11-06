@@ -4,13 +4,14 @@ import { PageIframeComponent } from './components/page-iframe/page-iframe.compon
 import { SignDialogComponent } from './components/sign-dialog/sign-dialog.component';
 import { DialogHeadComponent } from './components/dialog-head/dialog-head.component';
 import { FormsModule } from '@angular/forms';
+import { RegistDialogComponent } from './components/regist-dialog/regist-dialog.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
   ],
-  declarations: [PageIframeComponent, SignDialogComponent, DialogHeadComponent],
+  declarations: [PageIframeComponent, SignDialogComponent, DialogHeadComponent, RegistDialogComponent],
   exports: [PageIframeComponent]
 })
 export class SharedModule { }

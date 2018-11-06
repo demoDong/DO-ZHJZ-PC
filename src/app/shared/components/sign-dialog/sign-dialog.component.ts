@@ -10,7 +10,8 @@ import { CookieService } from '../../services/cookie.service';
   styleUrls: ['./sign-dialog.component.scss']
 })
 export class SignDialogComponent implements OnInit {
-  @Output() clickSignButton: EventEmitter<any> = new EventEmitter<any>();
+  @Output() clickSign: EventEmitter<any> = new EventEmitter<any>();
+  @Output() clickShowRegistDialog: EventEmitter<any> = new EventEmitter<any>();
   constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
 
   ngOnInit() {
@@ -19,8 +20,9 @@ export class SignDialogComponent implements OnInit {
     e.preventDefault();
     this.cookie.setCookie('_idptickeToken', '123');
     this.token._token = '123';
-    this.router.navigate([this.link._link]);
-    this.clickSignButton.emit(false);
+    this.clickSign.emit();
   }
-  closeDialog() { }
+  showRegistDialog() {
+    this.clickShowRegistDialog.emit();
+  }
 }

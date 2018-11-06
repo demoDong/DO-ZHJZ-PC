@@ -14,8 +14,11 @@ export class HomepageComponent implements OnInit {
   public EN_TITLE: string;
   public NAV_INDEX: number;
   public buildingPorjectsArr;
-  public ifShowSignDialog: boolean;
+  public ifShowDialog: boolean;
+  public ifShowSignContent: boolean;
   public newsArr;
+  public mapOption;
+  public nameMap;
   constructor(private link: LinkService, private token: TokenService, private router: Router) {
     this.buildingPorjectsArr = [
       {
@@ -101,22 +104,96 @@ export class HomepageComponent implements OnInit {
     this.ZH_TITLE = '首页';
     this.EN_TITLE = 'MY PROJECT';
     this.NAV_INDEX = 0;
-    this.ifShowSignDialog = false;
+    this.nameMap = 'china';
+    this.ifShowDialog = false;
+    this.ifShowSignContent = false;
+    this.mapOption = {
+      geo: {
+        zoom: '2.5',
+        map: 'china',
+        label: {
+          emphasis: {
+            show: false
+          }
+        },
+        itemStyle: {
+          normal: {
+            areaColor: 'rgba(86,148,161,0.6)',
+            borderColor: 'rgba(0,11,20,0.6)'
+          },
+          emphasis: {
+            areaColor: 'rgba(86,148,161,0.6)',
+            borderColor: 'rgba(0,11,20,0.6)'
+          }
+        }
+      },
+      series: [
+        {
+          name: 'pm2.5',
+          type: 'scatter',
+          coordinateSystem: 'geo',
+          data: [
+            { name: '海门', value: [125.03, 46.58] },
+            { name: '鄂尔多斯', value: [114.31, 30.52] },
+
+          ],
+          symbolSize: 12,
+          label: {
+            normal: {
+              show: false
+            },
+            emphasis: {
+              show: false
+            }
+          },
+          itemStyle: {
+            emphasis: {
+              borderColor: '#fff',
+              borderWidth: 1
+            }
+          }
+        }
+      ]
+    };
   }
   scanMoreProject() {
     this.link._link = 'projectInformation';
-    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['projectInformation']);
+    if (this.token._token === '') {
+      this.ifShowDialog = true;
+      this.ifShowSignContent = true;
+    } else {
+      this.router.navigate(['projectInformation']);
+    }
   }
   scanMoreNews() {
     this.link._link = 'newsAnnouncement';
-    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['newsAnnouncement']);
+    if (this.token._token === '') {
+      this.ifShowDialog = true;
+      this.ifShowSignContent = true;
+    } else {
+      this.router.navigate(['newsAnnouncement']);
+    }
   }
   scanNewsBulletinDetail() {
     this.link._link = 'newsBulletinDetail';
-    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['newsBulletinDetail']);
+    if (this.token._token === '') {
+      this.ifShowDialog = true;
+      this.ifShowSignContent = true;
+    } else {
+      this.router.navigate(['newsBulletinDetail']);
+    }
   }
   scanProjectInformationDetail() {
     this.link._link = 'projectInformationDetail';
-    this.token._token === '' ? this.ifShowSignDialog = true : this.router.navigate(['projectInformationDetail']);
+    if (this.token._token === '') {
+      this.ifShowDialog = true;
+      this.ifShowSignContent = true;
+    } else {
+      this.router.navigate(['projectInformationDetail']);
+    }
+  }
+  closeDialog() {
+    this.ifShowDialog = false;
+    this.ifShowSignContent = false;
   }
 }

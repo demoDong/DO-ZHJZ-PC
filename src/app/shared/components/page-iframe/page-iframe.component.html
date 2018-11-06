@@ -54,6 +54,7 @@
     </div>
   </div>
 </div>
-<app-dialog-head (close)="closeDialog($event)" *ngIf="ifShowSignDialog">
-  <app-sign-dialog (clickSignButton)="clickSignButton($event)"></app-sign-dialog>
+<app-dialog-head (close)="closeDialog()" *ngIf="ifShowDialog">
+  <app-sign-dialog (clickSign)="clickSign()" (clickShowRegistDialog)="clickShowRegistDialog()" *ngIf="ifShowSignContent"></app-sign-dialog>
+  <app-regist-dialog (clickRegist)="clickRegist()" (clickReturnSign)="clickReturnSign()" *ngIf="ifShowRegistContent"></app-regist-dialog>
 </app-dialog-head>

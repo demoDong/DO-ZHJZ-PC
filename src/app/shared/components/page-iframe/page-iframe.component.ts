@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { TokenService } from '../../services/token.service';
 import { LinkService } from '../../services/link.service';
@@ -14,8 +14,11 @@ export class PageIframeComponent implements OnInit {
     @Input() ZH_TITLE: string;
     @Input() EN_TITLE: string;
     @Input() NAV_INDEX: number;
-    @Input() ifShowSignDialog: boolean;
-    private ifShowSignButton: boolean;
+    @Input() ifShowDialog: boolean;
+    @Input() ifShowSignContent: boolean;
+    @Output() clickCloseDialog: EventEmitter<any> = new EventEmitter<any>();
+    public ifShowSignButton: boolean;
+    public ifShowRegistContent: boolean;
     public navArray: Array<object>;
     public ifNavClickedArr: Array<boolean>;
     constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
@@ -32,7 +35,9 @@ export class PageIframeComponent implements OnInit {
         this.ifNavClickedArr = new Array<boolean>(this.navArray.length);
         this.ifNavClickedArr.fill(false);
         this.ifNavClickedArr[this.NAV_INDEX] = true;
-        this.ifShowSignDialog = false;
+        this.ifShowDialog = false;
+        this.ifShowSignContent = false;
+        this.ifShowRegistContent = false;
         this.token._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
 
     }
@@ -44,20 +49,41 @@ export class PageIframeComponent implements OnInit {
             if (link === 'homepage' || link === 'contactUs') {
                 this.router.navigate([link]);
             } else {
-                this.ifShowSignDialog = true;
+                this.ifShowDialog = true;
+                this.ifShowSignContent = true;
+                this.ifShowRegistContent = false;
             }
         }
         this.link._link = link;
     }
-    closeDialog(e) {
-        this.ifShowSignDialog = e;
-    }
     showSignDialog() {
-        this.ifShowSignDialog = true;
+        this.ifShowDialog = true;
+        this.ifShowSignContent = true;
+        this.ifShowRegistContent = false;
     }
-    clickSignButton(e) {
-        this.ifShowSignButton = e;
-        this.ifShowSignDialog = e;
+    closeDialog() {
+        this.ifShowDialog = false;
+        this.ifShowSignContent = false;
+        this.ifShowRegistContent = false;
+        this.clickCloseDialog.emit();
+    }
+    clickSign() {
+        this.ifShowSignButton = false;
+        this.ifShowDialog = false;
+        this.ifShowSignContent = false;
+        this.router.navigate([this.link._link ? this.link._link : 'homepage']);
+    }
+    clickRegist() {
+        this.ifShowSignContent = true;
+        this.ifShowRegistContent = false;
+    }
+    clickShowRegistDialog() {
+        this.ifShowSignContent = false;
+        this.ifShowRegistContent = true;
+    }
+    clickReturnSign() {
+        this.ifShowSignContent = true;
+        this.ifShowRegistContent = false;
     }
     exit() {
         this.cookie.setCookie('_idptickeToken', '');
