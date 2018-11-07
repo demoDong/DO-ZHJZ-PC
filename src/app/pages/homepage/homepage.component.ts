@@ -118,6 +118,7 @@ export class HomepageComponent implements OnInit {
             show: false
           }
         },
+        roam: true,
         itemStyle: {
           normal: {
             areaColor: 'rgba(86,148,161,0.6)',

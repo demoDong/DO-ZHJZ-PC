@@ -74,7 +74,6 @@ export class PageIframeComponent implements OnInit {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
         if (!this.link._link || this.link._link === 'homepage') {
-            // this.router.navigate(['homepage']);
             window.location.reload();
         } else {
             this.router.navigate([this.link._link]);
@@ -98,7 +97,6 @@ export class PageIframeComponent implements OnInit {
         this.ifShowResetpwdContent = true;
     }
     exit() {
-        console.log(this.link._link);
         this.cookie.setCookie('_idptickeToken', '');
         this.token._token = '';
         this.ifShowSignButton = true;
@@ -106,6 +104,7 @@ export class PageIframeComponent implements OnInit {
             window.location.reload();
         } else {
             this.router.navigate(['homepage']);
+            this.link._link = 'homepage';
         }
 
     }
