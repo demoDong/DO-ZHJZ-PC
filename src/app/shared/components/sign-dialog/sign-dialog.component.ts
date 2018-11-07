@@ -12,6 +12,7 @@ import { CookieService } from '../../services/cookie.service';
 export class SignDialogComponent implements OnInit {
   @Output() clickSign: EventEmitter<any> = new EventEmitter<any>();
   @Output() clickShowRegistDialog: EventEmitter<any> = new EventEmitter<any>();
+  @Output() clickShowResetpwdDialog: EventEmitter<any> = new EventEmitter<any>();
   constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
 
   ngOnInit() {
@@ -24,5 +25,8 @@ export class SignDialogComponent implements OnInit {
   }
   showRegistDialog() {
     this.clickShowRegistDialog.emit();
+  }
+  showResetpwdDialog() {
+    this.clickShowResetpwdDialog.emit();
   }
 }

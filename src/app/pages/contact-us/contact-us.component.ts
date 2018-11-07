@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare const BMap: any;
+declare const BMAP_ANIMATION_BOUNCE: any;
 
 @Component({
   selector: 'app-contact-us',
@@ -17,6 +19,19 @@ export class ContactUsComponent implements OnInit {
     this.ZH_TITLE = '联系我们';
     this.EN_TITLE = 'CPNTACT US';
     this.NAV_INDEX = 5;
+    // 地图初始化
+    const map = new BMap.Map('allmap');
+    const point = new BMap.Point(116.275238, 40.08451);
+    const opts = {
+      position: point,
+      offset: new BMap.Size(-50, -80),
+    };
+    const label = new BMap.Label('友谊路39号', opts);
+    map.centerAndZoom(point, 16);
+    const marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+    map.addOverlay(label);
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE);
   }
 
 

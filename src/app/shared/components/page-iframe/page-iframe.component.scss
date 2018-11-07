@@ -48,8 +48,13 @@
         width: 5vw;
         background: #00e9fe;
         height: 1px;
-        margin: 0px 15px;
+        margin: 0px 5px;
         line-height: -4vh;
+        vertical-align: middle;
+    }
+    marquee {
+        display: inline-block;
+        width: 280px;
         vertical-align: middle;
     }
     .nav {

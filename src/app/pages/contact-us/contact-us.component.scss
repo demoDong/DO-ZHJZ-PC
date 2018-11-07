@@ -25,7 +25,22 @@
     line-height: 24px;
 }
 
-.map {
-    background: url(../../../assets/images/map.png) no-repeat;
-    background-size: 100% 100%;
+// .map {
+// }
+/deep/ .contactUs {
+    .h-bottom-content {
+        padding: 4vh 20vw !important;
+        background: #fff !important;
+    }
+    label.BMapLabel {
+        border: 1px solid #c7c7c7 !important;
+        border-radius: 4px;
+        width: 100px;
+        height: 25px;
+        line-height: 22px !important;
+        text-align: center;
+        font-size: 15px !important;
+        color: #000 !important;
+        letter-spacing: 1px;
+    }
 }

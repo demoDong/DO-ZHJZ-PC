@@ -16,6 +16,7 @@ export class HomepageComponent implements OnInit {
   public buildingPorjectsArr;
   public ifShowDialog: boolean;
   public ifShowSignContent: boolean;
+  public ifShowPopup: boolean;
   public newsArr;
   public mapOption;
   public nameMap;
@@ -107,6 +108,7 @@ export class HomepageComponent implements OnInit {
     this.nameMap = 'china';
     this.ifShowDialog = false;
     this.ifShowSignContent = false;
+    this.token._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
     this.mapOption = {
       geo: {
         zoom: '2.5',
@@ -195,5 +197,8 @@ export class HomepageComponent implements OnInit {
   closeDialog() {
     this.ifShowDialog = false;
     this.ifShowSignContent = false;
+  }
+  closePopup() {
+    this.ifShowPopup = false;
   }
 }

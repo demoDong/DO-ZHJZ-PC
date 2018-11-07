@@ -5,11 +5,11 @@
 </form>
 <div class="ui-g v-tooltop">
   <div class="ui-g-8">
-    <a routerLink="/forgetPwd" routerLinkActive="forgetPwd">忘记密码</a>
+    <a (click)="showResetpwdDialog()">忘记密码</a>
     <span>|</span>
     <a routerLink="/heroes" routerLinkActive="active">使用指南</a>
   </div>
   <div class="ui-g-4">
-    <a (click)="showRegistDialog($event)">注册新用户</a>
+    <a (click)="showRegistDialog()">注册新用户</a>
   </div>
 </div>

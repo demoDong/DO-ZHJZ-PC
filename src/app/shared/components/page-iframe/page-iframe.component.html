@@ -7,7 +7,9 @@
 
   <div class="h-bottom">
     <div class="ui-g h-bottom-header">
-      <h4 class="ui-g-5"><span></span>智慧建造信息平台<span></span></h4>
+      <h4 class="ui-g-5"><span></span>
+        <marquee>智慧建造信息平台</marquee><span></span>
+      </h4>
       <ul class="ui-g-7 nav">
         <li *ngFor="let item of navArray;index as i" (click)="navClicked(item['link'])" [ngClass]="{navClicked: ifNavClickedArr[i]}">{{item['name']}}</li>
       </ul>
@@ -55,6 +57,8 @@
   </div>
 </div>
 <app-dialog-head (close)="closeDialog()" *ngIf="ifShowDialog">
-  <app-sign-dialog (clickSign)="clickSign()" (clickShowRegistDialog)="clickShowRegistDialog()" *ngIf="ifShowSignContent"></app-sign-dialog>
-  <app-regist-dialog (clickRegist)="clickRegist()" (clickReturnSign)="clickReturnSign()" *ngIf="ifShowRegistContent"></app-regist-dialog>
+  <app-sign-dialog (clickSign)="clickSign()" (clickShowRegistDialog)="clickShowRegistDialog()"
+    (clickShowResetpwdDialog)="clickShowResetpwdDialog()" *ngIf="ifShowSignContent"></app-sign-dialog>
+  <app-regist-dialog (clickRegist)="clickRegist()" (clickReturnSign)="showSignDialog()" *ngIf="ifShowRegistContent"></app-regist-dialog>
+  <app-forgetpwd-dialog (clickResetPwd)="clickResetPwd()" (clickReturnSign)="showSignDialog()" *ngIf="ifShowResetpwdContent"></app-forgetpwd-dialog>
 </app-dialog-head>

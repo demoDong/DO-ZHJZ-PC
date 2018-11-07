@@ -225,6 +225,59 @@
     }
 }
 
+.popup {
+    position: fixed;
+    right: 8vh;
+    top: 40vh;
+    .closePopup {
+        background: url('../../../assets/images/clostPopupBG.png') no-repeat;
+        background-size: 100% 100%;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: -95px;
+        right: -50px;
+        border: none;
+        outline: none;
+    }
+    .signBtn {
+        background: url('../../../assets/images/signBtnBG.png') no-repeat;
+        background-size: 100% 100%;
+        width: 120px;
+        height: 55px;
+        position: absolute;
+        right: -25px;
+        top: -70px;
+        border: none;
+        outline: none;
+    }
+    .tooltipBox {
+        border: 1px solid #00e9f3;
+        color: #00e9f3;
+        font-size: 25px;
+        width: 45px;
+        text-align: center;
+        height: 135px;
+        line-height: 60px;
+        border-radius: 5px;
+        position: relative;
+        a {
+            color: #00e9f3;
+        }
+        img {
+            position: absolute;
+            right: 50px;
+            transform: rotate(-90deg);
+            top: -15px;
+            width: 80px;
+            display: none;
+        }
+        .wchat:hover img {
+            display: inline;
+        }
+    }
+}
+
 @media screen and (max-width:1440px) {
     .briefIntroduction li {
         font-size: 15px !important;

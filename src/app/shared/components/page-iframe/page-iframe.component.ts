@@ -19,6 +19,7 @@ export class PageIframeComponent implements OnInit {
     @Output() clickCloseDialog: EventEmitter<any> = new EventEmitter<any>();
     public ifShowSignButton: boolean;
     public ifShowRegistContent: boolean;
+    public ifShowResetpwdContent: boolean;
     public navArray: Array<object>;
     public ifNavClickedArr: Array<boolean>;
     constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
@@ -38,6 +39,7 @@ export class PageIframeComponent implements OnInit {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
         this.ifShowRegistContent = false;
+        this.ifShowResetpwdContent = false;
         this.token._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
 
     }
@@ -51,7 +53,6 @@ export class PageIframeComponent implements OnInit {
             } else {
                 this.ifShowDialog = true;
                 this.ifShowSignContent = true;
-                this.ifShowRegistContent = false;
             }
         }
         this.link._link = link;
@@ -60,6 +61,7 @@ export class PageIframeComponent implements OnInit {
         this.ifShowDialog = true;
         this.ifShowSignContent = true;
         this.ifShowRegistContent = false;
+        this.ifShowResetpwdContent = false;
     }
     closeDialog() {
         this.ifShowDialog = false;
@@ -71,24 +73,40 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignButton = false;
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
-        this.router.navigate([this.link._link ? this.link._link : 'homepage']);
+        if (!this.link._link || this.link._link === 'homepage') {
+            // this.router.navigate(['homepage']);
+            window.location.reload();
+        } else {
+            this.router.navigate([this.link._link]);
+        }
+
     }
     clickRegist() {
         this.ifShowSignContent = true;
         this.ifShowRegistContent = false;
     }
+    clickResetPwd() {
+        this.ifShowSignContent = true;
+        this.ifShowResetpwdContent = false;
+    }
     clickShowRegistDialog() {
         this.ifShowSignContent = false;
         this.ifShowRegistContent = true;
     }
-    clickReturnSign() {
-        this.ifShowSignContent = true;
-        this.ifShowRegistContent = false;
+    clickShowResetpwdDialog() {
+        this.ifShowSignContent = false;
+        this.ifShowResetpwdContent = true;
     }
     exit() {
+        console.log(this.link._link);
         this.cookie.setCookie('_idptickeToken', '');
         this.token._token = '';
         this.ifShowSignButton = true;
-        this.router.navigate(['homepage']);
+        if (!this.link._link || this.link._link === 'homepage') {
+            window.location.reload();
+        } else {
+            this.router.navigate(['homepage']);
+        }
+
     }
 }
