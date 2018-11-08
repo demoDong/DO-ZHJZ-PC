@@ -202,4 +202,8 @@ export class HomepageComponent implements OnInit {
   closePopup() {
     this.ifShowPopup = false;
   }
+  goSign() {
+    this.ifShowDialog = true;
+    this.ifShowSignContent = true;
+  }
 }

@@ -212,7 +212,7 @@ module.exports = "@charset \"UTF-8\";\n/* open-sans-300 - latin */\n@font-face {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\nhtml {\n  font-size: 17px; }\nhtml,\nbody,\nul,\nli,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  padding: 0px;\n  margin: 0px; }\nul {\n  list-style: none; }\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\nhtml {\n  font-size: 17px; }\nhtml,\nbody,\nul,\nli,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  padding: 0px;\n  margin: 0px; }\nul {\n  list-style: none; }\napp-echarts {\n  display: block;\n  width: 100%;\n  height: 100%; }\napp-echarts /deep/ .echart {\n    height: 100%;\n    width: 100%; }\n"
 
 /***/ }),
 
