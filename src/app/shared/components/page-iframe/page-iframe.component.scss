@@ -39,7 +39,6 @@
     h4 {
         padding: 0;
         color: #00E9FE;
-        font-size: 32px;
         letter-spacing: 2px;
         font-weight: normal;
     }
@@ -48,19 +47,24 @@
         width: 5vw;
         background: #00e9fe;
         height: 1px;
-        margin: 0px 5px;
-        line-height: -4vh;
+        margin: 0px 10px;
         vertical-align: middle;
     }
     marquee {
         display: inline-block;
-        width: 280px;
+        width: auto;
         vertical-align: middle;
+        height: 100%;
+        text-align: center;
+        h5 {
+            padding: 5px 0;
+            font-size: 26px;
+        }
     }
     .nav {
         display: flex;
         padding: 0;
-        padding-right: 10vw;
+        padding-right: 2vw;
         li {
             flex: 1;
             color: #fff;
@@ -160,11 +164,13 @@ ul.tools li {
     float: left;
     padding: 0px 1.5vw;
     font-size: 22px;
-    color: #fff;
     text-align: center;
+    i {
+        color: #fff;
+    }
 }
 
-ul.tools li:hover {
+ul.tools li:hover i {
     color: #00e9fe;
 }
 

@@ -1,8 +1,7 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" [ifShowDialog]="ifShowDialog"
     (clickCloseDialog)="closeDialog()" [ifShowSignContent]="ifShowSignContent" class="v-homepage-container">
     <div class="h-content-layout">
-        <div class="map">
-            <app-echarts [options]="mapOption" [nameMap]="nameMap"></app-echarts>
+        <div class="map" id="bmap">
         </div>
         <div class="ui-g productIntroduce">
             <div class="ui-g-5 text-right"><img src="assets/images/phone.png" alt=""></div>
