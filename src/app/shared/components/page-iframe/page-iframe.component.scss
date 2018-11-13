@@ -120,7 +120,7 @@
 
 .footer {
     position: relative;
-    height: 20vh;
+    height: 230px;
     background: url(../../../../assets/images/bottomBG.png) no-repeat;
 }
 
@@ -134,10 +134,29 @@
     line-height: 4vh;
     text-align: center;
     background: rgba(31, 34, 49, 0.8);
+    a.centerBase {
+        margin: 0px 5vw;
+        background: url(../../../../assets/images/ghs.png) no-repeat;
+        padding-left: 22px;
+    }
 }
 
-span.centerBase {
-    margin: 0px 5vw;
+._copyMessage {
+    color: #797A84;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    padding: 5px 0;
+    width: 100%;
+    line-height: 24px;
+    text-align: center;
+    background: rgba(31, 34, 49, 0.8);
+    a.centerBase {
+        margin: 0px 2vw;
+        padding-left: 22px;
+        background: url(../../../../assets/images/ghs.png) no-repeat;
+    }
 }
 
 .QR {

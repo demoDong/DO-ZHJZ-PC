@@ -17,6 +17,7 @@ export class PageIframeComponent implements OnInit {
     @Input() ifShowDialog: boolean;
     @Input() ifShowSignContent: boolean;
     @Output() clickCloseDialog: EventEmitter<any> = new EventEmitter<any>();
+    public ifIsFirst: boolean;
     public ifShowSignButton: boolean;
     public ifShowRegistContent: boolean;
     public ifShowResetpwdContent: boolean;
@@ -25,6 +26,7 @@ export class PageIframeComponent implements OnInit {
     constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
 
     ngOnInit() {
+        window.location.port === '4200' ? this.ifIsFirst = true : this.ifIsFirst = false;
         this.navArray = [
             { name: '首页', link: 'homepage' },
             { name: '我的项目', link: 'myProjects' },
