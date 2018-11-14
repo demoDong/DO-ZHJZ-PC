@@ -35,17 +35,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
-/* harmony import */ var _pages_regist_regist_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/regist/regist.component */ "./src/app/pages/regist/regist.component.ts");
-/* harmony import */ var _pages_forget_pwd_forget_pwd_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/forget-pwd/forget-pwd.component */ "./src/app/pages/forget-pwd/forget-pwd.component.ts");
-/* harmony import */ var _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/homepage/homepage.component */ "./src/app/pages/homepage/homepage.component.ts");
-/* harmony import */ var _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/my-projects/my-projects.component */ "./src/app/pages/my-projects/my-projects.component.ts");
-/* harmony import */ var _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/news-announcement/news-announcement.component */ "./src/app/pages/news-announcement/news-announcement.component.ts");
-/* harmony import */ var _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/personal-center/personal-center.component */ "./src/app/pages/personal-center/personal-center.component.ts");
-/* harmony import */ var _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/contact-us/contact-us.component */ "./src/app/pages/contact-us/contact-us.component.ts");
-/* harmony import */ var _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/project-information/project-information.component */ "./src/app/pages/project-information/project-information.component.ts");
-/* harmony import */ var _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/news-bulletin-detail/news-bulletin-detail.component */ "./src/app/pages/news-bulletin-detail/news-bulletin-detail.component.ts");
-/* harmony import */ var _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/project-information-detail/project-information-detail.component */ "./src/app/pages/project-information-detail/project-information-detail.component.ts");
+/* harmony import */ var _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/homepage/homepage.component */ "./src/app/pages/homepage/homepage.component.ts");
+/* harmony import */ var _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/news-announcement/news-announcement.component */ "./src/app/pages/news-announcement/news-announcement.component.ts");
+/* harmony import */ var _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/personal-center/personal-center.component */ "./src/app/pages/personal-center/personal-center.component.ts");
+/* harmony import */ var _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/contact-us/contact-us.component */ "./src/app/pages/contact-us/contact-us.component.ts");
+/* harmony import */ var _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/project-information/project-information.component */ "./src/app/pages/project-information/project-information.component.ts");
+/* harmony import */ var _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/news-bulletin-detail/news-bulletin-detail.component */ "./src/app/pages/news-bulletin-detail/news-bulletin-detail.component.ts");
+/* harmony import */ var _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/project-information-detail/project-information-detail.component */ "./src/app/pages/project-information-detail/project-information-detail.component.ts");
+/* harmony import */ var _pages_my_projects_todo_my_projects_todo_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/my-projects-todo/my-projects-todo.component */ "./src/app/pages/my-projects-todo/my-projects-todo.component.ts");
+/* harmony import */ var _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/my-projects/my-projects.component */ "./src/app/pages/my-projects/my-projects.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -63,21 +61,17 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
-
 var appRouters = [
-    { path: 'login', component: _pages_login_login_component__WEBPACK_IMPORTED_MODULE_2__["LoginComponent"] },
-    { path: 'regist', component: _pages_regist_regist_component__WEBPACK_IMPORTED_MODULE_3__["RegistComponent"] },
-    { path: 'forgetPwd', component: _pages_forget_pwd_forget_pwd_component__WEBPACK_IMPORTED_MODULE_4__["ForgetPwdComponent"] },
-    { path: 'homepage', component: _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__["HomepageComponent"] },
-    { path: 'myProjects', component: _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_6__["MyProjectsComponent"] },
-    { path: 'newsAnnouncement', component: _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_7__["NewsAnnouncementComponent"] },
-    { path: 'personalCenter', component: _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_8__["PersonalCenterComponent"] },
-    { path: 'contactUs', component: _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_9__["ContactUsComponent"] },
-    { path: 'projectInformation', component: _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_10__["ProjectInformationComponent"] },
-    { path: 'newsBulletinDetail', component: _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_11__["NewsBulletinDetailComponent"] },
-    { path: 'projectInformationDetail', component: _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_12__["ProjectInformationDetailComponent"] },
-    { path: '', component: _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_5__["HomepageComponent"] },
+    { path: 'homepage', component: _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_2__["HomepageComponent"] },
+    { path: 'myProjects', component: _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_10__["MyProjectsComponent"] },
+    { path: 'myProjectsTodo', component: _pages_my_projects_todo_my_projects_todo_component__WEBPACK_IMPORTED_MODULE_9__["MyProjectsTodoComponent"] },
+    { path: 'newsAnnouncement', component: _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_3__["NewsAnnouncementComponent"] },
+    { path: 'personalCenter', component: _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_4__["PersonalCenterComponent"] },
+    { path: 'contactUs', component: _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_5__["ContactUsComponent"] },
+    { path: 'projectInformation', component: _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_6__["ProjectInformationComponent"] },
+    { path: 'newsBulletinDetail', component: _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_7__["NewsBulletinDetailComponent"] },
+    { path: 'projectInformationDetail', component: _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_8__["ProjectInformationDetailComponent"] },
+    { path: '', component: _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_2__["HomepageComponent"] },
 ];
 var routerConfig = {
     useHash: true,
@@ -166,18 +160,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primeng_carousel__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(primeng_carousel__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shared/shared.module */ "./src/app/shared/shared.module.ts");
 /* harmony import */ var _shared_do_echarts_do_echarts_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./shared/do-echarts/do-echarts.module */ "./src/app/shared/do-echarts/do-echarts.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
-/* harmony import */ var _pages_regist_regist_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/regist/regist.component */ "./src/app/pages/regist/regist.component.ts");
-/* harmony import */ var _pages_forget_pwd_forget_pwd_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/forget-pwd/forget-pwd.component */ "./src/app/pages/forget-pwd/forget-pwd.component.ts");
-/* harmony import */ var _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/homepage/homepage.component */ "./src/app/pages/homepage/homepage.component.ts");
-/* harmony import */ var _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/my-projects/my-projects.component */ "./src/app/pages/my-projects/my-projects.component.ts");
-/* harmony import */ var _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/news-announcement/news-announcement.component */ "./src/app/pages/news-announcement/news-announcement.component.ts");
-/* harmony import */ var _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/personal-center/personal-center.component */ "./src/app/pages/personal-center/personal-center.component.ts");
-/* harmony import */ var _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/contact-us/contact-us.component */ "./src/app/pages/contact-us/contact-us.component.ts");
-/* harmony import */ var _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/project-information/project-information.component */ "./src/app/pages/project-information/project-information.component.ts");
-/* harmony import */ var _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/news-bulletin-detail/news-bulletin-detail.component */ "./src/app/pages/news-bulletin-detail/news-bulletin-detail.component.ts");
-/* harmony import */ var _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/project-information-detail/project-information-detail.component */ "./src/app/pages/project-information-detail/project-information-detail.component.ts");
+/* harmony import */ var primeng_tree__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! primeng/tree */ "./node_modules/primeng/tree.js");
+/* harmony import */ var primeng_tree__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(primeng_tree__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/homepage/homepage.component */ "./src/app/pages/homepage/homepage.component.ts");
+/* harmony import */ var _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/news-announcement/news-announcement.component */ "./src/app/pages/news-announcement/news-announcement.component.ts");
+/* harmony import */ var _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/personal-center/personal-center.component */ "./src/app/pages/personal-center/personal-center.component.ts");
+/* harmony import */ var _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/contact-us/contact-us.component */ "./src/app/pages/contact-us/contact-us.component.ts");
+/* harmony import */ var _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/project-information/project-information.component */ "./src/app/pages/project-information/project-information.component.ts");
+/* harmony import */ var _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/news-bulletin-detail/news-bulletin-detail.component */ "./src/app/pages/news-bulletin-detail/news-bulletin-detail.component.ts");
+/* harmony import */ var _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/project-information-detail/project-information-detail.component */ "./src/app/pages/project-information-detail/project-information-detail.component.ts");
+/* harmony import */ var _pages_my_projects_todo_my_projects_todo_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/my-projects-todo/my-projects-todo.component */ "./src/app/pages/my-projects-todo/my-projects-todo.component.ts");
+/* harmony import */ var _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/my-projects/my-projects.component */ "./src/app/pages/my-projects/my-projects.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -204,25 +198,22 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
-                _pages_login_login_component__WEBPACK_IMPORTED_MODULE_10__["LoginComponent"],
-                _pages_regist_regist_component__WEBPACK_IMPORTED_MODULE_11__["RegistComponent"],
-                _pages_forget_pwd_forget_pwd_component__WEBPACK_IMPORTED_MODULE_12__["ForgetPwdComponent"],
-                _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_14__["MyProjectsComponent"],
-                _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_13__["HomepageComponent"],
-                _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_15__["NewsAnnouncementComponent"],
-                _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_16__["PersonalCenterComponent"],
-                _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_17__["ContactUsComponent"],
-                _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_18__["ProjectInformationComponent"],
-                _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_19__["NewsBulletinDetailComponent"],
-                _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_20__["ProjectInformationDetailComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"],
+                _pages_my_projects_todo_my_projects_todo_component__WEBPACK_IMPORTED_MODULE_18__["MyProjectsTodoComponent"],
+                _pages_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_11__["HomepageComponent"],
+                _pages_news_announcement_news_announcement_component__WEBPACK_IMPORTED_MODULE_12__["NewsAnnouncementComponent"],
+                _pages_personal_center_personal_center_component__WEBPACK_IMPORTED_MODULE_13__["PersonalCenterComponent"],
+                _pages_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_14__["ContactUsComponent"],
+                _pages_project_information_project_information_component__WEBPACK_IMPORTED_MODULE_15__["ProjectInformationComponent"],
+                _pages_news_bulletin_detail_news_bulletin_detail_component__WEBPACK_IMPORTED_MODULE_16__["NewsBulletinDetailComponent"],
+                _pages_project_information_detail_project_information_detail_component__WEBPACK_IMPORTED_MODULE_17__["ProjectInformationDetailComponent"],
+                _pages_my_projects_my_projects_component__WEBPACK_IMPORTED_MODULE_19__["MyProjectsComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -233,9 +224,10 @@ var AppModule = /** @class */ (function () {
                 primeng_paginator__WEBPACK_IMPORTED_MODULE_5__["PaginatorModule"],
                 primeng_carousel__WEBPACK_IMPORTED_MODULE_6__["CarouselModule"],
                 _shared_do_echarts_do_echarts_module__WEBPACK_IMPORTED_MODULE_8__["DoEChartsModule"],
+                primeng_tree__WEBPACK_IMPORTED_MODULE_9__["TreeModule"],
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -325,69 +317,6 @@ var ContactUsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/forget-pwd/forget-pwd.component.html":
-/*!************************************************************!*\
-  !*** ./src/app/pages/forget-pwd/forget-pwd.component.html ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!-- <app-before-login-header>\r\n</app-before-login-header> -->\r\n<!-- <app-before-login-content></app-before-login-content> -->\r\n<!-- <app-before-login-dialog>\r\n  <form action=\"\">\r\n    <input type=\"text\" placeholder=\"请输入手机号\">\r\n    <label>\r\n      <input type=\"text\" placeholder=\"请输入验证码\"><a class=\"yzm\">获取验证码</a>\r\n    </label>\r\n    <input type=\"password\" placeholder=\"请输入密码(8~20位，不能全是数字)\"><br>\r\n    <input type=\"password\" placeholder=\"请再次输入密码\"><br>\r\n    <button>确定</button>\r\n  </form>\r\n  <div class=\"ui-g v-tooltop\">\r\n    <div class=\"ui-g-8\">\r\n    </div>\r\n    <div class=\"ui-g-4\">\r\n      <a routerLink=\"/login\" routerLinkActive=\"active\">已有账号 立即登录</a>\r\n    </div>\r\n  </div>\r\n</app-before-login-dialog> -->"
-
-/***/ }),
-
-/***/ "./src/app/pages/forget-pwd/forget-pwd.component.scss":
-/*!************************************************************!*\
-  !*** ./src/app/pages/forget-pwd/forget-pwd.component.scss ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "form {\n  text-align: center;\n  width: 330px;\n  margin: auto; }\n  form * {\n    font-size: 16px; }\n  input {\n  width: 100%;\n  height: 40px;\n  margin: 10px 0;\n  border-radius: 4px;\n  border: 1px solid #c1bfbf;\n  padding: 0px 15px;\n  font-size: 16px; }\n  input[type=\"checkbox\"] {\n  width: 22px;\n  height: 22px;\n  float: left; }\n  label {\n  position: relative;\n  line-height: 40px; }\n  a.yzm {\n  position: absolute;\n  right: 0px;\n  margin: 10px 15px; }\n  label a {\n  color: #02dde6; }\n  form > button {\n  width: 100%;\n  color: #fff;\n  background: #00e9f3;\n  height: 40px;\n  letter-spacing: 4px;\n  font-size: 20px;\n  border: none;\n  border-radius: 5px;\n  margin: 10px 0; }\n  .ui-g.v-tooltop {\n  margin-top: 4vh;\n  padding: 8px 20px;\n  background: #F7F8FA;\n  border-radius: 0 0 10px 10px; }\n  .v-tooltop .ui-g-4 {\n  text-align: right; }\n  .ui-g.v-tooltop * {\n  color: #02dde6;\n  font-size: 18px; }\n  .ui-g.v-tooltop span {\n  margin: 0 15px; }\n"
-
-/***/ }),
-
-/***/ "./src/app/pages/forget-pwd/forget-pwd.component.ts":
-/*!**********************************************************!*\
-  !*** ./src/app/pages/forget-pwd/forget-pwd.component.ts ***!
-  \**********************************************************/
-/*! exports provided: ForgetPwdComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgetPwdComponent", function() { return ForgetPwdComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ForgetPwdComponent = /** @class */ (function () {
-    function ForgetPwdComponent() {
-    }
-    ForgetPwdComponent.prototype.ngOnInit = function () {
-    };
-    ForgetPwdComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-forget-pwd',
-            template: __webpack_require__(/*! ./forget-pwd.component.html */ "./src/app/pages/forget-pwd/forget-pwd.component.html"),
-            styles: [__webpack_require__(/*! ./forget-pwd.component.scss */ "./src/app/pages/forget-pwd/forget-pwd.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], ForgetPwdComponent);
-    return ForgetPwdComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/pages/homepage/homepage.component.html":
 /*!********************************************************!*\
   !*** ./src/app/pages/homepage/homepage.component.html ***!
@@ -395,7 +324,7 @@ var ForgetPwdComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\" [EN_TITLE]=\"EN_TITLE\" [NAV_INDEX]=\"NAV_INDEX\" [ifShowDialog]=\"ifShowDialog\"\r\n    (clickCloseDialog)=\"closeDialog()\" [ifShowSignContent]=\"ifShowSignContent\" class=\"v-homepage-container\">\r\n    <div class=\"h-content-layout\">\r\n        <div class=\"map\">\r\n            <app-echarts [options]=\"mapOption\" [nameMap]=\"nameMap\"></app-echarts>\r\n        </div>\r\n        <div class=\"ui-g productIntroduce\">\r\n            <div class=\"ui-g-5 text-right\"><img src=\"assets/images/phone.png\" alt=\"\"></div>\r\n            <div class=\"ui-g-7 detail\">\r\n                <h3>产品介绍</h3>\r\n                <p>智慧建造信息平台是工程建造领域运用互联网、移动互联网、大数据、云计算技术的应用典范。通过工程建造全流程的表单在线填报、流程自动推送、手机APP施工现场电子签名、数据结构化存储等功能，实现了审批流程数字化、数据存档结构化、监督管理智能化，大幅度提高了工程建造全流程的信息化程度，降低企业成本，提高工作效率；已通过北京市住建委的科技成果鉴定，达到国内领先水平，具有良好的推广应用价值。</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"publicity text-center\">\r\n            <img src=\"assets/images/edit.png\" alt=\"\">\r\n            <h3>一站式解决资料审批和数据积累问题</h3>\r\n            <h6>INTELLIGENT BUILDING INFORMATION PLATFORM</h6>\r\n        </div>\r\n        <div class=\"projectsInformation text-center\">\r\n            <h3>在建<span>工程</span>信息</h3>\r\n            <h6>CONSTRUCTION PROJECT</h6>\r\n            <button class=\"scanMore\" (click)=\"scanMoreProject()\">查看更多>></button>\r\n            <p-carousel [value]=\"buildingPorjectsArr\" numVisible=3>\r\n                <ng-template let-project pTemplate=\"item\">\r\n                    <div class=\"ui-grid ui-grid-responsive\">\r\n                        <div class=\"ui-grid-row\">\r\n                            <div class=\"ui-grid-col-12 detailBox\">\r\n                                <img src=\"assets/images/{{project.pic}}.png\">\r\n                                <div class=\"briefIntroduction\">\r\n                                    <ul>\r\n                                        <li>项目名称：{{project.name}}</li>\r\n                                        <li>建筑规模：{{project.area}}平方米</li>\r\n                                        <li>工程地址：{{project.address}}</li>\r\n                                        <li>计划工期：{{project.planDate}}</li>\r\n                                        <li>监理单位：{{project.supervision}}</li>\r\n                                        <li>施工单位信息：{{project.builder}}</li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <button class=\"scanListMore\" (click)=\"scanProjectInformationDetail()\">查看更多详情</button>\r\n                    </div>\r\n                </ng-template>\r\n            </p-carousel>\r\n        </div>\r\n        <div class=\"newsBulletin text-center\">\r\n            <h3>新<span>闻通</span>告</h3>\r\n            <h6>NEWS BULLETIN</h6>\r\n            <button class=\"scanMore\" (click)=\"scanMoreNews()\">查看更多>></button>\r\n            <ul>\r\n                <li *ngFor=\"let item of newsArr\">\r\n                    <h4>{{item.type}}</h4>\r\n                    <p>{{item.content}}</p>\r\n                    <button (click)=\"scanNewsBulletinDetail()\">查看详情</button>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</app-page-iframe>\r\n<div class=\"popup\" *ngIf=\"ifShowPopup\">\r\n    <button class=\"closePopup\" (click)=\"closePopup()\"></button>\r\n    <button class=\"signBtn\" (click)=\"goSign()\"></button>\r\n    <div class=\"tooltipBox\">\r\n        <div class=\"wchat\"><img src=\"assets/images/wechat.png\" alt=\"\"><i class=\"fa fa-weixin\"></i></div>\r\n        <a href=\"mailto:demo99134@163.com\"><i class=\"fa fa-envelope-o\"></i></a>\r\n    </div>\r\n\r\n</div>"
+module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\" [EN_TITLE]=\"EN_TITLE\" [NAV_INDEX]=\"NAV_INDEX\" [ifShowDialog]=\"ifShowDialog\"\r\n    (clickCloseDialog)=\"closeDialog()\" [ifShowSignContent]=\"ifShowSignContent\" class=\"v-homepage-container\">\r\n    <div class=\"h-content-layout\">\r\n        <div class=\"map\" id=\"bmap\">\r\n        </div>\r\n        <div class=\"ui-g productIntroduce\">\r\n            <div class=\"ui-g-5 text-right\"><img src=\"assets/images/phone.png\" alt=\"\"></div>\r\n            <div class=\"ui-g-7 detail\">\r\n                <h3>产品介绍</h3>\r\n                <p>智慧建造信息平台是工程建造领域运用互联网、移动互联网、大数据、云计算技术的应用典范。通过工程建造全流程的表单在线填报、流程自动推送、手机APP施工现场电子签名、数据结构化存储等功能，实现了审批流程数字化、数据存档结构化、监督管理智能化，大幅度提高了工程建造全流程的信息化程度，降低企业成本，提高工作效率；已通过北京市住建委的科技成果鉴定，达到国内领先水平，具有良好的推广应用价值。</p>\r\n            </div>\r\n        </div>\r\n        <div class=\"publicity text-center\">\r\n            <img src=\"assets/images/edit.png\" alt=\"\">\r\n            <h3>一站式解决资料审批和数据积累问题</h3>\r\n            <h6>INTELLIGENT BUILDING INFORMATION PLATFORM</h6>\r\n        </div>\r\n        <div class=\"projectsInformation text-center\">\r\n            <h3>在建<span>工程</span>信息</h3>\r\n            <h6>CONSTRUCTION PROJECT</h6>\r\n            <button class=\"scanMore\" (click)=\"scanMoreProject()\">查看更多>></button>\r\n            <p-carousel [value]=\"buildingPorjectsArr\" numVisible=3>\r\n                <ng-template let-project pTemplate=\"item\">\r\n                    <div class=\"ui-grid ui-grid-responsive\">\r\n                        <div class=\"ui-grid-row\">\r\n                            <div class=\"ui-grid-col-12 detailBox\">\r\n                                <img src=\"assets/images/{{project.pic}}.png\">\r\n                                <div class=\"briefIntroduction\">\r\n                                    <ul>\r\n                                        <li>项目名称：{{project.name}}</li>\r\n                                        <li>建筑规模：{{project.area}}平方米</li>\r\n                                        <li>工程地址：{{project.address}}</li>\r\n                                        <li>计划工期：{{project.planDate}}</li>\r\n                                        <li>监理单位：{{project.supervision}}</li>\r\n                                        <li>施工单位信息：{{project.builder}}</li>\r\n                                    </ul>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <button class=\"scanListMore\" (click)=\"scanProjectInformationDetail()\">查看更多详情</button>\r\n                    </div>\r\n                </ng-template>\r\n            </p-carousel>\r\n        </div>\r\n        <div class=\"newsBulletin text-center\">\r\n            <h3>新<span>闻通</span>告</h3>\r\n            <h6>NEWS BULLETIN</h6>\r\n            <button class=\"scanMore\" (click)=\"scanMoreNews()\">查看更多>></button>\r\n            <ul>\r\n                <li *ngFor=\"let item of newsArr\">\r\n                    <h4>{{item.type}}</h4>\r\n                    <p>{{item.content}}</p>\r\n                    <button (click)=\"scanNewsBulletinDetail()\">查看详情</button>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</app-page-iframe>\r\n<div class=\"popup\" *ngIf=\"ifShowPopup\">\r\n    <button class=\"closePopup\" (click)=\"closePopup()\"></button>\r\n    <button class=\"signBtn\" (click)=\"goSign()\"></button>\r\n    <div class=\"tooltipBox\">\r\n        <div class=\"wchat\"><img src=\"assets/images/wechat.png\" alt=\"\"><i class=\"fa fa-weixin\"></i></div>\r\n        <a href=\"mailto:demo99134@163.com\"><i class=\"fa fa-envelope-o\"></i></a>\r\n    </div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -406,7 +335,7 @@ module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/deep/ .v-homepage-container .h-top-content {\n  display: none; }\n\n/deep/ .v-homepage-container .h-bottom-content {\n  padding: 0px !important; }\n\n.map {\n  background: url('mapBG.png') no-repeat;\n  background-size: 100% 100%;\n  height: 80vh; }\n\n.productIntroduce {\n  background: #fff;\n  padding: 5vh 0; }\n\n.productIntroduce .detail {\n    padding: 0 10vw; }\n\n.productIntroduce .detail h3 {\n      padding: 5vh 0;\n      letter-spacing: 2px;\n      color: #585858; }\n\n.productIntroduce .detail p {\n      color: #585858;\n      line-height: 32px; }\n\n.publicity {\n  background: url('centerBG.png') no-repeat;\n  background-size: 100% 100%;\n  color: #fff;\n  padding: 8vh 0; }\n\n.publicity h3 {\n    padding: 4vh 0 2vh; }\n\n.projectsInformation {\n  padding: 8vh 0;\n  background: #EEEEF0;\n  position: relative; }\n\n.projectsInformation h3 {\n    color: #585858;\n    letter-spacing: 2px;\n    padding-bottom: 2vh; }\n\n.projectsInformation h3 span {\n      padding: 6px 0;\n      border-bottom: 3px solid #1DD2E2; }\n\n.projectsInformation h6 {\n    color: #585858; }\n\n.projectsInformation img {\n    width: 100%; }\n\n.projectsInformation .detailBox {\n    position: relative; }\n\n.projectsInformation .briefIntroduction {\n    position: absolute;\n    top: 0px;\n    height: 100%;\n    width: 100%;\n    background: rgba(29, 210, 226, 0.8);\n    display: flex;\n    align-items: center;\n    visibility: hidden; }\n\n.projectsInformation .briefIntroduction li {\n      color: #fff;\n      text-align: left;\n      font-size: 17px;\n      letter-spacing: 2px;\n      padding: 12px;\n      width: 100% !important; }\n\n.projectsInformation .detailBox:hover .briefIntroduction {\n    visibility: visible; }\n\n.projectsInformation button.scanMore {\n    position: absolute;\n    right: 17vw;\n    top: 23vh;\n    background: #2cc6d8;\n    border: none;\n    outline: none;\n    color: #fff;\n    font-size: 15px;\n    padding: 5px 10px;\n    border-radius: 5px;\n    z-index: 1;\n    cursor: pointer; }\n\n.projectsInformation button.scanListMore {\n    margin-top: 3vh;\n    background: none;\n    border: none;\n    color: #2cc6d8;\n    font-size: 16px;\n    letter-spacing: 1px;\n    outline: none;\n    cursor: pointer; }\n\n.projectsInformation /deep/ .ui-carousel-header.ui-widget-header.ui-corner-all {\n    margin: 5vh 0; }\n\n.projectsInformation /deep/ .ui-carousel-viewport {\n    background: none !important;\n    border: none !important; }\n\n.projectsInformation /deep/ .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {\n    padding: 0px 17vw; }\n\n.projectsInformation /deep/ .ui-carousel-header.ui-widget-header.ui-corner-all {\n    display: inline-block;\n    background: none;\n    border: none; }\n\n.projectsInformation /deep/ .ui-carousel-page-links {\n    display: none; }\n\n.projectsInformation /deep/ li.ui-carousel-item.ui-widget-content.ui-corner-all {\n    padding: 10px !important;\n    border: none;\n    text-align: left;\n    width: 22vw !important; }\n\n.projectsInformation /deep/ .pi-arrow-circle-left.ui-state-disabled {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVGhD7ZrJa9RgGIf9R9RWLVpFcUFFRQSXgh48KLjgAu6KBz14qXhQPIjbwQVq63JQXG5uCFJwQxHrip2OY/d2klmSWdr/4PP3+0zGzDQIQ7NOc3ggTF4y75PvS/J+bzKpWBwVE4FItNaYuKKvswVxqC8jlv9SxYK4EhqY7/7ejHiF/CudSJnobTUn5nUpYnJnMrTMQf5tSq5MkpRE3+JMrEqoohGB15O6GM6PjAkOMsz3BvJu7ErK0a0c2ZLomUFNzIop4tKwJrTCv4AwkQMXkf9MeJyCj3VfSfQwrsupGPoPOBMFS0DY+KIVpcdeXK/W30ui+7CDc/y7XiwLCBtduaL02NmTLvs9Eg0rkai5EYmGjEjU3IhEQ0ZgRXWUm725ERFHgunC+OvrQIqypuaycAeSWolC/Fk6bxtXDYET5UhScjsSmoL/XRJXxeNUjYnmwXuL5CIsnM8PaXIK28VXQ6BEPxrTlZILIXkOkj0OSJLAiHZgGbXFkGQ34ywkux2SJIEQ/YZjb+pOSUl2Mijp1Eia+C76FcfdDEkuiqfHkuL0oCb6XWjX+CrKY1KyHoL8j5MDmki61JPyTTSG4/Huako2Q9LNnpTnouw7/cSxduO4dZCsw7FP9Gflo8Uu3ik8F/2Mu+uu3rQUbIgp4jgk3ZquVjwXvTKsy7srj7kNf8pa1i7OaTwXfaDmZFlH2TUJVTxBHcuyzy7WSTwXHcI0bVF0sQLFOmWbEinxFLJu94w9FyUKll2tkF1myK41ZO1incIXUcIbUBtkFxuyqyH73EVZ30QJR5ZvuOYab+rWQZbXrF3sePFVlKiQvYWRnYFnKsvApt8pRxbalfguStgquYu78TSjgFgP2ZcZZ2UDIUp0cAfTmNUSR3YDZNsdlA2MKGGt25rU5cjyPzei4OeLaCcePYESJSlM42vyDfXfG9RWJPZJs//+oBoCJ0oG8ei5gMU3Ow2zwX1cv3Zx1RBIUdIHWX4z0TyQFR21OqJuEImaG5FoyIhEzY1INGREouaGKcqOujUgbLCP/F/RY/1ZWWS/wBrR7d6rW3BR0J4piHqI8ttG676SaAvKsPlxRX6U/ANnxYuOnZMw307kfRD5s5NxFT7W/SXRGOb2HkzfBozqAQSzz3MPRXZYuIl8OUjsYLBxTmlbUfIOa8KjCF4aV+Xwc66HBebLPvIR5P8GHlYvUiZK4jgTj1J52Wm/HCKY70OMLO+6lU5kjGitMkFER8UfvGsIpTot1K8AAAAASUVORK5CYII=) no-repeat;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    background-size: contain; }\n\n.projectsInformation /deep/ .pi-arrow-circle-right.ui-state-disabled {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVGhD7ZrJa9RgGIf9R9RWLVpFcUFFRQSXgh48KLjgAu6KBz14qXhQPIjbwQVq63JQXG5uCFJwQxHrip2OY/d2klmSWdr/4PP3+0zGzDQIQ7NOc3ggTF4y75PvS/J+bzKpWBwVE4FItNaYuKKvswVxqC8jlv9SxYK4EhqY7/7ejHiF/CudSJnobTUn5nUpYnJnMrTMQf5tSq5MkpRE3+JMrEqoohGB15O6GM6PjAkOMsz3BvJu7ErK0a0c2ZLomUFNzIop4tKwJrTCv4AwkQMXkf9MeJyCj3VfSfQwrsupGPoPOBMFS0DY+KIVpcdeXK/W30ui+7CDc/y7XiwLCBtduaL02NmTLvs9Eg0rkai5EYmGjEjU3IhEQ0ZgRXWUm725ERFHgunC+OvrQIqypuaycAeSWolC/Fk6bxtXDYET5UhScjsSmoL/XRJXxeNUjYnmwXuL5CIsnM8PaXIK28VXQ6BEPxrTlZILIXkOkj0OSJLAiHZgGbXFkGQ34ywkux2SJIEQ/YZjb+pOSUl2Mijp1Eia+C76FcfdDEkuiqfHkuL0oCb6XWjX+CrKY1KyHoL8j5MDmki61JPyTTSG4/Huako2Q9LNnpTnouw7/cSxduO4dZCsw7FP9Gflo8Uu3ik8F/2Mu+uu3rQUbIgp4jgk3ZquVjwXvTKsy7srj7kNf8pa1i7OaTwXfaDmZFlH2TUJVTxBHcuyzy7WSTwXHcI0bVF0sQLFOmWbEinxFLJu94w9FyUKll2tkF1myK41ZO1incIXUcIbUBtkFxuyqyH73EVZ30QJR5ZvuOYab+rWQZbXrF3sePFVlKiQvYWRnYFnKsvApt8pRxbalfguStgquYu78TSjgFgP2ZcZZ2UDIUp0cAfTmNUSR3YDZNsdlA2MKGGt25rU5cjyPzei4OeLaCcePYESJSlM42vyDfXfG9RWJPZJs//+oBoCJ0oG8ei5gMU3Ow2zwX1cv3Zx1RBIUdIHWX4z0TyQFR21OqJuEImaG5FoyIhEzY1INGREouaGKcqOujUgbLCP/F/RY/1ZWWS/wBrR7d6rW3BR0J4piHqI8ttG676SaAvKsPlxRX6U/ANnxYuOnZMw307kfRD5s5NxFT7W/SXRGOb2HkzfBozqAQSzz3MPRXZYuIl8OUjsYLBxTmlbUfIOa8KjCF4aV+Xwc66HBebLPvIR5P8GHlYvUiZK4jgTj1J52Wm/HCKY70OMLO+6lU5kjGitMkFER8UfvGsIpTot1K8AAAAASUVORK5CYII=) no-repeat;\n    background-size: contain;\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg); }\n\n.projectsInformation /deep/ .pi-arrow-circle-left {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA7CAYAAAAn+enKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZvJTxNxFMf9R1QwSgQ1LnAQ9YAxwsEL8eByATEeNEZMXCKJ0XglygGiJ8PFhJN/gEExkaAnDxJLC3QD2imdThe6BEo3nt83QMKkv3gonQ2myef2ftN+8t5veTPTA6lUmvYTjvBeRyg8KSfpoV+mix6JzrrDtqEdv7fPF6Wv0WSV0zZVwp+kOLW6JTr0N0QHbUqTK0zvQ4rGaxuN8BQy2zkXEV7EbnDSxgWZ1ggPLirUMhMWXsBuHEWWnwVljSyjEX4SkOmwYLAd4Sl5y7uskWU0wo8CUeFgu3J93hF2hIUD7YojDBxh0UC74ggDR1g0sFaacEw9P7tM5zwRanSJY/TEcOHeBYX86yWayK5RN9rNIzjfiuL0wnDhu4txkopl2iCi71vSjQZKGy7MpfxWTpO8Q/qaz7gGxZRFq3U2QkOQjpU2pb9BustX/+8RYYow04ZMD8cylCpXVOnJXJ6uevWXNk2YaYX0CKSzW9K/cuvUMa+vtKnCzGmPRB+UDBU2NqgM6ylIX9ZR2nRhpsUt0Wg8ixwTlSA+hfLuwA8Txe4WSwgzvB/vlObV+8Jc/aUtI8w04OT1KZFTS7sM6S+ZVboE6XreHraUMHMC5T2WzFG+sjmnxzNrdKWOq7flhJl27NM/snm1vHn1fhNZEcbVguWEeS73LcTJky9SBbJSoUQPlhLC2FqwlDAfL++guXCtFdTMBtFkvJRSdBJlLoqvBUsJ9yKzbmSWZReR2QHINs/UT5axjHAPMju7JSsVS/RCSqr7syh2N1hCuA+y7nwBqkTJUkWVbdbpeZbpwj0oY56zvECtYSt6jjI+ruPDO1OFbwcVmoYs77cFyPaHk3RM5yeVpgnfCCj0Z3Uzs3yqegpZI+58GC7Mx8Ruf4x+r66rc7YIWV6NjbrNY7hwl1dWm33+cB/8OpJS72SKYvXAcOH+UIIyEE1gNR6U03RKh63nfxgu3IlG4CPawFfI7Bk0/6IYPTFt0TILRxg4wqKBdsURBo6waKBdcYSBRrh/vwkPBPmhtXiw3WgAvb6oRpbRCI+G49Rm8HlXL/it4HdL1e9Ma4Td8RTd90fVV29FF7ELnN2b3mWaVlIaWUYjzPyMJelxQFZfp7dbeTcCrtB7SNqELP4bQJUw44mv0OdIgkZCCg2hLOzCMBiT4uRCpYq8GKHwXsYR3tuk6R9NRWJrxGDQjgAAAABJRU5ErkJggg==) no-repeat;\n    background-size: contain;\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n    width: 55px;\n    height: 55px;\n    font-size: 0px;\n    margin-right: 10px; }\n\n.projectsInformation /deep/ .pi-arrow-circle-right {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA7CAYAAAAn+enKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZvJTxNxFMf9R1QwSgQ1LnAQ9YAxwsEL8eByATEeNEZMXCKJ0XglygGiJ8PFhJN/gEExkaAnDxJLC3QD2imdThe6BEo3nt83QMKkv3gonQ2myef2ftN+8t5veTPTA6lUmvYTjvBeRyg8KSfpoV+mix6JzrrDtqEdv7fPF6Wv0WSV0zZVwp+kOLW6JTr0N0QHbUqTK0zvQ4rGaxuN8BQy2zkXEV7EbnDSxgWZ1ggPLirUMhMWXsBuHEWWnwVljSyjEX4SkOmwYLAd4Sl5y7uskWU0wo8CUeFgu3J93hF2hIUD7YojDBxh0UC74ggDR1g0sFaacEw9P7tM5zwRanSJY/TEcOHeBYX86yWayK5RN9rNIzjfiuL0wnDhu4txkopl2iCi71vSjQZKGy7MpfxWTpO8Q/qaz7gGxZRFq3U2QkOQjpU2pb9BustX/+8RYYow04ZMD8cylCpXVOnJXJ6uevWXNk2YaYX0CKSzW9K/cuvUMa+vtKnCzGmPRB+UDBU2NqgM6ylIX9ZR2nRhpsUt0Wg8ixwTlSA+hfLuwA8Txe4WSwgzvB/vlObV+8Jc/aUtI8w04OT1KZFTS7sM6S+ZVboE6XreHraUMHMC5T2WzFG+sjmnxzNrdKWOq7flhJl27NM/snm1vHn1fhNZEcbVguWEeS73LcTJky9SBbJSoUQPlhLC2FqwlDAfL++guXCtFdTMBtFkvJRSdBJlLoqvBUsJ9yKzbmSWZReR2QHINs/UT5axjHAPMju7JSsVS/RCSqr7syh2N1hCuA+y7nwBqkTJUkWVbdbpeZbpwj0oY56zvECtYSt6jjI+ruPDO1OFbwcVmoYs77cFyPaHk3RM5yeVpgnfCCj0Z3Uzs3yqegpZI+58GC7Mx8Ruf4x+r66rc7YIWV6NjbrNY7hwl1dWm33+cB/8OpJS72SKYvXAcOH+UIIyEE1gNR6U03RKh63nfxgu3IlG4CPawFfI7Bk0/6IYPTFt0TILRxg4wqKBdsURBo6waKBdcYSBRrh/vwkPBPmhtXiw3WgAvb6oRpbRCI+G49Rm8HlXL/it4HdL1e9Ma4Td8RTd90fVV29FF7ELnN2b3mWaVlIaWUYjzPyMJelxQFZfp7dbeTcCrtB7SNqELP4bQJUw44mv0OdIgkZCCg2hLOzCMBiT4uRCpYq8GKHwXsYR3tuk6R9NRWJrxGDQjgAAAABJRU5ErkJggg==) no-repeat;\n    width: 55px;\n    height: 55px;\n    background-size: contain;\n    font-size: 0px;\n    margin-left: 10px; }\n\n.newsBulletin {\n  padding: 8vh 0;\n  background: #EEEEF0;\n  position: relative; }\n\n.newsBulletin h3 {\n    color: #585858;\n    letter-spacing: 2px;\n    padding-bottom: 2vh; }\n\n.newsBulletin h3 span {\n      padding: 6px 0;\n      border-bottom: 3px solid #1DD2E2; }\n\n.newsBulletin h6 {\n    color: #585858; }\n\n.newsBulletin button.scanMore {\n    position: absolute;\n    right: 17vw;\n    top: 12vh;\n    background: #2cc6d8;\n    border: none;\n    outline: none;\n    color: #fff;\n    font-size: 15px;\n    padding: 5px 10px;\n    border-radius: 5px;\n    z-index: 1;\n    cursor: pointer; }\n\n.newsBulletin ul {\n    padding: 5vh 17vw;\n    display: flex; }\n\n.newsBulletin ul li {\n      padding: 0 4vw;\n      text-align: left; }\n\n.newsBulletin ul h4 {\n      display: inline-block;\n      color: #2cc6d8;\n      border: 2px solid #2cc6d8;\n      padding: 2px 5px;\n      border-radius: 5px;\n      font-style: italic;\n      font-size: 20px; }\n\n.newsBulletin ul p {\n      color: #585858;\n      line-height: 32px;\n      padding: 2vh 0; }\n\n.newsBulletin ul button {\n      background: none;\n      border: none;\n      color: #2cc6d8;\n      font-size: 16px;\n      letter-spacing: 1px;\n      outline: none;\n      cursor: pointer; }\n\n.popup {\n  position: fixed;\n  right: 8vh;\n  top: 40vh; }\n\n.popup .closePopup {\n    background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowM2NmYjYwMC1hMmY3LTZmNDgtYWJlMC1iNGZmYjAzMWJjMzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZGQThDOEJFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZGQThDOEFFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjViZTkzNWItNWIwMS1lZDQ1LWI2ZjAtMzdmMmRjMmZjMzkxIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NDBmYzVjODUtODY0OC0xMWU4LTk3ZDgtYzc2MTVlMjA2NDdjIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+IqPnNgAAACRQTFRFlerxOtjmiOfwMdbljunxh+fwo+3zMtblhufwouzzHdLi////5GDxqwAAAAx0Uk5T//////////////8AEt/OzgAAAH5JREFUeNps0lkOAEEEBNCavXH/+07vtCbx9RKiAscpYZ0HiFMkiV9IaIlJIJEVKbRblUremjRarUsna0MGqU2ZNExFqZkRQ8WsWMpmZaHE/MSUpxEjorrHGtylxuAzUIPPQA1e1LDJNOwyLPftpRsEuzRDKNVwUfyi9P0CDACpAhtPOrKhJAAAAABJRU5ErkJggg==\") no-repeat;\n    background-size: 100% 100%;\n    width: 25px;\n    height: 25px;\n    position: absolute;\n    top: -95px;\n    right: -50px;\n    border: none;\n    outline: none; }\n\n.popup .signBtn {\n    background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAABHCAMAAAD8+G/IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowM2NmYjYwMC1hMmY3LTZmNDgtYWJlMC1iNGZmYjAzMWJjMzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDdEQURBODVFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDdEQURBODRFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjViZTkzNWItNWIwMS1lZDQ1LWI2ZjAtMzdmMmRjMmZjMzkxIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NDBmYzVjODUtODY0OC0xMWU4LTk3ZDgtYzc2MTVlMjA2NDdjIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Mhu9iQAAASNQTFRFoejwdN/q0/T3aOHs9fz9OdXkUNjmu+70k+Xu6vn7Y9vor+vyhOLs3/b5yPH2HtLi/f//svD1Z+HrouzzINPiItPjzvX5+/7/UNzoh+fwL9bkLdXk7vz9oOzzeeTugebvg+bvlerxeOTu+f7+5vr8IdPj0vb53Pj7YuDrYN/rVd3pnuzzKdTj3/n79v3+MtblRdrns/D1fuXvp+70RNrngObvpe3zNtflLtXk5Pr8xfP3e+XubeLskOnxJ9Tjpu30I9PjONflMNbkN9flwfP3d+Tu7Pv9hefvsO/1Ndfl6fv8TNvoo+3zn+zznuzy4/n7QNnmTtzodOPt6vv8c+PtStvoNNflpO3zpe30oezzlOrxgubvhObv5Pr7////HdLi////z1b66AAAAGF0Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AK6AbzEAAAQsSURBVHja7JrndtsgGIZBQWg7dppmN2nSpDujzezM6N57t9D7v4qCJCyEkBQrtvjT95yc+FgGHr4FEgJ/jQv8R9AhdKeWJ7bmj+jwdTS/NbE81a1DWJ19REerR7OrVQgL987T0ev8vYVShFtztB3N9fQI04u0PS1OaxA2rtE2dW2jgDB9lbarq9MqwgptWysKQo+2r+c5hIU5AwjzT2WERWpCKxLCnTUjCGt3MoRZakazfYTuviGE/a5AmKKmNCUQftb80LcsdzQIywJhouaHLiFVCKADOGdgZ19hWJSu6YRA2KlBAISoHYREyMIeiRgmIp1cC1VI1/OOQDioQbAI0VAJBP45dAiRrdApIli6ng8EQsk+BQghgvqfxcV4PDsiCFPMR/CYnUDfVr7iBEYJtLsXgVAyeaKRJ8ID8UmzuYc0/secYLOp++WuDLUXqhGgDiH1tx0QEmEnDVPMzOSHKLZEagWQl0eI3QChegpuTOTKkSEFQzEcI3oWBDZZXPw2UAeR8xZYOUWM70wImoSI54myuTpsEAQHs+MgCJqEgsy5kZ8VIOyjvCfy6pSFwikRWM45CgCzi5pkOOLlJ84Ij+gFBkMAJd3EKcEmZYWWIp4kbmkyc8HBEBxSMRXbgVKF7kc8TAhs5pgw8Q+vG2ltYn/2YAhumtDMvFEuw31p3ejLzfvKdhAQgRymVdRtGgu+8C/FhTRBuUULKF7s2ElUcMexqkWshqXJRqkH3QgpDJ6cJupSClk7z0+iAvIgQYA2swKzX2pAUEhM1m0Wip5avJKWcYmPuCkwbYjgZCXPU3IK1uwGbAv6Drc/X9rCck/XIDhSWWVDItmbLOwDL432wAJQXSIxSKoDN4dDmyI4ucaWWuaBMBELGMVJthtvWZh/EOVlM8LNEBIb8BrME7TDJ4WVotlJ16t8qIZxTUEBpjEbZ0DArkF4qMnGSFOWHF1OQCVKYoB4x42TKz6nR452EXsoEDZpyXYg2yzFC24SDThNA5SkBI+5RDCNGm6AtFq4Yn8jyouiTYEwo90ysWEDAFjI4X5SwNLdlLQGhNIOO23K9lf6Ld2MQPisKQnFJoGTdAhBiXLt43iovQH6KBC2R3CfBPvWq9K2QHhn7J7yT//mfsYQwUz2fOHQEMJhhnDphRGCr5ekZ017RhC+yY+7uh8MELzq5p47XrnZOsHNK8rT11uTLRNM9gqPwc+1SzB+TnMYsNemHSa/a49EHp+0RnDyuORU5tNYSwRjL8uPx+5ebwHg+t3qQ8LLt49HOv7x7cunOCpd7z14cn/s9HqvH+yL+rv7Tx701kd0WvtMl3Sv2z0w/l2V9i2dWV88A8Gwjs3zDOM/TJzcywzjF8y8PPCrKcEQ319YakgwzFcoEobxNybf4tjlBDfMvkiy24RgyO+yLL1t0OifAAMAab9bYS6l3TMAAAAASUVORK5CYII=\") no-repeat;\n    background-size: 100% 100%;\n    width: 120px;\n    height: 55px;\n    position: absolute;\n    right: -25px;\n    top: -70px;\n    border: none;\n    outline: none; }\n\n.popup .tooltipBox {\n    border: 1px solid #00e9f3;\n    color: #00e9f3;\n    font-size: 25px;\n    width: 45px;\n    text-align: center;\n    height: 135px;\n    line-height: 60px;\n    border-radius: 5px;\n    position: relative; }\n\n.popup .tooltipBox a {\n      color: #00e9f3; }\n\n.popup .tooltipBox img {\n      position: absolute;\n      right: 50px;\n      -webkit-transform: rotate(-90deg);\n              transform: rotate(-90deg);\n      top: -15px;\n      width: 80px;\n      display: none; }\n\n.popup .tooltipBox .wchat:hover img {\n      display: inline; }\n\n@media screen and (max-width: 1440px) {\n  .briefIntroduction li {\n    font-size: 15px !important;\n    padding: 3px 12px !important; } }\n"
+module.exports = "/deep/ .v-homepage-container .h-top-content {\n  display: none; }\n\n/deep/ .v-homepage-container .h-bottom-content {\n  padding: 0px !important; }\n\n.map {\n  height: 80vh; }\n\n.productIntroduce {\n  background: #fff;\n  padding: 5vh 0; }\n\n.productIntroduce .detail {\n    padding: 0 10vw; }\n\n.productIntroduce .detail h3 {\n      padding: 5vh 0;\n      letter-spacing: 2px;\n      color: #585858; }\n\n.productIntroduce .detail p {\n      color: #585858;\n      line-height: 32px; }\n\n.publicity {\n  background: url('centerBG.png') no-repeat;\n  background-size: 100% 100%;\n  color: #fff;\n  padding: 8vh 0; }\n\n.publicity h3 {\n    padding: 4vh 0 2vh; }\n\n.projectsInformation {\n  padding: 8vh 0;\n  background: #EEEEF0;\n  position: relative; }\n\n.projectsInformation h3 {\n    color: #585858;\n    letter-spacing: 2px;\n    padding-bottom: 2vh; }\n\n.projectsInformation h3 span {\n      padding: 6px 0;\n      border-bottom: 3px solid #1DD2E2; }\n\n.projectsInformation h6 {\n    color: #585858; }\n\n.projectsInformation img {\n    width: 100%; }\n\n.projectsInformation .detailBox {\n    position: relative; }\n\n.projectsInformation .briefIntroduction {\n    position: absolute;\n    top: 0px;\n    height: 100%;\n    width: 100%;\n    background: rgba(29, 210, 226, 0.8);\n    display: flex;\n    align-items: center;\n    visibility: hidden; }\n\n.projectsInformation .briefIntroduction li {\n      color: #fff;\n      text-align: left;\n      font-size: 17px;\n      letter-spacing: 2px;\n      padding: 12px;\n      width: 100% !important; }\n\n.projectsInformation .detailBox:hover .briefIntroduction {\n    visibility: visible; }\n\n.projectsInformation button.scanMore {\n    position: absolute;\n    right: 17vw;\n    top: 23vh;\n    background: #2cc6d8;\n    border: none;\n    outline: none;\n    color: #fff;\n    font-size: 15px;\n    padding: 5px 10px;\n    border-radius: 5px;\n    z-index: 1;\n    cursor: pointer; }\n\n.projectsInformation button.scanListMore {\n    margin-top: 3vh;\n    background: none;\n    border: none;\n    color: #2cc6d8;\n    font-size: 16px;\n    letter-spacing: 1px;\n    outline: none;\n    cursor: pointer; }\n\n.projectsInformation /deep/ .ui-carousel-header.ui-widget-header.ui-corner-all {\n    margin: 5vh 0; }\n\n.projectsInformation /deep/ .ui-carousel-viewport {\n    background: none !important;\n    border: none !important; }\n\n.projectsInformation /deep/ .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {\n    padding: 0px 17vw; }\n\n.projectsInformation /deep/ .ui-carousel-header.ui-widget-header.ui-corner-all {\n    display: inline-block;\n    background: none;\n    border: none; }\n\n.projectsInformation /deep/ .ui-carousel-page-links {\n    display: none; }\n\n.projectsInformation /deep/ li.ui-carousel-item.ui-widget-content.ui-corner-all {\n    padding: 10px !important;\n    border: none;\n    text-align: left;\n    width: 22vw !important; }\n\n.projectsInformation /deep/ .pi-arrow-circle-left.ui-state-disabled {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVGhD7ZrJa9RgGIf9R9RWLVpFcUFFRQSXgh48KLjgAu6KBz14qXhQPIjbwQVq63JQXG5uCFJwQxHrip2OY/d2klmSWdr/4PP3+0zGzDQIQ7NOc3ggTF4y75PvS/J+bzKpWBwVE4FItNaYuKKvswVxqC8jlv9SxYK4EhqY7/7ejHiF/CudSJnobTUn5nUpYnJnMrTMQf5tSq5MkpRE3+JMrEqoohGB15O6GM6PjAkOMsz3BvJu7ErK0a0c2ZLomUFNzIop4tKwJrTCv4AwkQMXkf9MeJyCj3VfSfQwrsupGPoPOBMFS0DY+KIVpcdeXK/W30ui+7CDc/y7XiwLCBtduaL02NmTLvs9Eg0rkai5EYmGjEjU3IhEQ0ZgRXWUm725ERFHgunC+OvrQIqypuaycAeSWolC/Fk6bxtXDYET5UhScjsSmoL/XRJXxeNUjYnmwXuL5CIsnM8PaXIK28VXQ6BEPxrTlZILIXkOkj0OSJLAiHZgGbXFkGQ34ywkux2SJIEQ/YZjb+pOSUl2Mijp1Eia+C76FcfdDEkuiqfHkuL0oCb6XWjX+CrKY1KyHoL8j5MDmki61JPyTTSG4/Huako2Q9LNnpTnouw7/cSxduO4dZCsw7FP9Gflo8Uu3ik8F/2Mu+uu3rQUbIgp4jgk3ZquVjwXvTKsy7srj7kNf8pa1i7OaTwXfaDmZFlH2TUJVTxBHcuyzy7WSTwXHcI0bVF0sQLFOmWbEinxFLJu94w9FyUKll2tkF1myK41ZO1incIXUcIbUBtkFxuyqyH73EVZ30QJR5ZvuOYab+rWQZbXrF3sePFVlKiQvYWRnYFnKsvApt8pRxbalfguStgquYu78TSjgFgP2ZcZZ2UDIUp0cAfTmNUSR3YDZNsdlA2MKGGt25rU5cjyPzei4OeLaCcePYESJSlM42vyDfXfG9RWJPZJs//+oBoCJ0oG8ei5gMU3Ow2zwX1cv3Zx1RBIUdIHWX4z0TyQFR21OqJuEImaG5FoyIhEzY1INGREouaGKcqOujUgbLCP/F/RY/1ZWWS/wBrR7d6rW3BR0J4piHqI8ttG676SaAvKsPlxRX6U/ANnxYuOnZMw307kfRD5s5NxFT7W/SXRGOb2HkzfBozqAQSzz3MPRXZYuIl8OUjsYLBxTmlbUfIOa8KjCF4aV+Xwc66HBebLPvIR5P8GHlYvUiZK4jgTj1J52Wm/HCKY70OMLO+6lU5kjGitMkFER8UfvGsIpTot1K8AAAAASUVORK5CYII=) no-repeat;\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n    background-size: contain; }\n\n.projectsInformation /deep/ .pi-arrow-circle-right.ui-state-disabled {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVGhD7ZrJa9RgGIf9R9RWLVpFcUFFRQSXgh48KLjgAu6KBz14qXhQPIjbwQVq63JQXG5uCFJwQxHrip2OY/d2klmSWdr/4PP3+0zGzDQIQ7NOc3ggTF4y75PvS/J+bzKpWBwVE4FItNaYuKKvswVxqC8jlv9SxYK4EhqY7/7ejHiF/CudSJnobTUn5nUpYnJnMrTMQf5tSq5MkpRE3+JMrEqoohGB15O6GM6PjAkOMsz3BvJu7ErK0a0c2ZLomUFNzIop4tKwJrTCv4AwkQMXkf9MeJyCj3VfSfQwrsupGPoPOBMFS0DY+KIVpcdeXK/W30ui+7CDc/y7XiwLCBtduaL02NmTLvs9Eg0rkai5EYmGjEjU3IhEQ0ZgRXWUm725ERFHgunC+OvrQIqypuaycAeSWolC/Fk6bxtXDYET5UhScjsSmoL/XRJXxeNUjYnmwXuL5CIsnM8PaXIK28VXQ6BEPxrTlZILIXkOkj0OSJLAiHZgGbXFkGQ34ywkux2SJIEQ/YZjb+pOSUl2Mijp1Eia+C76FcfdDEkuiqfHkuL0oCb6XWjX+CrKY1KyHoL8j5MDmki61JPyTTSG4/Huako2Q9LNnpTnouw7/cSxduO4dZCsw7FP9Gflo8Uu3ik8F/2Mu+uu3rQUbIgp4jgk3ZquVjwXvTKsy7srj7kNf8pa1i7OaTwXfaDmZFlH2TUJVTxBHcuyzy7WSTwXHcI0bVF0sQLFOmWbEinxFLJu94w9FyUKll2tkF1myK41ZO1incIXUcIbUBtkFxuyqyH73EVZ30QJR5ZvuOYab+rWQZbXrF3sePFVlKiQvYWRnYFnKsvApt8pRxbalfguStgquYu78TSjgFgP2ZcZZ2UDIUp0cAfTmNUSR3YDZNsdlA2MKGGt25rU5cjyPzei4OeLaCcePYESJSlM42vyDfXfG9RWJPZJs//+oBoCJ0oG8ei5gMU3Ow2zwX1cv3Zx1RBIUdIHWX4z0TyQFR21OqJuEImaG5FoyIhEzY1INGREouaGKcqOujUgbLCP/F/RY/1ZWWS/wBrR7d6rW3BR0J4piHqI8ttG676SaAvKsPlxRX6U/ANnxYuOnZMw307kfRD5s5NxFT7W/SXRGOb2HkzfBozqAQSzz3MPRXZYuIl8OUjsYLBxTmlbUfIOa8KjCF4aV+Xwc66HBebLPvIR5P8GHlYvUiZK4jgTj1J52Wm/HCKY70OMLO+6lU5kjGitMkFER8UfvGsIpTot1K8AAAAASUVORK5CYII=) no-repeat;\n    background-size: contain;\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg); }\n\n.projectsInformation /deep/ .pi-arrow-circle-left {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA7CAYAAAAn+enKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZvJTxNxFMf9R1QwSgQ1LnAQ9YAxwsEL8eByATEeNEZMXCKJ0XglygGiJ8PFhJN/gEExkaAnDxJLC3QD2imdThe6BEo3nt83QMKkv3gonQ2myef2ftN+8t5veTPTA6lUmvYTjvBeRyg8KSfpoV+mix6JzrrDtqEdv7fPF6Wv0WSV0zZVwp+kOLW6JTr0N0QHbUqTK0zvQ4rGaxuN8BQy2zkXEV7EbnDSxgWZ1ggPLirUMhMWXsBuHEWWnwVljSyjEX4SkOmwYLAd4Sl5y7uskWU0wo8CUeFgu3J93hF2hIUD7YojDBxh0UC74ggDR1g0sFaacEw9P7tM5zwRanSJY/TEcOHeBYX86yWayK5RN9rNIzjfiuL0wnDhu4txkopl2iCi71vSjQZKGy7MpfxWTpO8Q/qaz7gGxZRFq3U2QkOQjpU2pb9BustX/+8RYYow04ZMD8cylCpXVOnJXJ6uevWXNk2YaYX0CKSzW9K/cuvUMa+vtKnCzGmPRB+UDBU2NqgM6ylIX9ZR2nRhpsUt0Wg8ixwTlSA+hfLuwA8Txe4WSwgzvB/vlObV+8Jc/aUtI8w04OT1KZFTS7sM6S+ZVboE6XreHraUMHMC5T2WzFG+sjmnxzNrdKWOq7flhJl27NM/snm1vHn1fhNZEcbVguWEeS73LcTJky9SBbJSoUQPlhLC2FqwlDAfL++guXCtFdTMBtFkvJRSdBJlLoqvBUsJ9yKzbmSWZReR2QHINs/UT5axjHAPMju7JSsVS/RCSqr7syh2N1hCuA+y7nwBqkTJUkWVbdbpeZbpwj0oY56zvECtYSt6jjI+ruPDO1OFbwcVmoYs77cFyPaHk3RM5yeVpgnfCCj0Z3Uzs3yqegpZI+58GC7Mx8Ruf4x+r66rc7YIWV6NjbrNY7hwl1dWm33+cB/8OpJS72SKYvXAcOH+UIIyEE1gNR6U03RKh63nfxgu3IlG4CPawFfI7Bk0/6IYPTFt0TILRxg4wqKBdsURBo6waKBdcYSBRrh/vwkPBPmhtXiw3WgAvb6oRpbRCI+G49Rm8HlXL/it4HdL1e9Ma4Td8RTd90fVV29FF7ELnN2b3mWaVlIaWUYjzPyMJelxQFZfp7dbeTcCrtB7SNqELP4bQJUw44mv0OdIgkZCCg2hLOzCMBiT4uRCpYq8GKHwXsYR3tuk6R9NRWJrxGDQjgAAAABJRU5ErkJggg==) no-repeat;\n    background-size: contain;\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n    width: 55px;\n    height: 55px;\n    font-size: 0px;\n    margin-right: 10px; }\n\n.projectsInformation /deep/ .pi-arrow-circle-right {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA7CAYAAAAn+enKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZvJTxNxFMf9R1QwSgQ1LnAQ9YAxwsEL8eByATEeNEZMXCKJ0XglygGiJ8PFhJN/gEExkaAnDxJLC3QD2imdThe6BEo3nt83QMKkv3gonQ2myef2ftN+8t5veTPTA6lUmvYTjvBeRyg8KSfpoV+mix6JzrrDtqEdv7fPF6Wv0WSV0zZVwp+kOLW6JTr0N0QHbUqTK0zvQ4rGaxuN8BQy2zkXEV7EbnDSxgWZ1ggPLirUMhMWXsBuHEWWnwVljSyjEX4SkOmwYLAd4Sl5y7uskWU0wo8CUeFgu3J93hF2hIUD7YojDBxh0UC74ggDR1g0sFaacEw9P7tM5zwRanSJY/TEcOHeBYX86yWayK5RN9rNIzjfiuL0wnDhu4txkopl2iCi71vSjQZKGy7MpfxWTpO8Q/qaz7gGxZRFq3U2QkOQjpU2pb9BustX/+8RYYow04ZMD8cylCpXVOnJXJ6uevWXNk2YaYX0CKSzW9K/cuvUMa+vtKnCzGmPRB+UDBU2NqgM6ylIX9ZR2nRhpsUt0Wg8ixwTlSA+hfLuwA8Txe4WSwgzvB/vlObV+8Jc/aUtI8w04OT1KZFTS7sM6S+ZVboE6XreHraUMHMC5T2WzFG+sjmnxzNrdKWOq7flhJl27NM/snm1vHn1fhNZEcbVguWEeS73LcTJky9SBbJSoUQPlhLC2FqwlDAfL++guXCtFdTMBtFkvJRSdBJlLoqvBUsJ9yKzbmSWZReR2QHINs/UT5axjHAPMju7JSsVS/RCSqr7syh2N1hCuA+y7nwBqkTJUkWVbdbpeZbpwj0oY56zvECtYSt6jjI+ruPDO1OFbwcVmoYs77cFyPaHk3RM5yeVpgnfCCj0Z3Uzs3yqegpZI+58GC7Mx8Ruf4x+r66rc7YIWV6NjbrNY7hwl1dWm33+cB/8OpJS72SKYvXAcOH+UIIyEE1gNR6U03RKh63nfxgu3IlG4CPawFfI7Bk0/6IYPTFt0TILRxg4wqKBdsURBo6waKBdcYSBRrh/vwkPBPmhtXiw3WgAvb6oRpbRCI+G49Rm8HlXL/it4HdL1e9Ma4Td8RTd90fVV29FF7ELnN2b3mWaVlIaWUYjzPyMJelxQFZfp7dbeTcCrtB7SNqELP4bQJUw44mv0OdIgkZCCg2hLOzCMBiT4uRCpYq8GKHwXsYR3tuk6R9NRWJrxGDQjgAAAABJRU5ErkJggg==) no-repeat;\n    width: 55px;\n    height: 55px;\n    background-size: contain;\n    font-size: 0px;\n    margin-left: 10px; }\n\n.newsBulletin {\n  padding: 8vh 0;\n  background: #EEEEF0;\n  position: relative; }\n\n.newsBulletin h3 {\n    color: #585858;\n    letter-spacing: 2px;\n    padding-bottom: 2vh; }\n\n.newsBulletin h3 span {\n      padding: 6px 0;\n      border-bottom: 3px solid #1DD2E2; }\n\n.newsBulletin h6 {\n    color: #585858; }\n\n.newsBulletin button.scanMore {\n    position: absolute;\n    right: 17vw;\n    top: 12vh;\n    background: #2cc6d8;\n    border: none;\n    outline: none;\n    color: #fff;\n    font-size: 15px;\n    padding: 5px 10px;\n    border-radius: 5px;\n    z-index: 1;\n    cursor: pointer; }\n\n.newsBulletin ul {\n    padding: 5vh 17vw;\n    display: flex; }\n\n.newsBulletin ul li {\n      padding: 0 4vw;\n      text-align: left; }\n\n.newsBulletin ul h4 {\n      display: inline-block;\n      color: #2cc6d8;\n      border: 2px solid #2cc6d8;\n      padding: 2px 5px;\n      border-radius: 5px;\n      font-style: italic;\n      font-size: 20px; }\n\n.newsBulletin ul p {\n      color: #585858;\n      line-height: 32px;\n      padding: 2vh 0; }\n\n.newsBulletin ul button {\n      background: none;\n      border: none;\n      color: #2cc6d8;\n      font-size: 16px;\n      letter-spacing: 1px;\n      outline: none;\n      cursor: pointer; }\n\n.popup {\n  position: fixed;\n  right: 8vh;\n  top: 40vh; }\n\n.popup .closePopup {\n    background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowM2NmYjYwMC1hMmY3LTZmNDgtYWJlMC1iNGZmYjAzMWJjMzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZGQThDOEJFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZGQThDOEFFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjViZTkzNWItNWIwMS1lZDQ1LWI2ZjAtMzdmMmRjMmZjMzkxIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NDBmYzVjODUtODY0OC0xMWU4LTk3ZDgtYzc2MTVlMjA2NDdjIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+IqPnNgAAACRQTFRFlerxOtjmiOfwMdbljunxh+fwo+3zMtblhufwouzzHdLi////5GDxqwAAAAx0Uk5T//////////////8AEt/OzgAAAH5JREFUeNps0lkOAEEEBNCavXH/+07vtCbx9RKiAscpYZ0HiFMkiV9IaIlJIJEVKbRblUremjRarUsna0MGqU2ZNExFqZkRQ8WsWMpmZaHE/MSUpxEjorrHGtylxuAzUIPPQA1e1LDJNOwyLPftpRsEuzRDKNVwUfyi9P0CDACpAhtPOrKhJAAAAABJRU5ErkJggg==\") no-repeat;\n    background-size: 100% 100%;\n    width: 25px;\n    height: 25px;\n    position: absolute;\n    top: -95px;\n    right: -50px;\n    border: none;\n    outline: none; }\n\n.popup .signBtn {\n    background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAABHCAMAAAD8+G/IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowM2NmYjYwMC1hMmY3LTZmNDgtYWJlMC1iNGZmYjAzMWJjMzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDdEQURBODVFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDdEQURBODRFMkFCMTFFODg5NjNGRjI4NjJDM0NCMkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjViZTkzNWItNWIwMS1lZDQ1LWI2ZjAtMzdmMmRjMmZjMzkxIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6NDBmYzVjODUtODY0OC0xMWU4LTk3ZDgtYzc2MTVlMjA2NDdjIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Mhu9iQAAASNQTFRFoejwdN/q0/T3aOHs9fz9OdXkUNjmu+70k+Xu6vn7Y9vor+vyhOLs3/b5yPH2HtLi/f//svD1Z+HrouzzINPiItPjzvX5+/7/UNzoh+fwL9bkLdXk7vz9oOzzeeTugebvg+bvlerxeOTu+f7+5vr8IdPj0vb53Pj7YuDrYN/rVd3pnuzzKdTj3/n79v3+MtblRdrns/D1fuXvp+70RNrngObvpe3zNtflLtXk5Pr8xfP3e+XubeLskOnxJ9Tjpu30I9PjONflMNbkN9flwfP3d+Tu7Pv9hefvsO/1Ndfl6fv8TNvoo+3zn+zznuzy4/n7QNnmTtzodOPt6vv8c+PtStvoNNflpO3zpe30oezzlOrxgubvhObv5Pr7////HdLi////z1b66AAAAGF0Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AK6AbzEAAAQsSURBVHja7JrndtsgGIZBQWg7dppmN2nSpDujzezM6N57t9D7v4qCJCyEkBQrtvjT95yc+FgGHr4FEgJ/jQv8R9AhdKeWJ7bmj+jwdTS/NbE81a1DWJ19REerR7OrVQgL987T0ev8vYVShFtztB3N9fQI04u0PS1OaxA2rtE2dW2jgDB9lbarq9MqwgptWysKQo+2r+c5hIU5AwjzT2WERWpCKxLCnTUjCGt3MoRZakazfYTuviGE/a5AmKKmNCUQftb80LcsdzQIywJhouaHLiFVCKADOGdgZ19hWJSu6YRA2KlBAISoHYREyMIeiRgmIp1cC1VI1/OOQDioQbAI0VAJBP45dAiRrdApIli6ng8EQsk+BQghgvqfxcV4PDsiCFPMR/CYnUDfVr7iBEYJtLsXgVAyeaKRJ8ID8UmzuYc0/secYLOp++WuDLUXqhGgDiH1tx0QEmEnDVPMzOSHKLZEagWQl0eI3QChegpuTOTKkSEFQzEcI3oWBDZZXPw2UAeR8xZYOUWM70wImoSI54myuTpsEAQHs+MgCJqEgsy5kZ8VIOyjvCfy6pSFwikRWM45CgCzi5pkOOLlJ84Ij+gFBkMAJd3EKcEmZYWWIp4kbmkyc8HBEBxSMRXbgVKF7kc8TAhs5pgw8Q+vG2ltYn/2YAhumtDMvFEuw31p3ejLzfvKdhAQgRymVdRtGgu+8C/FhTRBuUULKF7s2ElUcMexqkWshqXJRqkH3QgpDJ6cJupSClk7z0+iAvIgQYA2swKzX2pAUEhM1m0Wip5avJKWcYmPuCkwbYjgZCXPU3IK1uwGbAv6Drc/X9rCck/XIDhSWWVDItmbLOwDL432wAJQXSIxSKoDN4dDmyI4ucaWWuaBMBELGMVJthtvWZh/EOVlM8LNEBIb8BrME7TDJ4WVotlJ16t8qIZxTUEBpjEbZ0DArkF4qMnGSFOWHF1OQCVKYoB4x42TKz6nR452EXsoEDZpyXYg2yzFC24SDThNA5SkBI+5RDCNGm6AtFq4Yn8jyouiTYEwo90ysWEDAFjI4X5SwNLdlLQGhNIOO23K9lf6Ld2MQPisKQnFJoGTdAhBiXLt43iovQH6KBC2R3CfBPvWq9K2QHhn7J7yT//mfsYQwUz2fOHQEMJhhnDphRGCr5ekZ017RhC+yY+7uh8MELzq5p47XrnZOsHNK8rT11uTLRNM9gqPwc+1SzB+TnMYsNemHSa/a49EHp+0RnDyuORU5tNYSwRjL8uPx+5ebwHg+t3qQ8LLt49HOv7x7cunOCpd7z14cn/s9HqvH+yL+rv7Tx701kd0WvtMl3Sv2z0w/l2V9i2dWV88A8Gwjs3zDOM/TJzcywzjF8y8PPCrKcEQ319YakgwzFcoEobxNybf4tjlBDfMvkiy24RgyO+yLL1t0OifAAMAab9bYS6l3TMAAAAASUVORK5CYII=\") no-repeat;\n    background-size: 100% 100%;\n    width: 120px;\n    height: 55px;\n    position: absolute;\n    right: -25px;\n    top: -70px;\n    border: none;\n    outline: none; }\n\n.popup .tooltipBox {\n    border: 1px solid #00e9f3;\n    color: #00e9f3;\n    font-size: 25px;\n    width: 45px;\n    text-align: center;\n    height: 135px;\n    line-height: 60px;\n    border-radius: 5px;\n    position: relative; }\n\n.popup .tooltipBox a {\n      color: #00e9f3; }\n\n.popup .tooltipBox img {\n      position: absolute;\n      right: 50px;\n      -webkit-transform: rotate(-90deg);\n              transform: rotate(-90deg);\n      top: -15px;\n      width: 80px;\n      display: none; }\n\n.popup .tooltipBox .wchat:hover img {\n      display: inline; }\n\n@media screen and (max-width: 1440px) {\n  .briefIntroduction li {\n    font-size: 15px !important;\n    padding: 3px 12px !important; } }\n"
 
 /***/ }),
 
@@ -525,58 +454,459 @@ var HomepageComponent = /** @class */ (function () {
         this.ZH_TITLE = '首页';
         this.EN_TITLE = 'MY PROJECT';
         this.NAV_INDEX = 0;
-        this.nameMap = 'china';
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
         this.token._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
-        this.mapOption = {
-            geo: {
-                zoom: '2.5',
-                map: 'china',
-                label: {
-                    emphasis: {
-                        show: false
-                    }
-                },
-                roam: true,
-                itemStyle: {
-                    normal: {
-                        areaColor: 'rgba(86,148,161,0.6)',
-                        borderColor: 'rgba(0,11,20,0.6)'
-                    },
-                    emphasis: {
-                        areaColor: 'rgba(86,148,161,0.6)',
-                        borderColor: 'rgba(0,11,20,0.6)'
-                    }
+        var _THEMEJSON = [{
+                'featureType': 'land',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#091220ff'
                 }
-            },
-            series: [
-                {
-                    name: 'pm2.5',
-                    type: 'scatter',
-                    coordinateSystem: 'geo',
-                    data: [
-                        { name: '海门', value: [125.03, 46.58] },
-                        { name: '鄂尔多斯', value: [114.31, 30.52] },
-                    ],
-                    symbolSize: 12,
-                    label: {
-                        normal: {
-                            show: false
-                        },
-                        emphasis: {
-                            show: false
-                        }
-                    },
-                    itemStyle: {
-                        emphasis: {
-                            borderColor: '#fff',
-                            borderWidth: 1
-                        }
-                    }
+            }, {
+                'featureType': 'water',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#113549ff'
                 }
-            ]
-        };
+            }, {
+                'featureType': 'green',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#0e1b30ff'
+                }
+            }, {
+                'featureType': 'building',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'building',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#09185ab3'
+                }
+            }, {
+                'featureType': 'building',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#020053b3'
+                }
+            }, {
+                'featureType': 'subwaystation',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#b15454B2'
+                }
+            }, {
+                'featureType': 'education',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#e4f1f1ff'
+                }
+            }, {
+                'featureType': 'medical',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#f0dedeff'
+                }
+            }, {
+                'featureType': 'scenicspots',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'color': '#e2efe5ff'
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'weight': 4
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#f7c54dff'
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#fed669ff'
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#8f5a33ff'
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'highway',
+                'elementType': 'labels.icon',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'arterial',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'weight': 2
+                }
+            }, {
+                'featureType': 'arterial',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#d8d8d8ff'
+                }
+            }, {
+                'featureType': 'arterial',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#ffeebbff'
+                }
+            }, {
+                'featureType': 'arterial',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'arterial',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#525355ff'
+                }
+            }, {
+                'featureType': 'arterial',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'local',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'weight': 1
+                }
+            }, {
+                'featureType': 'local',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#d8d8d8ff'
+                }
+            }, {
+                'featureType': 'local',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'local',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'local',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#979c9aff'
+                }
+            }, {
+                'featureType': 'local',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'railway',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'weight': 1
+                }
+            }, {
+                'featureType': 'railway',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#123c52ff'
+                }
+            }, {
+                'featureType': 'railway',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#12223dff'
+                }
+            }, {
+                'featureType': 'subway',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'weight': 1
+                }
+            }, {
+                'featureType': 'subway',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#d8d8d8ff'
+                }
+            }, {
+                'featureType': 'subway',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#ffffff00'
+                }
+            }, {
+                'featureType': 'subway',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'subway',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#979c9aff'
+                }
+            }, {
+                'featureType': 'subway',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'continent',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'continent',
+                'elementType': 'labels.icon',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'continent',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#333333ff'
+                }
+            }, {
+                'featureType': 'continent',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'city',
+                'elementType': 'labels.icon',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'city',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'city',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#454d50ff'
+                }
+            }, {
+                'featureType': 'city',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'town',
+                'elementType': 'labels.icon',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'town',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'town',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#454d50ff'
+                }
+            }, {
+                'featureType': 'town',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'road',
+                'elementType': 'geometry.fill',
+                'stylers': {
+                    'color': '#002a4bff'
+                }
+            }, {
+                'featureType': 'poilabel',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'districtlabel',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'off'
+                }
+            }, {
+                'featureType': 'road',
+                'elementType': 'geometry',
+                'stylers': {
+                    'visibility': 'on',
+                    'weight': 2.5
+                }
+            }, {
+                'featureType': 'road',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'road',
+                'elementType': 'geometry.stroke',
+                'stylers': {
+                    'color': '#0001668a'
+                }
+            }, {
+                'featureType': 'district',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'off'
+                }
+            }, {
+                'featureType': 'poilabel',
+                'elementType': 'labels.icon',
+                'stylers': {
+                    'visibility': 'off'
+                }
+            }, {
+                'featureType': 'poilabel',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#2dc4bbff'
+                }
+            }, {
+                'featureType': 'poilabel',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ffffff00'
+                }
+            }, {
+                'featureType': 'manmade',
+                'elementType': 'geometry',
+                'stylers': {
+                    'color': '#12223dff'
+                }
+            }, {
+                'featureType': 'districtlabel',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ff0000ff'
+                }
+            }, {
+                'featureType': 'entertainment',
+                'elementType': 'geometry',
+                'stylers': {
+                    'color': '#ffffffff'
+                }
+            }, {
+                'featureType': 'shopping',
+                'elementType': 'geometry',
+                'stylers': {
+                    'color': '#12223dff'
+                }
+            }, {
+                'featureType': 'background',
+                'elementType': 'geometry',
+                'stylers': {
+                    'color': '#28525bff'
+                }
+            }, {
+                'featureType': 'road',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#00848dff'
+                }
+            }, {
+                'featureType': 'road',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#adadad00'
+                }
+            }, {
+                'featureType': 'country',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#ff0005ff'
+                }
+            }, {
+                'featureType': 'country',
+                'elementType': 'labels.text.stroke',
+                'stylers': {
+                    'color': '#ff0005bd'
+                }
+            }, {
+                'featureType': 'districtlabel',
+                'elementType': 'labels.text.fill',
+                'stylers': {
+                    'color': '#ff0000ff'
+                }
+            }, {
+                'featureType': 'districtlabel',
+                'elementType': 'labels.icon',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }, {
+                'featureType': 'country',
+                'elementType': 'labels',
+                'stylers': {
+                    'visibility': 'on'
+                }
+            }];
+        var map = new BMap.Map('bmap');
+        map.centerAndZoom(new BMap.Point(104.89101, 34.536594), 6);
+        map.enableScrollWheelZoom();
+        map.setMapStyleV2({ styleJson: _THEMEJSON });
     };
     HomepageComponent.prototype.scanMoreProject = function () {
         this.link._link = 'projectInformation';
@@ -644,40 +974,39 @@ var HomepageComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/login/login.component.html":
-/*!**************************************************!*\
-  !*** ./src/app/pages/login/login.component.html ***!
-  \**************************************************/
+/***/ "./src/app/pages/my-projects-todo/my-projects-todo.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/my-projects-todo/my-projects-todo.component.html ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <app-before-login-header>\r\n</app-before-login-header>\r\n<app-before-login-content></app-before-login-content>\r\n<app-before-login-dialog>\r\n    <form action=\"\">\r\n        <input type=\"text\" placeholder=\"请输入手机号\"><br>\r\n        <input type=\"password\" placeholder=\"请输入密码\"><br>\r\n        <button (click)=\"login()\">登录</button>\r\n    </form>\r\n    <div class=\"ui-g v-tooltop\">\r\n        <div class=\"ui-g-8\">\r\n            <a routerLink=\"/forgetPwd\" routerLinkActive=\"forgetPwd\">忘记密码</a>\r\n            <span>|</span>\r\n            <a routerLink=\"/heroes\" routerLinkActive=\"active\">使用指南</a>\r\n        </div>\r\n        <div class=\"ui-g-4\">\r\n            <a routerLink=\"/regist\" routerLinkActive=\"active\">注册新用户</a>\r\n        </div>\r\n    </div>\r\n</app-before-login-dialog> -->\r\n<app-page-iframe></app-page-iframe>"
+module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\" [EN_TITLE]=\"EN_TITLE\" [NAV_INDEX]=\"NAV_INDEX\">\r\n    <div class=\"h-content-layout\">\r\n        <div class=\"h-content-top\">\r\n            <span>我的项目&lt;&lt;待办事项</span>\r\n        </div>\r\n        <ul class=\"h-content-botttom\">\r\n            <li class=\"contentTitle\">\r\n                <h4>待办事项<span>10</span></h4>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n        </ul>\r\n        <p-paginator [rows]=\"5\" [totalRecords]=\"18\"></p-paginator>\r\n    </div>\r\n</app-page-iframe>"
 
 /***/ }),
 
-/***/ "./src/app/pages/login/login.component.scss":
-/*!**************************************************!*\
-  !*** ./src/app/pages/login/login.component.scss ***!
-  \**************************************************/
+/***/ "./src/app/pages/my-projects-todo/my-projects-todo.component.scss":
+/*!************************************************************************!*\
+  !*** ./src/app/pages/my-projects-todo/my-projects-todo.component.scss ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "form {\n  text-align: center;\n  width: 330px;\n  margin: auto; }\n\ninput {\n  width: 100%;\n  height: 40px;\n  margin: 10px 0;\n  border-radius: 4px;\n  border: 1px solid #c1bfbf;\n  padding: 0px 15px;\n  font-size: 16px; }\n\nform > button {\n  width: 100%;\n  color: #fff;\n  background: #00e9f3;\n  height: 40px;\n  font-size: 20px;\n  border: none;\n  letter-spacing: 4px;\n  border-radius: 5px;\n  margin: 10px 0; }\n\n.ui-g.v-tooltop {\n  margin-top: 4vh;\n  padding: 8px 20px;\n  background: #F7F8FA;\n  border-radius: 0 0 10px 10px; }\n\n.v-tooltop .ui-g-4 {\n  text-align: right; }\n\n.ui-g.v-tooltop * {\n  color: #02dde6;\n  font-size: 18px; }\n\n.ui-g.v-tooltop span {\n  margin: 0 15px; }\n"
+module.exports = ".h-content-top span {\n  color: #2cc6d8; }\n\nul.h-content-botttom {\n  background: #fff;\n  margin: 4vh 0; }\n\nul.h-content-botttom li.contentTitle {\n  margin: 0 !important;\n  border: 1px solid #00e9f3 !important;\n  color: #2cc6d8; }\n\nul.h-content-botttom li.contentTitle h4 {\n    margin: auto;\n    font-size: 30px; }\n\nul.h-content-botttom li.contentTitle h4 span {\n    background: #EB6100;\n    border-radius: 18px;\n    display: inline-block;\n    width: 36px;\n    height: 36px;\n    text-align: center;\n    line-height: 36px;\n    font-size: 20px;\n    color: #fff;\n    margin-left: 15px; }\n\nul.h-content-botttom li {\n  display: flex;\n  align-items: center;\n  margin: 0 2vw;\n  padding: 2vh 0;\n  border-bottom: 1px dashed #837F80; }\n\nul.h-content-botttom li:last-child {\n    border: none; }\n\nul.h-content-botttom li .listDetail {\n    font-size: 20px;\n    padding: 8px 0; }\n\nul.h-content-botttom li .listMes {\n    font-size: 18px;\n    padding: 8px 0; }\n\nul.h-content-botttom li .listMes span {\n      margin-right: 5vw; }\n\nul.h-content-botttom li button {\n    color: #2cc6d8;\n    background: none;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    font-size: 18px;\n    padding: 8px 0; }\n\nul.h-content-botttom li p {\n    font-size: 18px; }\n\np-paginator {\n  float: right; }\n\n/deep/ .ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {\n  border: none;\n  background: none; }\n\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-first,\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-prev,\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-next,\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-last {\n  background: #00e9f3;\n  color: #FFF !important; }\n\n/deep/ .ui-paginator-element.ui-state-default {\n  border: 1px solid #00e9f3 !important;\n  margin: 0px 5px !important;\n  border-radius: 3px !important;\n  color: #00e9f3 !important; }\n"
 
 /***/ }),
 
-/***/ "./src/app/pages/login/login.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/pages/login/login.component.ts ***!
-  \************************************************/
-/*! exports provided: LoginComponent */
+/***/ "./src/app/pages/my-projects-todo/my-projects-todo.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/pages/my-projects-todo/my-projects-todo.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: MyProjectsTodoComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyProjectsTodoComponent", function() { return MyProjectsTodoComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -688,25 +1017,24 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-var LoginComponent = /** @class */ (function () {
-    function LoginComponent(router) {
-        this.router = router;
+var MyProjectsTodoComponent = /** @class */ (function () {
+    function MyProjectsTodoComponent() {
     }
-    LoginComponent.prototype.ngOnInit = function () {
+    MyProjectsTodoComponent.prototype.ngOnInit = function () {
+        this.picture = 'personCenter.png';
+        this.ZH_TITLE = '我的项目';
+        this.EN_TITLE = 'MY PROJECT';
+        this.NAV_INDEX = 1;
     };
-    LoginComponent.prototype.login = function () {
-        this.router.navigate(['homepage']);
-    };
-    LoginComponent = __decorate([
+    MyProjectsTodoComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-login',
-            template: __webpack_require__(/*! ./login.component.html */ "./src/app/pages/login/login.component.html"),
-            styles: [__webpack_require__(/*! ./login.component.scss */ "./src/app/pages/login/login.component.scss")]
+            selector: 'app-my-projects',
+            template: __webpack_require__(/*! ./my-projects-todo.component.html */ "./src/app/pages/my-projects-todo/my-projects-todo.component.html"),
+            styles: [__webpack_require__(/*! ./my-projects-todo.component.scss */ "./src/app/pages/my-projects-todo/my-projects-todo.component.scss")],
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
-    ], LoginComponent);
-    return LoginComponent;
+        __metadata("design:paramtypes", [])
+    ], MyProjectsTodoComponent);
+    return MyProjectsTodoComponent;
 }());
 
 
@@ -720,7 +1048,7 @@ var LoginComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\" [EN_TITLE]=\"EN_TITLE\" [NAV_INDEX]=\"NAV_INDEX\">\r\n    <div class=\"h-content-layout\">\r\n        <div class=\"h-content-top\">\r\n            <span>我的项目&lt;&lt;待办事项</span>\r\n        </div>\r\n        <ul class=\"h-content-botttom\">\r\n            <li class=\"contentTitle\">\r\n                <h4>待办事项<span>10</span></h4>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n            <li class=\"ui-g\">\r\n                <div class=\"ui-g-10\">\r\n                    <div class=\"listDetail\"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>\r\n                    <div class=\"listMes\"><span>类型：审批流程</span><span>发送人：安静二</span></div>\r\n                </div>\r\n                <div class=\"ui-g-2 text-center\">\r\n                    <button>查看详情</button>\r\n                    <p>2017-07-08</p>\r\n                </div>\r\n            </li>\r\n        </ul>\r\n        <p-paginator [rows]=\"5\" [totalRecords]=\"18\"></p-paginator>\r\n    </div>\r\n</app-page-iframe>"
+module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\" [EN_TITLE]=\"EN_TITLE\" [NAV_INDEX]=\"NAV_INDEX\" class=\"myProjects\">\n  <div class=\"h-content-layout\">\n    <div class=\"v-top text-right\">\n      <button class=\"todoBtn\" (click)=\"jumpTodopage()\">待办事项<span>10</span></button>\n    </div>\n    <div class=\"ui-g v-bottom\">\n      <div class=\"ui-g-5 allProjectsList\">\n        <h4 class=\"title\"><span></span>项目列表<span></span></h4>\n        <div class=\"projects-lauout\">\n          <div class=\"projectsList v-building-box\">\n            <h4><span></span>在建项目</h4>\n            <!-- <p-tree [value]=\"buildingProjects\"></p-tree>\n             -->\n            <p-tree [value]=\"projects['building']\" selectionMode=\"single\" [(selection)]=\"selectedFile\" (onNodeSelect)=\"nodeSelect($event)\"\n              (onNodeCollapse)=\"onNodeCollapse($event)\"></p-tree>\n          </div>\n          <div class=\"projectsList v-finished-box\">\n            <h4><span></span>已完成项目</h4>\n            <p-tree [value]=\"projects['finished']\" selectionMode=\"single\" (onNodeSelect)=\"nodeSelect($event)\"\n              (onNodeCollapse)=\"onNodeCollapse($event)\"></p-tree>\n          </div>\n        </div>\n      </div>\n      <div class=\"ui-g-7 projectsDetail\">\n        <p-carousel [value]=\"projectProduce['pics']\" numVisible=1>\n          <ng-template let-projectPic pTemplate=\"item\">\n            <div class=\"ui-grid ui-grid-responsive\">\n              <div class=\"ui-grid-row\">\n                <div class=\"ui-grid-col-12 detailBox\">\n                  <img src=\"assets/images/{{projectPic}}.png\" alt=\"\">\n                </div>\n              </div>\n            </div>\n          </ng-template>\n        </p-carousel>\n        <h4 class=\"simpleProduce\">项目简介</h4>\n        <div class=\"underLine\"></div>\n        <ul class=\"v-projectDetail\">\n          <li><span>工程名称：</span><span>{{projectProduce['name']}}</span></li>\n          <li><span>工程地址：</span><span>{{projectProduce['address']}}</span></li>\n          <li><span>建筑面积：</span><span>{{projectProduce['area']}}</span></li>\n        </ul>\n      </div>\n\n    </div>\n  </div>\n</app-page-iframe>"
 
 /***/ }),
 
@@ -731,7 +1059,7 @@ module.exports = "<app-page-iframe [picture]=\"picture\" [ZH_TITLE]=\"ZH_TITLE\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".h-content-top span {\n  color: #2cc6d8; }\n\nul.h-content-botttom {\n  background: #fff;\n  margin: 4vh 0; }\n\nul.h-content-botttom li.contentTitle {\n  margin: 0 !important;\n  border: 1px solid #00e9f3 !important;\n  color: #2cc6d8; }\n\nul.h-content-botttom li.contentTitle h4 {\n    margin: auto;\n    font-size: 30px; }\n\nul.h-content-botttom li.contentTitle h4 span {\n    background: #EB6100;\n    border-radius: 18px;\n    display: inline-block;\n    width: 36px;\n    height: 36px;\n    text-align: center;\n    line-height: 36px;\n    font-size: 20px;\n    color: #fff;\n    margin-left: 15px; }\n\nul.h-content-botttom li {\n  display: flex;\n  align-items: center;\n  margin: 0 2vw;\n  padding: 2vh 0;\n  border-bottom: 1px dashed #837F80; }\n\nul.h-content-botttom li:last-child {\n    border: none; }\n\nul.h-content-botttom li .listDetail {\n    font-size: 20px;\n    padding: 8px 0; }\n\nul.h-content-botttom li .listMes {\n    font-size: 18px;\n    padding: 8px 0; }\n\nul.h-content-botttom li .listMes span {\n      margin-right: 5vw; }\n\nul.h-content-botttom li button {\n    color: #2cc6d8;\n    background: none;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    font-size: 18px;\n    padding: 8px 0; }\n\nul.h-content-botttom li p {\n    font-size: 18px; }\n\np-paginator {\n  float: right; }\n\n/deep/ .ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {\n  border: none;\n  background: none; }\n\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-first,\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-prev,\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-next,\n/deep/ .ui-paginator .ui-paginator-element.ui-paginator-last {\n  background: #00e9f3;\n  color: #FFF !important; }\n\n/deep/ .ui-paginator-element.ui-state-default {\n  border: 1px solid #00e9f3 !important;\n  margin: 0px 5px !important;\n  border-radius: 3px !important;\n  color: #00e9f3 !important; }\n"
+module.exports = "/deep/ .myProjects .h-bottom-content {\n  background: #fff !important;\n  padding: 6vh 12vw !important; }\n\n/deep/ .myProjects .ui-tree {\n  background: none;\n  border: none;\n  width: 100%;\n  padding: 0; }\n\n/deep/ .myProjects ul.ui-tree-container {\n  padding: 0 !important; }\n\n/deep/ .myProjects .ui-treenode-content {\n  outline: none; }\n\n/deep/ .myProjects .ui-treenode-content.ui-treenode-selectable {\n  padding: 0 2vw !important; }\n\n/deep/ .myProjects span.ui-treenode-label.ui-corner-all:hover {\n  background: none !important; }\n\n/deep/ .myProjects .ui-treenode-content.ui-treenode-selectable:hover,\n/deep/ .myProjects .ui-treenode-content.ui-treenode-selectable.ui-treenode-content-selected {\n  background: #C0F1F6; }\n\n/deep/ .myProjects span.ui-tree-toggler.pi.pi-fw.pi-caret-right {\n  color: transparent !important;\n  background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAvCAYAAACVDljoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRBMDlFQzg2RTY0QjExRTg4M0MzQUFENEFBRkE5REM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRBMDlFQzg3RTY0QjExRTg4M0MzQUFENEFBRkE5REM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEEwOUVDODRFNjRCMTFFODgzQzNBQUQ0QUFGQTlEQzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEEwOUVDODVFNjRCMTFFODgzQzNBQUQ0QUFGQTlEQzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4gDXqiAAACyElEQVR42syZPWhUQRSFZ5dNMCIiqEWQBItUaSSSIhaCVmoRQkQQV220Uit/UEHRQgsVUSREgqAIQhARbQRTiAYFEYmIQkKiplkLRVREDIr4dy6eB4+X9zOZ92beXPjYTfJ2OdyZuffcSaXtZeOMUuoqmFAeRxV8Ai/ARdDqs9Bhvu4Cr8AR0OKj0LfgEX9eAE6CSbAFVHwSqpjVcLTzd0/BGp+E3gQ/Y/7eDR6AW6DDB6GfwUjKc/1gHJwFS8oUKnEt49lmsB+85mtzWULvgK8an1nEzI4z086F/uBe1I0OPv8Q9LgUGnf6dWI1eMzPtrsSeh+8N/ieCuvuJOvwQttCfxtmNYgWdrZpsBvUbAlVOYUGISVskB5ivS2hz8BUQYnoBHdZo7uKFlpUVsOxDoyBy6YOLU3oXwvnYYepQ0sS+gY8sVRpAoc2TeHVPEJtLH80WrkVxnQcWprQG+CXg+7YFXJonSZCP4B7Dn1HP8vZYJxDy9ofw8pt1NgoZjm0LKGyHDMl2M/AoU0FI1GW0BnHyx+N5VzVc1WNw7ayRKENUAf7skyDlI22EgR+Ya2Vu4bvSsPdbHUsUMrhJXAcfIyesqSYBzY5FCmj0CGVcLWUJrTPhgGOieeyB8GoaWeqWxb4Duzk3cGoToFNMr4bLAn8BuQG8Tzfa3eCuNgMmgoW+Ef9v948ymzOuWW5OO0yNB7gfjTurXHzelFz+gR79oiNmamu8l83Sg3cA1YUITIpo9tzfJ90kQvgNLtLobYqHD3K7HpR5qvr4DD7sxX/l/cQyWy11+KMNWuPNrEs6YYMgBvBKtsioxmV2XvpHJzNgIq/pbYudFvGsyJqCJyIOhuXQsV89KY8dxsc5HKXEoFQ2WvzTZ2Ni6gmLHuDFaDbB5FBRpeBtSFnc0qGqWAE8CVqbJnibK6AYybOxpXQxezJXv93+Z8AAwA7E4ks19GVLAAAAABJRU5ErkJggg==\") no-repeat;\n  background-size: 100% 100%;\n  width: 13px;\n  height: 13px; }\n\n/deep/ .myProjects span.ui-tree-toggler.pi.pi-fw.pi-caret-down {\n  color: transparent !important;\n  background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAqCAYAAAAj6gIfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQyMDVFQzA2RTY0QjExRThCRjhDOTdDQjU2RjMzMDU5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQyMDVFQzA3RTY0QjExRThCRjhDOTdDQjU2RjMzMDU5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDIwNUVDMDRFNjRCMTFFOEJGOEM5N0NCNTZGMzMwNTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDIwNUVDMDVFNjRCMTFFOEJGOEM5N0NCNTZGMzMwNTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7e/fUJAAAC/ElEQVR42syZSWsUURSFb5dxYXDAISJoVg64cOFCERdiFrpyoaKIqAt/gCs1GnEIGLIIijgGB5xxBAci7qKYhUQCogZxFpwVo6BR24QE9Vw8JU1bVV3De1114Es6nTd8fav6varuXHXnqyYR6QKnwTvJfqrBUlCVg/wUPLgLcuA6OAUugu4MCY8Ai8ByMAv8BlMd/LgPDgN9PAccBR/AGTAPDExJeBBYDC7xjDgIZtPziHpr5bXhGPAEDPEY5CM4zyNyy7LwAFADVoCFYJhHm29gkhbY4RNa6SafAUeDVaCdL3ALGG9YehrYAbSSrWClj7jQU33Frbx7mB7zDREm7TwaZ8HnGMJagGVkcsg+r9k2Lzx/3PwEGyNMPhPsBe9BC1jCAgSl8Cg+A1sjiAv98u4fhZUXrjgdPIxx8pUr1UnQBn6BwWABKzwXVMQc+zaYzpXGU174jr5h4Dx+wwlVuNLAeDUsyL84Ho3auDwlzTgw35D45WJxP3nNetCXkQ2qjz4SVv4paM6IfDOX6P/idc67GckXMTxF8S9ggt9S7AR01A4NKVe9IWgPcUIcsucpieu8+4IalJLv9XuzlCF1nD+2vHDTuVlmcZ3vQqlGYeR1R1tduLNZTuj5nJADdvACrBw5x/nElLxmA+ixLN7Dc11My78EOy3L7+I8oRK0SXllKC9lqyyId3FD6rZReeHA9ZaqXh/1pt+JMckh8MCw+EOOK7bl+8E6w/K1HNe6vOYqb5RNpJXjSbnkNWt4m5ck2n9t3M5J5DvBsYTy2v9eGvKaTeB7zL4/2F/SktePPbbH7LuN/WMn6ibllUrepo2N0Oet/P3ILp9m5YUCUQ//5qTipuQ1J8CdkG213XETk5qSj7Lk1RpYYo3Ka/SLiZYSba6Aa6YmNCkvvN/tL9dlhWn5R2C/z/8O8P/GYmKpLM4oXvMXfjmgnx5P5DV7Ziuv+QQai55rNC1uS16zG7zgY/29x8YktuR7C26k62zduFeIveg3iDP420r+CDAACSawVZ/veboAAAAASUVORK5CYII=\") no-repeat;\n  background-size: 100% 100%;\n  width: 13px;\n  height: 13px; }\n\n/deep/ .myProjects span.ui-treenode-label.ui-corner-all.ui-state-highlight {\n  background: none !important;\n  color: #000 !important; }\n\n/deep/ .myProjects span.ui-tree-toggler.pi.pi-fw.pi-caret-right + span.ui-treenode-label.ui-corner-all,\n/deep/ .myProjects span.ui-tree-toggler.pi.pi-fw.pi-caret-down + span.ui-treenode-label.ui-corner-all {\n  font-size: 20px;\n  color: #000; }\n\n/deep/ .myProjects li.ui-treenode.ui-treenode-leaf span.ui-treenode-label.ui-corner-all {\n  font-size: 16px !important;\n  color: #8c8a8a !important;\n  padding: 5px 18px !important; }\n\n/deep/ .myProjects li.ui-carousel-item.ui-widget-content.ui-corner-all {\n  border: none;\n  width: 42vw !important;\n  margin: 0px; }\n\n/deep/ .myProjects .ui-carousel-viewport {\n  border: none !important; }\n\n/deep/ .myProjects .ui-carousel-header.ui-widget-header.ui-corner-all {\n  position: absolute;\n  bottom: 0px;\n  z-index: 100;\n  border: none;\n  background: none; }\n\n/deep/ .myProjects .ui-carousel-page-links {\n  display: none; }\n\n/deep/ .myProjects .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {\n  padding-bottom: 10vh;\n  margin-bottom: 2vh;\n  display: flex;\n  justify-content: center;\n  width: 42vw !important; }\n\n/deep/ .myProjects .pi-arrow-circle-left.ui-state-disabled {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVGhD7ZrJa9RgGIf9R9RWLVpFcUFFRQSXgh48KLjgAu6KBz14qXhQPIjbwQVq63JQXG5uCFJwQxHrip2OY/d2klmSWdr/4PP3+0zGzDQIQ7NOc3ggTF4y75PvS/J+bzKpWBwVE4FItNaYuKKvswVxqC8jlv9SxYK4EhqY7/7ejHiF/CudSJnobTUn5nUpYnJnMrTMQf5tSq5MkpRE3+JMrEqoohGB15O6GM6PjAkOMsz3BvJu7ErK0a0c2ZLomUFNzIop4tKwJrTCv4AwkQMXkf9MeJyCj3VfSfQwrsupGPoPOBMFS0DY+KIVpcdeXK/W30ui+7CDc/y7XiwLCBtduaL02NmTLvs9Eg0rkai5EYmGjEjU3IhEQ0ZgRXWUm725ERFHgunC+OvrQIqypuaycAeSWolC/Fk6bxtXDYET5UhScjsSmoL/XRJXxeNUjYnmwXuL5CIsnM8PaXIK28VXQ6BEPxrTlZILIXkOkj0OSJLAiHZgGbXFkGQ34ywkux2SJIEQ/YZjb+pOSUl2Mijp1Eia+C76FcfdDEkuiqfHkuL0oCb6XWjX+CrKY1KyHoL8j5MDmki61JPyTTSG4/Huako2Q9LNnpTnouw7/cSxduO4dZCsw7FP9Gflo8Uu3ik8F/2Mu+uu3rQUbIgp4jgk3ZquVjwXvTKsy7srj7kNf8pa1i7OaTwXfaDmZFlH2TUJVTxBHcuyzy7WSTwXHcI0bVF0sQLFOmWbEinxFLJu94w9FyUKll2tkF1myK41ZO1incIXUcIbUBtkFxuyqyH73EVZ30QJR5ZvuOYab+rWQZbXrF3sePFVlKiQvYWRnYFnKsvApt8pRxbalfguStgquYu78TSjgFgP2ZcZZ2UDIUp0cAfTmNUSR3YDZNsdlA2MKGGt25rU5cjyPzei4OeLaCcePYESJSlM42vyDfXfG9RWJPZJs//+oBoCJ0oG8ei5gMU3Ow2zwX1cv3Zx1RBIUdIHWX4z0TyQFR21OqJuEImaG5FoyIhEzY1INGREouaGKcqOujUgbLCP/F/RY/1ZWWS/wBrR7d6rW3BR0J4piHqI8ttG676SaAvKsPlxRX6U/ANnxYuOnZMw307kfRD5s5NxFT7W/SXRGOb2HkzfBozqAQSzz3MPRXZYuIl8OUjsYLBxTmlbUfIOa8KjCF4aV+Xwc66HBebLPvIR5P8GHlYvUiZK4jgTj1J52Wm/HCKY70OMLO+6lU5kjGitMkFER8UfvGsIpTot1K8AAAAASUVORK5CYII=) no-repeat;\n  -webkit-transform: rotate(0deg);\n          transform: rotate(0deg);\n  background-size: contain; }\n\n/deep/ .myProjects .pi-arrow-circle-right.ui-state-disabled {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA7CAYAAAAq55mNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOlSURBVGhD7ZrJa9RgGIf9R9RWLVpFcUFFRQSXgh48KLjgAu6KBz14qXhQPIjbwQVq63JQXG5uCFJwQxHrip2OY/d2klmSWdr/4PP3+0zGzDQIQ7NOc3ggTF4y75PvS/J+bzKpWBwVE4FItNaYuKKvswVxqC8jlv9SxYK4EhqY7/7ejHiF/CudSJnobTUn5nUpYnJnMrTMQf5tSq5MkpRE3+JMrEqoohGB15O6GM6PjAkOMsz3BvJu7ErK0a0c2ZLomUFNzIop4tKwJrTCv4AwkQMXkf9MeJyCj3VfSfQwrsupGPoPOBMFS0DY+KIVpcdeXK/W30ui+7CDc/y7XiwLCBtduaL02NmTLvs9Eg0rkai5EYmGjEjU3IhEQ0ZgRXWUm725ERFHgunC+OvrQIqypuaycAeSWolC/Fk6bxtXDYET5UhScjsSmoL/XRJXxeNUjYnmwXuL5CIsnM8PaXIK28VXQ6BEPxrTlZILIXkOkj0OSJLAiHZgGbXFkGQ34ywkux2SJIEQ/YZjb+pOSUl2Mijp1Eia+C76FcfdDEkuiqfHkuL0oCb6XWjX+CrKY1KyHoL8j5MDmki61JPyTTSG4/Huako2Q9LNnpTnouw7/cSxduO4dZCsw7FP9Gflo8Uu3ik8F/2Mu+uu3rQUbIgp4jgk3ZquVjwXvTKsy7srj7kNf8pa1i7OaTwXfaDmZFlH2TUJVTxBHcuyzy7WSTwXHcI0bVF0sQLFOmWbEinxFLJu94w9FyUKll2tkF1myK41ZO1incIXUcIbUBtkFxuyqyH73EVZ30QJR5ZvuOYab+rWQZbXrF3sePFVlKiQvYWRnYFnKsvApt8pRxbalfguStgquYu78TSjgFgP2ZcZZ2UDIUp0cAfTmNUSR3YDZNsdlA2MKGGt25rU5cjyPzei4OeLaCcePYESJSlM42vyDfXfG9RWJPZJs//+oBoCJ0oG8ei5gMU3Ow2zwX1cv3Zx1RBIUdIHWX4z0TyQFR21OqJuEImaG5FoyIhEzY1INGREouaGKcqOujUgbLCP/F/RY/1ZWWS/wBrR7d6rW3BR0J4piHqI8ttG676SaAvKsPlxRX6U/ANnxYuOnZMw307kfRD5s5NxFT7W/SXRGOb2HkzfBozqAQSzz3MPRXZYuIl8OUjsYLBxTmlbUfIOa8KjCF4aV+Xwc66HBebLPvIR5P8GHlYvUiZK4jgTj1J52Wm/HCKY70OMLO+6lU5kjGitMkFER8UfvGsIpTot1K8AAAAASUVORK5CYII=) no-repeat;\n  background-size: contain;\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg); }\n\n/deep/ .myProjects .pi-arrow-circle-left {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA7CAYAAAAn+enKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZvJTxNxFMf9R1QwSgQ1LnAQ9YAxwsEL8eByATEeNEZMXCKJ0XglygGiJ8PFhJN/gEExkaAnDxJLC3QD2imdThe6BEo3nt83QMKkv3gonQ2myef2ftN+8t5veTPTA6lUmvYTjvBeRyg8KSfpoV+mix6JzrrDtqEdv7fPF6Wv0WSV0zZVwp+kOLW6JTr0N0QHbUqTK0zvQ4rGaxuN8BQy2zkXEV7EbnDSxgWZ1ggPLirUMhMWXsBuHEWWnwVljSyjEX4SkOmwYLAd4Sl5y7uskWU0wo8CUeFgu3J93hF2hIUD7YojDBxh0UC74ggDR1g0sFaacEw9P7tM5zwRanSJY/TEcOHeBYX86yWayK5RN9rNIzjfiuL0wnDhu4txkopl2iCi71vSjQZKGy7MpfxWTpO8Q/qaz7gGxZRFq3U2QkOQjpU2pb9BustX/+8RYYow04ZMD8cylCpXVOnJXJ6uevWXNk2YaYX0CKSzW9K/cuvUMa+vtKnCzGmPRB+UDBU2NqgM6ylIX9ZR2nRhpsUt0Wg8ixwTlSA+hfLuwA8Txe4WSwgzvB/vlObV+8Jc/aUtI8w04OT1KZFTS7sM6S+ZVboE6XreHraUMHMC5T2WzFG+sjmnxzNrdKWOq7flhJl27NM/snm1vHn1fhNZEcbVguWEeS73LcTJky9SBbJSoUQPlhLC2FqwlDAfL++guXCtFdTMBtFkvJRSdBJlLoqvBUsJ9yKzbmSWZReR2QHINs/UT5axjHAPMju7JSsVS/RCSqr7syh2N1hCuA+y7nwBqkTJUkWVbdbpeZbpwj0oY56zvECtYSt6jjI+ruPDO1OFbwcVmoYs77cFyPaHk3RM5yeVpgnfCCj0Z3Uzs3yqegpZI+58GC7Mx8Ruf4x+r66rc7YIWV6NjbrNY7hwl1dWm33+cB/8OpJS72SKYvXAcOH+UIIyEE1gNR6U03RKh63nfxgu3IlG4CPawFfI7Bk0/6IYPTFt0TILRxg4wqKBdsURBo6waKBdcYSBRrh/vwkPBPmhtXiw3WgAvb6oRpbRCI+G49Rm8HlXL/it4HdL1e9Ma4Td8RTd90fVV29FF7ELnN2b3mWaVlIaWUYjzPyMJelxQFZfp7dbeTcCrtB7SNqELP4bQJUw44mv0OdIgkZCCg2hLOzCMBiT4uRCpYq8GKHwXsYR3tuk6R9NRWJrxGDQjgAAAABJRU5ErkJggg==) no-repeat;\n  background-size: contain;\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n  width: 55px;\n  height: 55px;\n  font-size: 0px;\n  margin-right: 10px; }\n\n/deep/ .myProjects .pi-arrow-circle-right {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA7CAYAAAAn+enKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVGhD7ZvJTxNxFMf9R1QwSgQ1LnAQ9YAxwsEL8eByATEeNEZMXCKJ0XglygGiJ8PFhJN/gEExkaAnDxJLC3QD2imdThe6BEo3nt83QMKkv3gonQ2myef2ftN+8t5veTPTA6lUmvYTjvBeRyg8KSfpoV+mix6JzrrDtqEdv7fPF6Wv0WSV0zZVwp+kOLW6JTr0N0QHbUqTK0zvQ4rGaxuN8BQy2zkXEV7EbnDSxgWZ1ggPLirUMhMWXsBuHEWWnwVljSyjEX4SkOmwYLAd4Sl5y7uskWU0wo8CUeFgu3J93hF2hIUD7YojDBxh0UC74ggDR1g0sFaacEw9P7tM5zwRanSJY/TEcOHeBYX86yWayK5RN9rNIzjfiuL0wnDhu4txkopl2iCi71vSjQZKGy7MpfxWTpO8Q/qaz7gGxZRFq3U2QkOQjpU2pb9BustX/+8RYYow04ZMD8cylCpXVOnJXJ6uevWXNk2YaYX0CKSzW9K/cuvUMa+vtKnCzGmPRB+UDBU2NqgM6ylIX9ZR2nRhpsUt0Wg8ixwTlSA+hfLuwA8Txe4WSwgzvB/vlObV+8Jc/aUtI8w04OT1KZFTS7sM6S+ZVboE6XreHraUMHMC5T2WzFG+sjmnxzNrdKWOq7flhJl27NM/snm1vHn1fhNZEcbVguWEeS73LcTJky9SBbJSoUQPlhLC2FqwlDAfL++guXCtFdTMBtFkvJRSdBJlLoqvBUsJ9yKzbmSWZReR2QHINs/UT5axjHAPMju7JSsVS/RCSqr7syh2N1hCuA+y7nwBqkTJUkWVbdbpeZbpwj0oY56zvECtYSt6jjI+ruPDO1OFbwcVmoYs77cFyPaHk3RM5yeVpgnfCCj0Z3Uzs3yqegpZI+58GC7Mx8Ruf4x+r66rc7YIWV6NjbrNY7hwl1dWm33+cB/8OpJS72SKYvXAcOH+UIIyEE1gNR6U03RKh63nfxgu3IlG4CPawFfI7Bk0/6IYPTFt0TILRxg4wqKBdsURBo6waKBdcYSBRrh/vwkPBPmhtXiw3WgAvb6oRpbRCI+G49Rm8HlXL/it4HdL1e9Ma4Td8RTd90fVV29FF7ELnN2b3mWaVlIaWUYjzPyMJelxQFZfp7dbeTcCrtB7SNqELP4bQJUw44mv0OdIgkZCCg2hLOzCMBiT4uRCpYq8GKHwXsYR3tuk6R9NRWJrxGDQjgAAAABJRU5ErkJggg==) no-repeat;\n  width: 55px;\n  height: 55px;\n  background-size: contain;\n  font-size: 0px;\n  margin-left: 10px; }\n\nbutton.todoBtn {\n  position: relative;\n  border: 1px solid #00e9f3;\n  background: #fff;\n  color: #00e9f3;\n  padding: 10px 50px 10px 30px;\n  font-size: 22px;\n  outline: none;\n  cursor: pointer; }\n\nbutton.todoBtn:hover {\n    background: #00e9f3;\n    color: #fff; }\n\nbutton.todoBtn span {\n    background: #EB6100;\n    color: #fff;\n    width: 36px;\n    position: absolute;\n    height: 36px;\n    border-radius: 18px;\n    font-size: 22px;\n    line-height: 34px;\n    text-align: center;\n    right: 10px;\n    top: -18px; }\n\n.v-bottom {\n  margin-top: 5vh; }\n\n.v-bottom .allProjectsList {\n    padding: 0 2vw; }\n\n.v-bottom h4.title {\n    text-align: center;\n    background: #00e9f3;\n    color: #fff;\n    padding: 12px 0;\n    font-size: 26px;\n    letter-spacing: 2px;\n    margin-bottom: 20px; }\n\n.v-bottom h4.title span {\n      display: inline-block;\n      width: 16px;\n      height: 16px;\n      background: #fff;\n      border-radius: 8px;\n      margin: 0px 20px; }\n\n.v-bottom .v-building-box h4 {\n    padding: 2vh 0 1vh; }\n\n.v-bottom .v-building-box h4 {\n    padding: 2vh 0 1vh; }\n\n.v-bottom .projectsList.v-finished-box h4 {\n    border-top: 1px solid #ccc;\n    padding: 3vh 0 1vh; }\n\n.v-bottom .projects-lauout {\n    background: #F4F4F4; }\n\n.v-bottom .projectsList {\n    min-height: 45vh;\n    padding-bottom: 2vh; }\n\n.v-bottom .projectsList h4 {\n      font-size: 22px;\n      margin: 2vh 2vw; }\n\n.v-bottom .projectsList h4 span {\n        display: inline-block;\n        width: 8px;\n        height: 8px;\n        border-radius: 4px;\n        background: #00e9f3;\n        margin-right: 15px;\n        vertical-align: middle; }\n\n.v-bottom img {\n    width: 100%; }\n\n.v-bottom .projectsDetail {\n    padding: 0 0 0 2vw; }\n\n.v-bottom .projectsDetail h4.simpleProduce {\n      font-weight: bold;\n      color: #737373;\n      letter-spacing: 2px; }\n\n.v-bottom .projectsDetail .underLine {\n      margin: 2vh 0;\n      width: 85px;\n      height: 5px;\n      background: #00e9f3; }\n\n.v-bottom .projectsDetail ul.v-projectDetail {\n      list-style: disc;\n      padding-left: 1vw; }\n\n.v-bottom .projectsDetail ul.v-projectDetail li {\n        padding: 1vh; }\n"
 
 /***/ }),
 
@@ -746,6 +1074,7 @@ module.exports = ".h-content-top span {\n  color: #2cc6d8; }\n\nul.h-content-bot
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyProjectsComponent", function() { return MyProjectsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -756,14 +1085,185 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var MyProjectsComponent = /** @class */ (function () {
-    function MyProjectsComponent() {
+    function MyProjectsComponent(router) {
+        this.router = router;
     }
     MyProjectsComponent.prototype.ngOnInit = function () {
         this.picture = 'personCenter.png';
         this.ZH_TITLE = '我的项目';
         this.EN_TITLE = 'MY PROJECT';
         this.NAV_INDEX = 1;
+        this.projects = {
+            'building': [
+                {
+                    'label': '中关村声明科学院医药科技中心二标段',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '中关村声明科学院医药科技中心二标段',
+                        'address': '北京市昌平区回龙观镇中关村国际生命医疗园东北部',
+                        'area': '98000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '中关村声明科学院医药科技中心一标段',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '中关村声明科学院医药科技中心一标段',
+                        'address': '北京市昌平区回龙观镇中关村国际生命医疗园西北部',
+                        'area': '80000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '东城区西河沿房改带危改项目（幼儿园）',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '东城区西河沿房改带危改项目（幼儿园）',
+                        'address': '北京市东城区',
+                        'area': '86000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '东城区西河沿房改带危改项目（东区）',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '东城区西河沿房改带危改项目（东区）',
+                        'address': '北京市东城区',
+                        'area': '86000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '东城区西河沿房改带危改项目（西区）',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '东城区西河沿房改带危改项目（西区）',
+                        'address': '北京市东城区',
+                        'area': '86000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                }
+            ],
+            'finished': [
+                {
+                    'label': '中关村声明科学院医药科技中心二标段',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '中关村声明科学院医药科技中心二标段',
+                        'address': '北京市昌平区回龙观镇中关村国际生命医疗园东北部',
+                        'area': '98000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '中关村声明科学院医药科技中心一标段',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '中关村声明科学院医药科技中心一标段',
+                        'address': '北京市昌平区回龙观镇中关村国际生命医疗园西北部',
+                        'area': '80000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '东城区西河沿房改带危改项目（幼儿园）',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '东城区西河沿房改带危改项目（幼儿园）',
+                        'address': '北京市东城区',
+                        'area': '86000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '东城区西河沿房改带危改项目（东区）',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '东城区西河沿房改带危改项目（东区）',
+                        'address': '北京市东城区',
+                        'area': '86000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                },
+                {
+                    'label': '东城区西河沿房改带危改项目（西区）',
+                    'data': {
+                        'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+                        'name': '东城区西河沿房改带危改项目（西区）',
+                        'address': '北京市东城区',
+                        'area': '86000平方米',
+                    },
+                    'children': [
+                        { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
+                        { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
+                    ]
+                }
+            ]
+        };
+        // this.selectedFile = {
+        //   'node': {
+        //     'label': '中关村声明科学院医药科技中心二标段'
+        //   },
+        // };
+        this.projectProduce = this.projects['building'][0].data;
+    };
+    MyProjectsComponent.prototype.nodeSelect = function (e) {
+        console.log(e);
+        if (!e.node.parent) {
+            this.projectProduce = e.node.data;
+        }
+    };
+    MyProjectsComponent.prototype.onNodeCollapse = function (e) {
+    };
+    MyProjectsComponent.prototype.jumpTodopage = function () {
+        this.router.navigate(['myProjectsTodo']);
     };
     MyProjectsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -771,7 +1271,7 @@ var MyProjectsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./my-projects.component.html */ "./src/app/pages/my-projects/my-projects.component.html"),
             styles: [__webpack_require__(/*! ./my-projects.component.scss */ "./src/app/pages/my-projects/my-projects.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
     ], MyProjectsComponent);
     return MyProjectsComponent;
 }());
@@ -1277,69 +1777,6 @@ var ProjectInformationComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/regist/regist.component.html":
-/*!****************************************************!*\
-  !*** ./src/app/pages/regist/regist.component.html ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!-- <app-before-login-header>\r\n</app-before-login-header> -->\r\n<!-- <app-before-login-content></app-before-login-content> -->\r\n<!-- <app-before-login-dialog>\r\n  <form action=\"\">\r\n    <input type=\"text\" placeholder=\"请输入手机号\">\r\n    <label>\r\n      <input type=\"text\" placeholder=\"请输入验证码\"><a class=\"yzm\">获取验证码</a>\r\n    </label>\r\n    <input type=\"password\" placeholder=\"请输入密码(8~20位，不能全是数字)\"><br>\r\n    <input type=\"password\" placeholder=\"请再次输入密码\"><br>\r\n    <label>\r\n      <input type=\"checkbox\"><span>阅读并接受<a href=\"\">\r\n          《智慧建造用户协议》\r\n        </a></span>\r\n    </label>\r\n    <button>注册</button>\r\n  </form>\r\n  <div class=\"ui-g v-tooltop\">\r\n    <div class=\"ui-g-8\">\r\n    </div>\r\n    <div class=\"ui-g-4\">\r\n      <a routerLink=\"/login\" routerLinkActive=\"active\">已有账号 立即登录</a>\r\n    </div>\r\n  </div>\r\n</app-before-login-dialog> -->"
-
-/***/ }),
-
-/***/ "./src/app/pages/regist/regist.component.scss":
-/*!****************************************************!*\
-  !*** ./src/app/pages/regist/regist.component.scss ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "form {\n  text-align: center;\n  width: 330px;\n  margin: auto; }\n  form * {\n    font-size: 16px; }\n  input {\n  width: 100%;\n  height: 40px;\n  margin: 10px 0;\n  border-radius: 4px;\n  border: 1px solid #c1bfbf;\n  padding: 0px 15px;\n  font-size: 16px; }\n  input[type=\"checkbox\"] {\n  width: 22px;\n  height: 22px;\n  float: left; }\n  label {\n  position: relative;\n  line-height: 40px; }\n  a.yzm {\n  position: absolute;\n  right: 0px;\n  margin: 10px 15px; }\n  label a {\n  color: #02dde6; }\n  form > button {\n  width: 100%;\n  color: #fff;\n  background: #00e9f3;\n  letter-spacing: 4px;\n  height: 40px;\n  font-size: 20px;\n  border: none;\n  border-radius: 5px;\n  margin: 10px 0; }\n  .ui-g.v-tooltop {\n  margin-top: 4vh;\n  padding: 8px 20px;\n  background: #F7F8FA;\n  border-radius: 0 0 10px 10px; }\n  .v-tooltop .ui-g-4 {\n  text-align: right; }\n  .ui-g.v-tooltop * {\n  color: #02dde6;\n  font-size: 18px; }\n  .ui-g.v-tooltop span {\n  margin: 0 15px; }\n"
-
-/***/ }),
-
-/***/ "./src/app/pages/regist/regist.component.ts":
-/*!**************************************************!*\
-  !*** ./src/app/pages/regist/regist.component.ts ***!
-  \**************************************************/
-/*! exports provided: RegistComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegistComponent", function() { return RegistComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var RegistComponent = /** @class */ (function () {
-    function RegistComponent() {
-    }
-    RegistComponent.prototype.ngOnInit = function () {
-    };
-    RegistComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-regist',
-            template: __webpack_require__(/*! ./regist.component.html */ "./src/app/pages/regist/regist.component.html"),
-            styles: [__webpack_require__(/*! ./regist.component.scss */ "./src/app/pages/regist/regist.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], RegistComponent);
-    return RegistComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/shared/components/dialog-head/dialog-head.component.html":
 /*!**************************************************************************!*\
   !*** ./src/app/shared/components/dialog-head/dialog-head.component.html ***!
@@ -1501,7 +1938,7 @@ var ForgetpwdDialogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"v-container-layout\">\r\n  <div class=\"ui-g h-top-header\">\r\n    <div class=\"ui-g-6 logo\"></div>\r\n    <div class=\"ui-g-6 buttons\"><button class=\"sign\" (click)=\"showSignDialog()\" *ngIf=\"ifShowSignButton\">登录/注册</button><button\r\n        class=\"exit\" (click)=\"exit()\" *ngIf=\"!ifShowSignButton\">退出登录</button><button class=\"downloadApp text-right\">下载APP</button></div>\r\n  </div>\r\n\r\n  <div class=\"h-bottom\">\r\n    <div class=\"ui-g h-bottom-header\">\r\n      <h4 class=\"ui-g-5\"><span></span>\r\n        <marquee>智慧建造信息平台</marquee><span></span>\r\n      </h4>\r\n      <ul class=\"ui-g-7 nav\">\r\n        <li *ngFor=\"let item of navArray;index as i\" (click)=\"navClicked(item['link'])\" [ngClass]=\"{navClicked: ifNavClickedArr[i]}\">{{item['name']}}</li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"h-top-content\">\r\n      <img src=\"assets/images/{{picture}}\" alt=\"\">\r\n      <div class=\"title\">\r\n        <h4>{{ZH_TITLE}}</h4><span>{{EN_TITLE}}</span>\r\n      </div>\r\n    </div>\r\n    <div class=\"h-bottom-content\">\r\n      <ng-content></ng-content>\r\n    </div>\r\n    <div class=\"footer\">\r\n      <div class=\"baseMessage\">\r\n        <div class=\"QR\">\r\n          <img src=\"assets/images/QR.png\" alt=\"\">\r\n          <br><span>智慧建造信息平台</span>\r\n          <br><span>扫描下载官方APP</span>\r\n        </div>\r\n        <ul class=\"tools\">\r\n          <li>\r\n            <img src=\"\" alt=\"\">\r\n            <br>\r\n            <i class=\"fa fa-envelope-o\"></i>\r\n          </li>\r\n          <li>\r\n            <img src=\"assets/images/wechat.png\" alt=\"\">\r\n            <br>\r\n            <i class=\"fa fa-weixin\"></i>\r\n          </li>\r\n          <li>\r\n            <img src=\"\" alt=\"\">\r\n            <br>\r\n            <i class=\"fa fa-qq\"></i>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <div class=\"copyMessage\">\r\n        <span>©2017-2020 北京天辰科技有限公司 版权所有</span>\r\n        <span class=\"centerBase\">京公网安备11010602005793号</span>\r\n        <span>联系电话：010-62419299；18513900020&nbsp;&nbsp;邮箱：icc@iccloudy.com</span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<app-dialog-head (close)=\"closeDialog()\" *ngIf=\"ifShowDialog\">\r\n  <app-sign-dialog (clickSign)=\"clickSign()\" (clickShowRegistDialog)=\"clickShowRegistDialog()\"\r\n    (clickShowResetpwdDialog)=\"clickShowResetpwdDialog()\" *ngIf=\"ifShowSignContent\"></app-sign-dialog>\r\n  <app-regist-dialog (clickRegist)=\"clickRegist()\" (clickReturnSign)=\"showSignDialog()\" *ngIf=\"ifShowRegistContent\"></app-regist-dialog>\r\n  <app-forgetpwd-dialog (clickResetPwd)=\"clickResetPwd()\" (clickReturnSign)=\"showSignDialog()\" *ngIf=\"ifShowResetpwdContent\"></app-forgetpwd-dialog>\r\n</app-dialog-head>"
+module.exports = "<div class=\"v-container-layout\">\r\n  <div class=\"ui-g h-top-header\">\r\n    <div class=\"ui-g-6 logo\"></div>\r\n    <div class=\"ui-g-6 buttons\"><button class=\"sign\" (click)=\"showSignDialog()\" *ngIf=\"ifShowSignButton\">登录/注册</button><button\r\n        class=\"exit\" (click)=\"exit()\" *ngIf=\"!ifShowSignButton\">退出登录</button><button class=\"downloadApp text-right\">下载APP</button></div>\r\n  </div>\r\n\r\n  <div class=\"h-bottom\">\r\n    <div class=\"ui-g h-bottom-header\">\r\n      <h4 class=\"ui-g-6\"><span></span>\r\n        <marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\" direction=\"up\" scrollamount=\"4\">\r\n          <h5>智慧建造信息平台</h5>\r\n          <h5>一站式解决资料审批和数据积累问题</h5>\r\n        </marquee><span></span>\r\n      </h4>\r\n      <ul class=\"ui-g-6 nav\">\r\n        <li *ngFor=\"let item of navArray;index as i\" (click)=\"navClicked(item['link'])\" [ngClass]=\"{navClicked: ifNavClickedArr[i]}\">{{item['name']}}</li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"h-top-content\">\r\n      <img src=\"assets/images/{{picture}}\" alt=\"\">\r\n      <div class=\"title\">\r\n        <h4>{{ZH_TITLE}}</h4><span>{{EN_TITLE}}</span>\r\n      </div>\r\n    </div>\r\n    <div class=\"h-bottom-content\">\r\n      <ng-content></ng-content>\r\n    </div>\r\n    <div class=\"footer\">\r\n      <div class=\"baseMessage\">\r\n        <div class=\"QR\">\r\n          <img src=\"assets/images/QR.png\" alt=\"\">\r\n          <br><span>智慧建造信息平台</span>\r\n          <br><span>扫描下载官方APP</span>\r\n        </div>\r\n        <ul class=\"tools\">\r\n          <li>\r\n            <img src=\"\" alt=\"\">\r\n            <br>\r\n            <a href=\"mailto:demo99134@163.com\"><i class=\"fa fa-envelope-o\"></i></a>\r\n          </li>\r\n          <li>\r\n            <img src=\"assets/images/wechat.png\" alt=\"\">\r\n            <br>\r\n            <i class=\"fa fa-weixin\"></i>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <div class=\"copyMessage\" *ngIf=\"ifIsFirst\">\r\n        <span>©2017-2020 北京天辰科技有限公司 版权所有</span>\r\n        <a class=\"centerBase\" href=\"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010602005793\" target=\"_blank\">京公网安备11010602005793号</a>\r\n        <span>联系电话：010-62419299；18513900020&nbsp;&nbsp;&nbsp;&nbsp;邮箱：<a href=\"mailto:icc@iccloudy.com\">icc@iccloudy.com</a></span>\r\n      </div>\r\n      <div class=\"_copyMessage\" *ngIf=\"!ifIsFirst\">\r\n        <span>石油石化工程智慧建造信息平台</span><br>\r\n        <span>©2017-2020 北京华油鑫业工程技术有限公司All Rights Reserved\r\n          <a class=\"centerBase\" href=\"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010602005793\"\r\n            target=\"_blank\">京公网安备11010602005793号</a>Total\r\n          Solution by 北京天辰信科技有限公司\r\n        </span><br>\r\n        <span>联系电话：010-62419299；18513900020&nbsp;&nbsp;&nbsp;&nbsp;邮箱：<a href=\"mailto:icc@iccloudy.com\">icc@iccloudy.com</a></span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<app-dialog-head (close)=\"closeDialog()\" *ngIf=\"ifShowDialog\">\r\n  <app-sign-dialog (clickSign)=\"clickSign()\" (clickShowRegistDialog)=\"clickShowRegistDialog()\"\r\n    (clickShowResetpwdDialog)=\"clickShowResetpwdDialog()\" *ngIf=\"ifShowSignContent\"></app-sign-dialog>\r\n  <app-regist-dialog (clickRegist)=\"clickRegist()\" (clickReturnSign)=\"showSignDialog()\" *ngIf=\"ifShowRegistContent\"></app-regist-dialog>\r\n  <app-forgetpwd-dialog (clickResetPwd)=\"clickResetPwd()\" (clickReturnSign)=\"showSignDialog()\" *ngIf=\"ifShowResetpwdContent\"></app-forgetpwd-dialog>\r\n</app-dialog-head>"
 
 /***/ }),
 
@@ -1512,7 +1949,7 @@ module.exports = "<div class=\"v-container-layout\">\r\n  <div class=\"ui-g h-to
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".h-top-header {\n  height: 5vh;\n  padding-left: 4vw; }\n  .h-top-header > div {\n    height: 100%; }\n  .h-top-header .logo {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAa4AAABOCAMAAABPGAKeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowM2NmYjYwMC1hMmY3LTZmNDgtYWJlMC1iNGZmYjAzMWJjMzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzA3OUJFMDRDNzE1MTFFODhGMjNERTk2OTREQjg1NjIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzA3OUJFMDNDNzE1MTFFODhGMjNERTk2OTREQjg1NjIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZDk4OGMwYTktNTFiMy0wNzRkLTgyNTEtYjM1MjJlODk1ZjU0IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6N2ZmM2U3MDEtOGNjZC0xMWU4LThiNjItYTNlZTRlMmFkYmVjIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+LzhhrwAAAwBQTFRFpqamcpbHzc3NdW5sytfq/PLy65Wb3UpTMzMzpBg04+r0ycnJ1y03LCws0Q0Z/Pz85HJ5wcHB0xkl54SLRXS0nZ2dobnZ9PT0REREra2tbm5u2TlDubm54WNroqGhS0tL8bi7sbGxFlKi9vb2WoS9eXl5+NnbcXFxqampDAwM4mpx/vr6IyMjGhoakZGR0NDQfn5++uPldXV1hISEvb29xcXFm7TXkYuK+Pj48vLygYGB6/H3YipetbW131VemZmZ1NTU+vr64uLiyMXE7+7uIxgVjY2N19bWXV1dEhISBUWb88LFVVVVlZWV99LV7OzsYlpYure2ZmZm2kJLPT09iIiIaWlpYWFhTENAOTk5g317UkpH39/fe3Rz2+TwIVqnWVlZqaWk2traYovA7qis5OTk0tLS8vX6M2et2NjY+u/w++ztTk6KRDo45XuC3lFa6Ojo8r3A6urq4ODg4Fxk8ba65ubmoZybUVFR9crN31lh983QscXg3Nzc7qSp93Z+EU6gZ2BdmZSTgaLNXFRS9fj7LGKqWVFP8K6yvM3kPjQx7Jyhwb69Iz2IMCYja2Ri0NzsrsLeioSCBAQEzAsa2NbW4uDgOWyw7aGmmh9A8LG10REe6OfnzMvL1jQ/p6Oh1tTUC0mdjqvS//z876uwnpqY9VtlvLu7xcPC3NvanJeWNSso3U5Xh4F/3lNc+d7g3d3d4N7eJhwZ1dPSMykmsa2s1SEsOjAulY+OLiQhD0KV+vv9NzZ6KR4bwg4gT3y5LCEe20dRzwoX1tTTrKin8PDw8fHw8fHx8vHx5eTjcGln8/Pz5OPj6+vrx8TD5eXlOC4r7+/vSkE+9fX1+fn56enpw8DA5+bl6Y2S7e3tt7Szv7y7joiH+8HE/vb3/f39/f7+29nY3dzb/dja9Gx0a5HE1YGO9FRelbDVp77cCkSY0M7NP3Cyt7Oyk2OHwdHmramo9uHkrWF8t8ri/NXX1s/d9cjLy0RTl5KRj4mI0kVSfnh2+/z9eHFvAAAA////LP3NdQAAAQB0Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AFP3ByUAABF7SURBVHja7JsNXFRlusBRLMfGMyPqyIDEyE7TeHKGmUBSIJcBPDIjYwqCfEhKmKa1mqUWt6xNS9nIJXcH10zQW1dXDSuWbS3bzBJRQwlZ0Kt3S9q73Xtrb3u73b1370d3z7PP875nvgB3wYV+xZ6nX+N5P845zPs/z+d7JgJU+QZJhLoEKi5VVFyqqLhUXKqouFRRcam4VFFxqaLiUnGpouJSRcWl4lJFxaWKikvFpYqKSxUV118FrpsvPTJ294kTu/esv/7Vb8LXmjB+8h3w3PiF18HdRybfCs+P33MrTBk/9vfwPDWHN65pj08+ESILn//6f63xOt334JJOdz3s0enGwWid7m4Yp9M9Dgt1uhuHE65JYbIRe6aMPdFDJv/NX37j1uLiy/TvPxYXF58d9K81VqebAtcTmtH08W2dbgO8q9M9D/frdIeHE665obJ1CVy5JYTTkYWHF5JR1E2YFnLKgU29RBlZUNxL3ucj5iZp9SkSrSRJ59jRUOBiijWOcE0hUt+jo/XDCdeSG5YFaaXDfQsDrN59nFv9K7njxp945UrwlP1SL1FGqnuP5PGRX0rSH/o+Z4hwbYBXhiMugBF+WkvT4d49AVh3hEy5cmn36KB+jZzB5ZgkVSmHQVx788JlLR/ZJEkHa8JlKHDdwnEd/ivA9cIomObXrd3X95j0xeTeHrtGkmaE9yCurD5vW49kh/JrMVwTdLrnOC60g/uuiutBV05jF6TmrMpJ7TESfbYztSusp8ORUwaZj+Ws6AQ4tyJHefbMp83K+OkcV1n4GTjYGRhWZGbZirJMdlTnqjitdJa5Kjr/ElxPAqxRaI3P7R0uPvJM/3CVhjm1NtY/HwdKYWZ2iGgHH9eGI3vuI1y3QO7Yd2+9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) no-repeat;\n    background-position: center left;\n    background-size: contain; }\n  .h-top-header .buttons {\n    text-align: right;\n    padding: 0 10vw 0 0; }\n  .h-top-header .buttons button {\n    border: none;\n    height: 100%;\n    letter-spacing: 2px;\n    font-size: 18px;\n    padding: 0px 2.5vw;\n    margin: 0px 11px; }\n  .h-top-header button.sign,\n  .h-top-header button.exit {\n    background: #00e9f3;\n    color: #fff; }\n  .ui-g.h-bottom-header {\n  background: rgba(16, 16, 16, 0.5);\n  height: 6vh;\n  line-height: 6vh;\n  padding-left: 4vw;\n  position: absolute;\n  width: 100%;\n  z-index: 10; }\n  .ui-g.h-bottom-header h4 {\n    padding: 0;\n    color: #00E9FE;\n    font-size: 32px;\n    letter-spacing: 2px;\n    font-weight: normal; }\n  .ui-g.h-bottom-header h4 span {\n    display: inline-block;\n    width: 5vw;\n    background: #00e9fe;\n    height: 1px;\n    margin: 0px 5px;\n    line-height: -4vh;\n    vertical-align: middle; }\n  .ui-g.h-bottom-header marquee {\n    display: inline-block;\n    width: 280px;\n    vertical-align: middle; }\n  .ui-g.h-bottom-header .nav {\n    display: flex;\n    padding: 0;\n    padding-right: 10vw; }\n  .ui-g.h-bottom-header .nav li {\n      flex: 1;\n      color: #fff;\n      text-align: center; }\n  .ui-g.h-bottom-header .nav .navClicked,\n    .ui-g.h-bottom-header .nav li:hover {\n      color: #00e9fe; }\n  .h-top-content {\n  height: 20vh;\n  position: relative; }\n  .h-top-content img {\n  height: 100%;\n  width: 100%; }\n  .title {\n  text-align: center;\n  position: absolute;\n  width: 100%;\n  top: 0p;\n  color: #fff;\n  top: 9vh; }\n  .title h4 {\n  font-size: 20px;\n  font-weight: normal;\n  letter-spacing: 2px; }\n  .title span {\n  font-size: 12px;\n  line-height: 30px; }\n  .h-bottom {\n  height: 95vh;\n  overflow: auto; }\n  .h-bottom-content {\n  min-height: 55vh;\n  padding: 6vh 8vw;\n  background: #EEEEF0; }\n  .footer {\n  position: relative;\n  height: 20vh;\n  background: url('bottomBG.png') no-repeat; }\n  .copyMessage {\n  color: #797A84;\n  font-size: 15px;\n  position: absolute;\n  bottom: 0;\n  height: 4vh;\n  width: 100%;\n  line-height: 4vh;\n  text-align: center;\n  background: rgba(31, 34, 49, 0.8); }\n  span.centerBase {\n  margin: 0px 5vw; }\n  .QR {\n  position: absolute;\n  left: 25vw;\n  top: 1.5vh;\n  font-size: 12px;\n  text-align: center;\n  color: #d6d6d6; }\n  .QR img {\n  width: 9vh;\n  margin-bottom: 0.5vh; }\n  ul.tools {\n  position: absolute;\n  right: 25vw;\n  top: 2vh; }\n  ul.tools li {\n  float: left;\n  padding: 0px 1.5vw;\n  font-size: 22px;\n  color: #fff;\n  text-align: center; }\n  ul.tools li:hover {\n  color: #00e9fe; }\n  ul.tools li:hover > *:first-child {\n  visibility: visible; }\n  ul.tools li > *:first-child {\n  height: 6vh;\n  display: inline-block;\n  visibility: hidden; }\n  .h-bottom::-webkit-scrollbar {\n  width: 0px; }\n"
+module.exports = ".h-top-header {\n  height: 5vh;\n  padding-left: 4vw; }\n  .h-top-header > div {\n    height: 100%; }\n  .h-top-header .logo {\n    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAkCAYAAAB2UT9CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA5uSURBVGhD7VlnVFbXEn1/XopGk2d8iRE19o4lmlhi1yB27KBirDEaIbEbuzFqjFFExULAgooaREQsgIhKVGw06V1Feu+d/WbmK3yYDwXWSvjx2GsN63LvOfd+d/bMnjnn/gt1qFXUEVDLqCOgllFHQC2jjoBaRh0BtYy/hYDS/HwUhEci0ewgoo3mImzoWLIxiJq1EEnmh1EQGY2y/ALl6P9vvJGA4pJSeIclV27hyQiLyUApjSsrKESWy008M16Ipzod4PtBc/i89wl86n0Mn/pN4Pu+Dvw+bAn/5p3wbO5iZLvfQVlhIVBWpnxaRZTR+ZKSEhQwoVWwIr6XBkpLS+Vcfl5elaywoECeqYm01FRcvmiPpz4+9I4lcj03NxdXLjnAwe48CpRzXp1XVbyRgMKiUnT8+jyaTD6F/4w/gQ/GKY2O+f9m007jjGsoitIzEbt2E3wbtRBni9PJ+b4fNBMyAjv2QuQEQ0RNm42wAXoIaN0NAZ92QcKufSjNzmFvKZ9YDnag8/VrMF20QG0m3yzA0oXz8N2CeXKseW2V6VLlTAUKyfk8Zuq40TAyGA+jia+3hcYzkZaWqpyteP6dW+7o0rI59v26C2GhIYgID8Ojhw/Qo30bdGzeFH4+3nKOLSbmhXJm1fFGApjYrLwiTNlyA++MtMK/v/pd7C2y98ceh92dSOQmpyN69iL4NmyqcLzS+f6tdJFkZoH8wGDKDg3JoZuWpKYh+5aHZMJL09UozctXXiwHR7/ztaswZUcrbcm8Oej8aTO0a/oxZkwygMnC8mtrvjdVzlQgNycHegP7y9jNP67Bji2bsWOrdttJtn/PbmRlZSlnQ7JqhckStG/2CX5YvAg9O7RF93atK7VJo0cqZ1YdVaoBpaVlMNx2E+/olxPAZKw47In83AK8MF1Fztcpdz5lQNiwccjz9kMZOVFYfBV8jiKsrKgIKdY2SNp3iI6LlRfLUVZWKkSoLDMjA/26d0WnFjq45+GBIpqvulZaSs/SgIoAjtSQ4CA88ryPB/fvabXHFNXZGs5nSbnldgO6bVrCeOpkFNNzEhMSkBAfr9WSEhNlTHVRLQLeVRLwtp4VWhrZIi2rANke9+H3Uety55OF9B6MwhcxCudrIL+oRLKJrYCOVWAScu56oiAsUnmmcmRnZ6N/D10ioBke3LsrMlEZVAR0IALOnzmNAb16yFxtNvjzXngWHa2cCURHRWFo38+FvOVLF0tmDO3TG1/27K7V9AcPQB7VhuqiRgS8N/oYLC4FoCgtHUG6feHToLzQ+pOu5/n6V3B+KUeTbxwMNrpIPek05w+SNFfcpnPFJYrsKCssQsYV5wpSxLpqY22FE79bqs3S4gClexu012mCLevW4rjlUfU1m2NW8PejrFNmnJoAkpDgoCAppL7eXlrN388X6enpkkkMd1dXrF2+DLqtP8WKpUsk0645OUpB1mauJJX5JFnVRY0IaDr1FAKiUpDh7Aa/Rp+qI59lKHbdVoloFdgZiel5aGFoi7c1aggfd51vh4ycQlEj+UPRXBSfoDgm3HRxweihg6E/aIDaBn/RSxzKut5Ht7M4WHVtzLDBsDt3Vp0VKgKYLEODcVRoJ0jdmEWSYjxtyl9s4exZiI6MlN9cXFyMcCq6n3VsJwTkUZe0ae1qrF+1Qqtt27hein51USMCOIpzcvLJ2T9Ra9lMTYAfdUC5j73Fkap5+YUlsL4eInO5btQbZS2mIuOce4SM4XaXX7yMXlwFLoIpyclkSWLJSUm46nRZirAqAxLi4tTXeaxCBipmAJO1Y8smIW5E/744sPc3sj04aLYHRw7sxyFzMzm2OnKItDxBfgcjMiJcTQBHt/lvu/Hbzu1a7ZD5vn9Ggthx49c7S5SH6xlU6PMDWnZRRz/Lzv3ABHxnfhfdFthJATfe4Q7He89w+kY4+ps4SifVec55DF3uhG2nvCQbXgeObI40dmhbMo54dnJlUBHQsbkOtZCh6NKqBeYaTcOjB56i+SbfzJeovX7FCYN698QZmxPKmQpoEsAZ8eftW7h9002r3f9T0RBUF9Um4F19a5geuCeaHdipt7rn96U6EDl2qoznALr+6AUaG5yUaG8w5hgGmjoiJTNfIr2ILC41V9YQ9UdbS2ZwXdFbdRVFxZQJcpe/IjQkRGRneP8+MJ4ySYgw3/2rZIo2CAED+kvHFB0Via5CwHQkU7ZMGjVS2kvHixcwhIrrzMkGIjOa0CQgMzNT2tAe1G72666LLz+j4qs0bkH7USHX7KKqihoRsPKIpxAQ0FpXg4CmiDaaJ+PZ0V8sdpCxXC8u0FohIjaTCly5a0vonsHP02F5JRiNJpyQbGhI6wouzPw8FVR6/Oed2xhIUcotKBfIeGr9po0fKw46c/KE1gKYQUW1b7cuUjeSkxLRlQrqHMNpyKBWNigggLqfbnLu+2+/QURYmGSYJl4lgDNoMvX6wUGBiIqIUBuT+XmXjtIiVxc1IMAK35p5iNQEd+9PElS+6g36cqQ4LORFOj6ZckrGbj/tLXKkCf4/m1rRh8GJCI3JwJBlTlIP6lMWHL4cJOQw2PHxpPHWRw6rC64rrYw51dlZ7LQZkyeid+cOIk3sML4mtYTM8+5dceBB0nuuD+zsscOHwoL0ejYVXe6guCaMGTYELtTFpKelVSBBGwFGkyYIsfn5eWKcZbwA49+XRWOqi+rXAFoDDF95BaX0ohETjCTyhQAyrw9bIyU+DcHP0pQEWGPyZlfp+UV6SF74OC4lF9tsvLBorwceBSdh/AZnBQEkVwccAtStKTuQo7d721ZY/YOpOFHVJqrAaX/s6BF80bWT9ON2Z23FiTyO54waMkgWUKkpKSIfnaiA9+rYHts3b0Jubg5exsTIKpdJHDt8CC2q4pR3BqIiI+T8StOlQgDP70uOnk6Zx5I1kzqqqWNHy7bE5NH6/9w6oJ3xOaRl5CLhF7MKXZD3B83hcdQe6Zl5UliZLHaq4TY3HHIMxD57fxjvdEerGbaY9pMbjl8PFTJ0qR3l+3IdsPeIUmfAQ1q5/n74kKxiVZ1JZeBMuXDOlnryi0IAZ4LTJQdxMIMXUj9v2oCrjpcqOJnB9+ZscnJwoLVAmvIsEBcbK3tOlhYHpVjb2pzEqWPWf7Gzp2wQRvXpTb9RG2pEwEeTbPA4OAHZ9x/C78PydYAXydCRruMQFJGISNJ8/TVXRd/V7SdlBG/g9VniAHfvWMSS8/XXXJP7cg3QGW+FqLhM9YuoIrlMQxYqA8/hsaoM4f95vuZc1XVtjlKP17gmzycZZGOo5msz3jKpCWpEADtz47HHKKZVa+iQUepNOO96TeDZsAUW6K3DiSuBiEnKgVdYMmxvhsOcov+kSxg8AxMRFZ+FK57PhQiWKdnY0zuK/fN/oZcpfxFO+1CK/kB/f4RQ4UtMTJSoVNWA58+iRXf5mPWb92PYgVwMOeJ5K5ply+fJY7pXBgoK8kmO4ukZxTKHdy95Hj+D7x9OrSqvhp9HR4vTeds55sVzyq5YpJCE8XZ0AslZHGVbZHi4PJu3L7hWsfy8pLHVRY0IeIukhbenA6LTkBsYgoB2PdTdEJvLf9pj0MBNGGpyEZuOP4bV1WCccQuH9bUQbD35BCMp6jkT3tJT7Ko2HH4IJsNXIiOy4nYuy4qj/QUYjBwh2wAhQUHYuGYVLQKzSRIKMG+GIbau/1HkwcnhIgz0vxK9537d3dUFt27cwIbVK0V2uEhzHeAFmerbAV/zuOWOPbSQ4vtzgfd69FBW1c+fP0NIYKB0SAFP/WQsb7otW/KtkDWs3xe4434TI2lsFBXr4MAAkqu5yl9edVSJANZkQ9LsV3dDp1CBzc7OR/xuc/g1blmBBI+GLaHf83txbn09S5IfxUqYnS4kfmWJd0ccwX+HmmNL16kI/dWCVsEVCyyDi+xM6nQ4YjnSeNnPUXvP4w727tqJiaP0EPvyJS5dsBNHWlHNcHNxhsvVK1i3Yrk4TTKEtJ1X0htoPhdXzp4VSxfDzdWZ5v4h9+TMCQrwx0R9PWpXp+IJkbF04XzZ5TTbvQtzpk/FDWdnifxBvT+D+w1XjNcbLlvhTNyir42Vv7rqeCMB3DJyDz9unbPIBRdWlbEU8ZogKz0bCWYWinqgQcL9Bs1hoTMQk7p/i4bDLMjhR/EOWT1yfNsBO7Gg82zYN/scMXsPyWdMbdBGABfReTONsHPLZllY8bYxb4hdtDuP3dt/htmuX3DtsqOM5UUXyxLrNEvUMup4bhJBPIc/4jBZ5uRc/p9Xs099fbDS5DtaoNlTp7QRS+bPlecePbgfcw2nw835OgVdlhCguMdC2P9xXr43fDN7lvJXVx1vJIDbxhHUdnJXw/36kGWXKxhfs3ULo3pQgLQz5xW7o6rtCTIvqguP6uvA871mcGzcFfYfdcfVRh3xpIEO/HsNRqqdgyzqyEvKJ1aENgJ8njyRlw0LCcZdWqCxLHH7yTLEPboBRfB1p8uyBb1n5w6pIRfOnZW+/qcN60TbWYZW/2CCm5QBnDX8ZSvQ/yn8vL2FgBzq79evXC5E+/n4yNc2lrel1BX50hgVASxRvEXOG3WcNdXFmzOA5Ccrt+i1xptpZTSON9KKk1OQSJIU0Kab7JSWrxOawJs/2jRuBf92PZF85BhK0tIVm2+VOJ/BTmfHcBSz8cqTpYRlh0lh/WdNjot9iWRlEVYUzWT5XstF0oNqAtcT+T8qUrKB54ZT68nj2Pm8Hc3yw3UiIixUxvD3YF4x86dIzh4uzC/puaz5Pl6P5Tpfk7FpqVIHqosq1YDqgiO6KC4BWe53kHriDJIOHEXSQUuk2JxFtsc9IUlzy/pNYKeqoCLidedevaZoEyufx2SoTHOM6lj1P0PznOY1zePq4G8hoA5VRx0BtYw6AmoZdQTUMuoIqGXUEVDLqCOgVgH8DxTTuu0jB3jYAAAAAElFTkSuQmCC) no-repeat;\n    background-position: center left; }\n  .h-top-header .buttons {\n    text-align: right;\n    padding: 0 10vw 0 0; }\n  .h-top-header .buttons button {\n    border: none;\n    height: 100%;\n    letter-spacing: 2px;\n    font-size: 18px;\n    padding: 0px 2.5vw;\n    margin: 0px 11px; }\n  .h-top-header button.sign,\n  .h-top-header button.exit {\n    background: #00e9f3;\n    color: #fff; }\n  .ui-g.h-bottom-header {\n  background: rgba(16, 16, 16, 0.5);\n  height: 6vh;\n  line-height: 6vh;\n  padding-left: 4vw;\n  position: absolute;\n  width: 100%;\n  z-index: 10; }\n  .ui-g.h-bottom-header h4 {\n    padding: 0;\n    color: #00E9FE;\n    letter-spacing: 2px;\n    font-weight: normal; }\n  .ui-g.h-bottom-header h4 span {\n    display: inline-block;\n    width: 5vw;\n    background: #00e9fe;\n    height: 1px;\n    margin: 0px 10px;\n    vertical-align: middle; }\n  .ui-g.h-bottom-header marquee {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n    height: 100%;\n    text-align: center; }\n  .ui-g.h-bottom-header marquee h5 {\n      padding: 5px 0;\n      font-size: 26px; }\n  .ui-g.h-bottom-header .nav {\n    display: flex;\n    padding: 0;\n    padding-right: 2vw; }\n  .ui-g.h-bottom-header .nav li {\n      flex: 1;\n      color: #fff;\n      text-align: center; }\n  .ui-g.h-bottom-header .nav .navClicked,\n    .ui-g.h-bottom-header .nav li:hover {\n      color: #00e9fe; }\n  .h-top-content {\n  height: 20vh;\n  position: relative; }\n  .h-top-content img {\n  height: 100%;\n  width: 100%; }\n  .title {\n  text-align: center;\n  position: absolute;\n  width: 100%;\n  top: 0p;\n  color: #fff;\n  top: 9vh; }\n  .title h4 {\n  font-size: 20px;\n  font-weight: normal;\n  letter-spacing: 2px; }\n  .title span {\n  font-size: 12px;\n  line-height: 30px; }\n  .h-bottom {\n  height: 95vh;\n  overflow: auto; }\n  .h-bottom-content {\n  min-height: 55vh;\n  padding: 6vh 8vw;\n  background: #EEEEF0; }\n  .footer {\n  position: relative;\n  height: 230px;\n  background: url('bottomBG.png') no-repeat; }\n  .copyMessage {\n  color: #797A84;\n  font-size: 15px;\n  position: absolute;\n  bottom: 0;\n  height: 4vh;\n  width: 100%;\n  line-height: 4vh;\n  text-align: center;\n  background: rgba(31, 34, 49, 0.8); }\n  .copyMessage a.centerBase {\n    margin: 0px 5vw;\n    background: url('ghs.png') no-repeat;\n    padding-left: 22px; }\n  ._copyMessage {\n  color: #797A84;\n  font-size: 15px;\n  position: absolute;\n  bottom: 0;\n  height: 80px;\n  padding: 5px 0;\n  width: 100%;\n  line-height: 24px;\n  text-align: center;\n  background: rgba(31, 34, 49, 0.8); }\n  ._copyMessage a.centerBase {\n    margin: 0px 2vw;\n    padding-left: 22px;\n    background: url('ghs.png') no-repeat; }\n  .QR {\n  position: absolute;\n  left: 25vw;\n  top: 1.5vh;\n  font-size: 12px;\n  text-align: center;\n  color: #d6d6d6; }\n  .QR img {\n  width: 9vh;\n  margin-bottom: 0.5vh; }\n  ul.tools {\n  position: absolute;\n  right: 25vw;\n  top: 2vh; }\n  ul.tools li {\n  float: left;\n  padding: 0px 1.5vw;\n  font-size: 22px;\n  text-align: center; }\n  ul.tools li i {\n    color: #fff; }\n  ul.tools li:hover i {\n  color: #00e9fe; }\n  ul.tools li:hover > *:first-child {\n  visibility: visible; }\n  ul.tools li > *:first-child {\n  height: 6vh;\n  display: inline-block;\n  visibility: hidden; }\n  .h-bottom::-webkit-scrollbar {\n  width: 0px; }\n"
 
 /***/ }),
 
@@ -1554,6 +1991,7 @@ var PageIframeComponent = /** @class */ (function () {
         this.clickCloseDialog = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
     PageIframeComponent.prototype.ngOnInit = function () {
+        window.location.port === '4200' ? this.ifIsFirst = true : this.ifIsFirst = false;
         this.navArray = [
             { name: '首页', link: 'homepage' },
             { name: '我的项目', link: 'myProjects' },
