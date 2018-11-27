@@ -26,7 +26,7 @@ export class PageIframeComponent implements OnInit {
     constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
 
     ngOnInit() {
-        window.location.port === '4200' ? this.ifIsFirst = true : this.ifIsFirst = false;
+        window.location.port !== '4200' ? this.ifIsFirst = true : this.ifIsFirst = false;
         this.navArray = [
             { name: '首页', link: 'homepage' },
             { name: '我的项目', link: 'myProjects' },

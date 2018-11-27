@@ -1,8 +1,15 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" [ifShowDialog]="ifShowDialog"
     (clickCloseDialog)="closeDialog()" [ifShowSignContent]="ifShowSignContent" class="v-homepage-container">
     <div class="h-content-layout">
-        <div class="map" id="bmap">
+        <div class="map-box">
+            <div class="map" id="bmap">
+            </div>
+            <div class="title-box">
+                <h5 class="mainTitle">智慧建造信息平台</h5>
+                <h5>一站式解决资料审批和数据积累问题</h5>
+            </div>
         </div>
+
         <div class="ui-g productIntroduce">
             <div class="ui-g-5 text-right"><img src="assets/images/phone.png" alt=""></div>
             <div class="ui-g-7 detail">

@@ -7,10 +7,26 @@
     }
 }
 
-.map {
-    // background: url(../../../assets/images/mapBG.png) no-repeat; // background: #001C3E;
-    // background-size: 100% 100%;
+.map-box {
     height: 80vh;
+    position: relative;
+    .map {
+        height: 100%;
+        width: 100%;
+    }
+    .title-box {
+        position: absolute;
+        top: 20vh;
+        right: 4vw;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 2px;
+        .mainTitle {
+            font-size: 35px;
+            padding: 1.5vh 0;
+            letter-spacing: 5px;
+        }
+    }
 }
 
 .productIntroduce {
@@ -228,7 +244,7 @@
 .popup {
     position: fixed;
     right: 8vh;
-    top: 40vh;
+    top: 60vh;
     .closePopup {
         background: url('../../../assets/images/clostPopupBG.png') no-repeat;
         background-size: 100% 100%;

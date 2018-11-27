@@ -7,11 +7,7 @@
 
   <div class="h-bottom">
     <div class="ui-g h-bottom-header">
-      <h4 class="ui-g-6"><span></span>
-        <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" scrollamount="4">
-          <h5>智慧建造信息平台</h5>
-          <h5>一站式解决资料审批和数据积累问题</h5>
-        </marquee><span></span>
+      <h4 class="ui-g-6">
       </h4>
       <ul class="ui-g-6 nav">
         <li *ngFor="let item of navArray;index as i" (click)="navClicked(item['link'])" [ngClass]="{navClicked: ifNavClickedArr[i]}">{{item['name']}}</li>
