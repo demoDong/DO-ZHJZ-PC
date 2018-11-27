@@ -1,12 +1,9 @@
 .h-top-header {
-    height: 5vh;
+    height: 4vh;
     padding-left: 4vw;
+    background: #F1F1F1;
     &>div {
         height: 100%;
-    }
-    .logo {
-        background: url(../../../../assets/images/_logo.png) no-repeat;
-        background-position: center left;
     }
     .buttons {
         text-align: right;
@@ -16,25 +13,27 @@
         border: none;
         height: 100%;
         letter-spacing: 2px;
-        font-size: 18px;
-        padding: 0px 2.5vw;
-        margin: 0px 11px;
+        font-size: 15px;
+        margin-left: 1vw;
+        cursor: pointer;
+        background: none;
+        outline: none;
     }
-    button.sign,
-    button.exit {
-        background: #00e9f3;
-        color: #fff;
+    .signBox {
+        display: inline-block;
     }
 }
 
-.ui-g.h-bottom-header {
-    background: rgba(16, 16, 16, 0.5);
+.ui-g.h-menubar {
+    background: #fff;
     height: 6vh;
     line-height: 6vh;
-    padding-left: 4vw;
-    position: absolute;
+    padding: 0 5vw;
     width: 100%;
-    z-index: 10;
+    .logo {
+        background: url(../../../../assets/images/_logo.png) no-repeat;
+        background-position: center left;
+    }
     h4 {
         padding: 0;
         color: #00E9FE;
@@ -66,7 +65,7 @@
         padding-right: 2vw;
         li {
             flex: 1;
-            color: #fff;
+            color: #000;
             text-align: center;
         }
         .navClicked,
@@ -107,7 +106,7 @@
 }
 
 .h-bottom {
-    height: 95vh;
+    height: 90vh;
     overflow: auto;
 }
 
@@ -203,5 +202,5 @@ ul.tools li>*:first-child {
 }
 
 // .h-bottom::-webkit-scrollbar {
-    //     width: 0px;
-    // }
+//     width: 0px;
+// }

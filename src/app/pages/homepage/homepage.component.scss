@@ -8,7 +8,7 @@
 }
 
 .map-box {
-    height: 80vh;
+    height: 70vh;
     position: relative;
     .map {
         height: 100%;
@@ -243,38 +243,38 @@
 
 .popup {
     position: fixed;
-    right: 8vh;
+    right: 6vw;
     top: 60vh;
     .closePopup {
         background: url('../../../assets/images/clostPopupBG.png') no-repeat;
         background-size: 100% 100%;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         position: absolute;
-        top: -95px;
-        right: -50px;
+        top: -80px;
+        right: -40px;
         border: none;
         outline: none;
     }
     .signBtn {
         background: url('../../../assets/images/signBtnBG.png') no-repeat;
         background-size: 100% 100%;
-        width: 120px;
-        height: 55px;
+        width: 100px;
+        height: 45px;
         position: absolute;
-        right: -25px;
-        top: -70px;
+        right: -15px;
+        top: -60px;
         border: none;
         outline: none;
     }
     .tooltipBox {
         border: 1px solid #00e9f3;
         color: #00e9f3;
-        font-size: 25px;
-        width: 45px;
+        font-size: 20px;
+        width: 40px;
         text-align: center;
-        height: 135px;
-        line-height: 60px;
+        height: 110px;
+        line-height: 50px;
         border-radius: 5px;
         position: relative;
         a {

@@ -1,18 +1,23 @@
 <div class="v-container-layout">
   <div class="ui-g h-top-header">
-    <div class="ui-g-6 logo"></div>
-    <div class="ui-g-6 buttons"><button class="sign" (click)="showSignDialog()" *ngIf="ifShowSignButton">登录/注册</button><button
-        class="exit" (click)="exit()" *ngIf="!ifShowSignButton">退出登录</button><button class="downloadApp text-right">下载APP</button></div>
-  </div>
-
-  <div class="h-bottom">
-    <div class="ui-g h-bottom-header">
-      <h4 class="ui-g-6">
-      </h4>
-      <ul class="ui-g-6 nav">
-        <li *ngFor="let item of navArray;index as i" (click)="navClicked(item['link'])" [ngClass]="{navClicked: ifNavClickedArr[i]}">{{item['name']}}</li>
-      </ul>
+    <div class="ui-g-6"></div>
+    <div class="ui-g-6 buttons">
+      <div *ngIf="ifShowSignButton" class="signBox">
+        <button class="sign" (click)="showSignDialog()">请登录</button>
+        <button class="regist" (click)="showRegistDialog()">去注册</button>
+      </div>
+      <button class="exit" (click)="exit()" *ngIf="!ifShowSignButton">退出登录</button>
+      <button class="downloadApp text-right">下载APP</button>
     </div>
+  </div>
+  <div class="ui-g h-menubar">
+    <div class="ui-g-5 logo"></div>
+    <ul class="ui-g-7 nav">
+      <li *ngFor="let item of navArray;index as i" (click)="navClicked(item['link'])" [ngClass]="{navClicked: ifNavClickedArr[i]}">{{item['name']}}</li>
+    </ul>
+  </div>
+  <div class="h-bottom">
+
     <div class="h-top-content">
       <img src="assets/images/{{picture}}" alt="">
       <div class="title">

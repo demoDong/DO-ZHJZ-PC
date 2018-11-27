@@ -1,7 +1,7 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX">
     <div class="h-content-layout">
         <div class="h-content-top">
-            <span>我的项目&lt;&lt;待办事项</span>
+            <a [routerLink]="['/myProjects']">我的项目</a>&lt;&lt;<span>待办事项</span>
         </div>
         <ul class="h-content-botttom">
             <li class="contentTitle">

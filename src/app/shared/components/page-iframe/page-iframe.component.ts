@@ -65,6 +65,12 @@ export class PageIframeComponent implements OnInit {
         this.ifShowRegistContent = false;
         this.ifShowResetpwdContent = false;
     }
+    showRegistDialog() {
+        this.ifShowDialog = true;
+        this.ifShowSignContent = false;
+        this.ifShowRegistContent = true;
+        this.ifShowResetpwdContent = false;
+    }
     closeDialog() {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
@@ -99,7 +105,7 @@ export class PageIframeComponent implements OnInit {
         this.ifShowResetpwdContent = true;
     }
     exit() {
-        this.cookie.setCookie('_idptickeToken', '');
+        this.cookie.setCookie(('_idptickeToken'), '');
         this.token._token = '';
         this.ifShowSignButton = true;
         if (!this.link._link || this.link._link === 'homepage') {
