@@ -116,7 +116,7 @@ export class HomepageComponent implements OnInit {
     this.ifShowDialog = false;
     this.ifShowSignContent = false;
     this.token._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
-    this.http.get('../../../assets/bmap/ditu.json').subscribe(data => {
+    this.http.get('./assets/bmap/ditu.json').subscribe(data => {
       const _THEMEJSON = data;
       const map = new BMap.Map('bmap');
       map.centerAndZoom(new BMap.Point(120.89101, 34.536594), 6);
