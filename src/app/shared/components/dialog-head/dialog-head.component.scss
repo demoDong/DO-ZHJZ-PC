@@ -12,9 +12,9 @@
 }
 
 .v-scroll-box {
-    height: 90vh;
+    height: 86vh;
     padding: 0vh 0;
-    margin-top: 6vh;
+    margin-top: 10vh;
     overflow: auto;
     display: flex;
 }
@@ -30,6 +30,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 0px;
+    display: table;
 }
 
 .title {

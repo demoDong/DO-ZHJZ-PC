@@ -67,6 +67,8 @@
          z-index: 100;
          border: none;
          background: none;
+         left: 50%;
+         transform: translate(-50%);
      }
      .ui-carousel-page-links {
          display: none;

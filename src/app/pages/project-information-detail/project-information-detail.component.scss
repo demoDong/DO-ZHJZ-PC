@@ -6,6 +6,7 @@
     li.ui-carousel-item.ui-widget-content.ui-corner-all {
         border: none;
         width: 60vw !important;
+        margin: 0;
     }
     .ui-carousel-viewport {
         border: none !important;
@@ -56,19 +57,18 @@
     }
 }
 
+.h-content-top,
+.h-content-top * {
+    color: #2cc6d8;
+}
+
+.h-content-bottom {
+    width: 60vw;
+    margin: auto;
+    margin-top: 4vh;
+}
+
 .h-content-layout {
-    .h-content-left button {
-        display: block;
-        background: #EEEEEE;
-        color: #000;
-        padding: 10px 40px;
-        border: none;
-        outline: none;
-    }
-    button.building {
-        background: #00e9f3 !important;
-        color: #fff !important
-    }
     img {
         width: 100%;
     }

@@ -50,7 +50,7 @@ export class PageIframeComponent implements OnInit {
         if (!this.ifShowSignButton) {
             this.router.navigate([link]);
         } else {
-            if (link === 'homepage' || link === 'contactUs') {
+            if (link === 'homepage' || link === 'contactUs' || link === 'newsAnnouncement') {
                 this.router.navigate([link]);
             } else {
                 this.ifShowDialog = true;
@@ -81,12 +81,13 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignButton = false;
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
-        if (!this.link._link || this.link._link === 'homepage') {
-            window.location.reload();
+        // tslint:disable-next-line:max-line-length
+        if (!this.link._link || this.link._link === 'homepage' || this.link._link === 'contactUs' || this.link._link === 'newsAnnouncement') {
+            this.router.navigate(['myProjects']);
+            this.link._link = 'myProjects';
         } else {
             this.router.navigate([this.link._link]);
         }
-
     }
     clickRegist() {
         this.ifShowSignContent = true;

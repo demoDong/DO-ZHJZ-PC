@@ -7,6 +7,15 @@
     }
 }
 
+.shadow-layout {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: auto;
+    background: rgba(3, 52, 71, 0.5);
+}
+
 .map-box {
     height: 70vh;
     position: relative;
@@ -15,16 +24,40 @@
         width: 100%;
     }
     .title-box {
-        position: absolute;
-        top: 20vh;
-        right: 4vw;
+        margin-top: 15vh;
+        padding: 0 2vw;
         text-align: center;
         color: #fff;
         letter-spacing: 2px;
         .mainTitle {
-            font-size: 35px;
+            font-size: 26px;
             padding: 1.5vh 0;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+        }
+        h5.subTitle {
+            padding: 1.5vh;
+            span {
+                display: block;
+                padding: 5px;
+                font-size: 18px;
+            }
+        }
+        span.line {
+            height: 1px;
+            width: 140px;
+            background: #fff;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span.circle {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 7px;
+            background: #fff;
+            margin: 0px 20px;
+            vertical-align: middle;
         }
     }
 }
@@ -132,7 +165,8 @@
             border: none !important;
         }
         .ui-carousel.ui-widget.ui-widget-content.ui-corner-all {
-            padding: 0px 17vw;
+            width: 66vw;
+            margin: auto;
         }
         .ui-carousel-header.ui-widget-header.ui-corner-all {
             display: inline-block;
@@ -147,6 +181,7 @@
             border: none;
             text-align: left;
             width: 22vw !important;
+            margin: 0;
         }
         .pi-arrow-circle-left.ui-state-disabled {
             background: url(../../../assets/images/left.png) no-repeat;

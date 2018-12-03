@@ -1,10 +1,14 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" class="projectInformationDetail">
-  <div class="h-content-layout ui-g">
-    <div class="ui-g-2 h-content-left">
-      <button [ngClass]="{building: isBuilding}">在建项目</button>
+  <div class="h-content-layout">
+    <!-- <div class="ui-g-2 h-content-left"> -->
+    <!-- <button [ngClass]="{building: isBuilding}">在建项目</button>
       <button [ngClass]="{building: !isBuilding}">完成项目</button>
+    </div> -->
+    <div class="h-content-top">
+      <a [routerLink]="['/projectInformation']">在建项目</a>&lt;&lt;<span>工程概况</span>
     </div>
-    <div class="ui-g-10 h-content-right">
+
+    <div class="h-content-bottom">
       <p-carousel [value]="projectDetail['pics']" numVisible=1>
         <ng-template let-projectPic pTemplate="item">
           <div class="ui-grid ui-grid-responsive">

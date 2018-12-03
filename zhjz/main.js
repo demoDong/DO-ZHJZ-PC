@@ -461,13 +461,20 @@ var HomepageComponent = /** @class */ (function () {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
         this.token._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
-        this.http.get('./assets/bmap/ditu.json').subscribe(function (data) {
+        var time = new Date();
+        this.http.get("./assets/bmap/ditu.json?time=" + Date.parse(time)).subscribe(function (data) {
             var _THEMEJSON = data;
             var map = new BMap.Map('bmap');
             map.centerAndZoom(new BMap.Point(120.89101, 34.536594), 6);
-            // map.enableScrollWheelZoom();
             map.setMapStyleV2({ styleJson: _THEMEJSON });
         });
+        // const map = new AMap.Map('bmap', {
+        //   zoomEnable: false,
+        //   doubleClickZoom: true,
+        //   mapStyle: 'amap://styles/blue',
+        //   zoom: 5,
+        //   center: [120.89101, 34.536594]
+        // });
     };
     HomepageComponent.prototype.scanMoreProject = function () {
         this.link._link = 'projectInformation';

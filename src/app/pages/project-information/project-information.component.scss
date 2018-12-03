@@ -70,6 +70,8 @@
         z-index: 100;
         border: none;
         background: none;
+        left: 50%;
+        transform: translate(-50%);
     }
     .ui-carousel-page-links {
         display: none;
@@ -78,6 +80,7 @@
         padding-bottom: 15vh;
         display: flex;
         justify-content: center;
+        width: 84vw;
     }
     .pi-arrow-circle-left.ui-state-disabled {
         background: url(../../../assets/images/left.png) no-repeat;
