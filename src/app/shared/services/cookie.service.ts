@@ -13,7 +13,6 @@ export class CookieService {
     const cookieArr = document.cookie.split(';');
     for (let i = 0; i < cookieArr.length; i++) {
       const cookie = cookieArr[i].split('=');
-      console.log(cookie[0]);
       if (cookie[0] === name) {
         return cookie[1];
       }

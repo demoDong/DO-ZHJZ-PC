@@ -9,6 +9,5 @@ import { TokenService } from './shared/services/token.service';
 export class AppComponent {
   constructor(private cookie: CookieService, private token: TokenService) {
     this.token._token = this.cookie.getCookie('_idptickeToken');
-    console.log(this.token._token);
   }
 }
