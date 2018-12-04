@@ -18,6 +18,13 @@
             <div class="ui-g-7 detail">
                 <h3>产品介绍</h3>
                 <p>智慧建造信息平台是工程建造领域运用互联网、移动互联网、大数据、云计算技术的应用典范。通过工程建造全流程的表单在线填报、流程自动推送、手机APP施工现场电子签名、数据结构化存储等功能，实现了审批流程数字化、数据存档结构化、监督管理智能化，大幅度提高了工程建造全流程的信息化程度，降低企业成本，提高工作效率；已通过北京市住建委的科技成果鉴定，达到国内领先水平，具有良好的推广应用价值。</p>
+                <ul>
+                    <li *ngFor="let item of timgs"><img src="assets/images/{{item}}.jpg" alt="点击查看大图" (click)="showBigPic(item)"></li>
+                </ul>
+            </div>
+            <div *ngIf="ifShowBigPic" class="bigpicDialog">
+                <img src="assets/images/{{bigPic}}.jpg" alt="">
+                <button (click)="ifShowBigPic = !ifShowBigPic">X</button>
             </div>
         </div>
         <div class="publicity text-center">

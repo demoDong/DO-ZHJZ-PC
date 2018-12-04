@@ -25,6 +25,9 @@ export class HomepageComponent implements OnInit {
   public ifShowPopup: boolean;
   public newsArr;
   public mapOption;
+  public timgs;
+  public bigPic;
+  public ifShowBigPic: boolean;
   constructor(
     private link: LinkService,
     private token: TokenService,
@@ -108,6 +111,7 @@ export class HomepageComponent implements OnInit {
       { type: 'ADV', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' },
       { type: 'NEW', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' }
     ];
+    this.timgs = ['timg1', 'timg2', 'timg3'];
   }
 
   ngOnInit() {
@@ -117,6 +121,7 @@ export class HomepageComponent implements OnInit {
     this.NAV_INDEX = 0;
     this.ifShowDialog = false;
     this.ifShowSignContent = false;
+    this.ifShowBigPic = false;
     this.token._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
     const time: any = new Date();
     // this.http.get(`./assets/bmap/ditu.json?time=${Date.parse(time)}`).subscribe(data => {
@@ -174,6 +179,10 @@ export class HomepageComponent implements OnInit {
     } else {
       this.router.navigate(['projectInformationDetail']);
     }
+  }
+  showBigPic(pic) {
+    this.bigPic = pic;
+    this.ifShowBigPic = true;
   }
   closeDialog() {
     this.ifShowDialog = false;
