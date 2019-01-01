@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { TokenService } from '../../shared/services/token.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -15,7 +16,7 @@ export class MyProjectsComponent implements OnInit {
   public projects: object;
   public projectProduce: object;
   public selectedFile: object;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private http: HttpClient, private token: TokenService) { }
 
   ngOnInit() {
     this.picture = 'personCenter.png';
@@ -28,7 +29,7 @@ export class MyProjectsComponent implements OnInit {
         {
           'label': '中关村声明科学院医药科技中心二标段',
           'data': {
-            'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
+            'pics': ['projectInformation'],
             'name': '中关村声明科学院医药科技中心二标段',
             'address': '北京市昌平区回龙观镇中关村国际生命医疗园东北部',
             'area': '98000平方米',
@@ -172,6 +173,13 @@ export class MyProjectsComponent implements OnInit {
       ]
     };
 
+    this.http.get(
+      '/ucenter/rest/v2/services/ucenter_ProjectGroupService/getProjectGroupsByLogin',
+      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+    ).subscribe(data => {
+      console.log(data);
+    });
+
     // this.selectedFile = {
     //   'node': {
     //     'label': '中关村声明科学院医药科技中心二标段'
@@ -180,7 +188,6 @@ export class MyProjectsComponent implements OnInit {
     this.projectProduce = this.projects['building'][0].data;
   }
   nodeSelect(e) {
-    console.log(e);
     if (!e.node.parent) {
       this.projectProduce = e.node.data;
     }

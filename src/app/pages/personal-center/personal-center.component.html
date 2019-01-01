@@ -1,11 +1,33 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" class="personalCenter">
     <ul class="h-content-layout">
-        <li><span>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户：</span><input type="text"></li>
-        <li><span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span><input type="text"><button>修改</button></li>
-        <li><span>归属公司：</span><input type="text"><button>修改</button></li>
-        <li><span>所在职位：</span><input type="text"><button>修改</button></li>
-        <li><span>手机号码：</span><input type="text"></li>
-        <li><span>实名认证：</span><span class="status">未认证</span></li>
-        <li><span>CA&nbsp;&nbsp;认证：</span><span class="status">未认证</span><span class="warning">请使用手机进行认证！</span></li>
+        <li>
+            <span>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户：</span>
+            <input type="text" [(ngModel)]="mobile" readonly></li>
+        <li>
+            <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+            <input type="text" [(ngModel)]="name" [readonly]="isNameReadonly" id="name">
+            <button (click)="onClickResetName('name')">{{ifNameResetSureClicked === true? "确认":"修改"}}</button>
+        </li>
+        <li>
+            <span>归属公司：</span>
+            <input type="text" [(ngModel)]="company" [readonly]="isCompanyReadonly" id="company">
+            <button (click)="onClickResetCompany('company')">{{ifComponyResetSureClicked === true? "确认":"修改"}}</button>
+        </li>
+        <li>
+            <span>所在职位：</span>
+            <input type="text" [(ngModel)]="position" [readonly]="isPositionReadonly" id="position">
+            <button (click)="onClickResetPosition('position')">{{ifPositionResetSureClicked === true? "确认":"修改"}}</button>
+        </li>
+        <li>
+            <span>手机号码：</span><input type="text" [(ngModel)]="mobile" readonly>
+        </li>
+        <li>
+            <span>实名认证：</span>
+            <span class="status">未认证</span>
+        </li>
+        <li>
+            <span>CA&nbsp;&nbsp;认证：</span>
+            <span class="status">未认证</span><span class="warning">请使用手机进行认证！</span>
+        </li>
     </ul>
 </app-page-iframe>

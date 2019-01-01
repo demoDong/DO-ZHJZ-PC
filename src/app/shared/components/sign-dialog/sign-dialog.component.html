@@ -1,6 +1,6 @@
 <form action="">
-  <input type="text" placeholder="请输入手机号"><br>
-  <input type="password" placeholder="请输入密码"><br>
+  <input type="text" placeholder="请输入手机号" [(ngModel)]="username" name="username"><br>
+  <input type="password" placeholder="请输入密码" [(ngModel)]="password" name="password"><br>
   <button (click)="sign($event)">登录</button>
 </form>
 <div class="ui-g v-tooltop">

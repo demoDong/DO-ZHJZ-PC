@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,6 +22,7 @@ import { MyProjectsTodoComponent } from './pages/my-projects-todo/my-projects-to
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
     MyProjectsComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

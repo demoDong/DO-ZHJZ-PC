@@ -109,6 +109,7 @@ export class PageIframeComponent implements OnInit {
         this.cookie.setCookie(('_idptickeToken'), '');
         this.token._token = '';
         this.ifShowSignButton = true;
+        console.log(this.link._link);
         if (!this.link._link || this.link._link === 'homepage') {
             window.location.reload();
         } else {
