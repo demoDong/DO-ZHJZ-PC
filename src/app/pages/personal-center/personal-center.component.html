@@ -2,32 +2,41 @@
     <ul class="h-content-layout">
         <li>
             <span>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户：</span>
-            <input type="text" [(ngModel)]="mobile" readonly></li>
+            <input type="text" [(ngModel)]="allMes['user']['_instanceName']" readonly></li>
         <li>
             <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
-            <input type="text" [(ngModel)]="name" [readonly]="isNameReadonly" id="name">
-            <button (click)="onClickResetName('name')">{{ifNameResetSureClicked === true? "确认":"修改"}}</button>
+            <input type="text" [(ngModel)]="name" [readonly]="isNameReadonly" id="name" [ngClass]="{'edit': isEdits[0]}">
+            <button (click)="onClickResetName()">修改</button>
         </li>
         <li>
             <span>归属公司：</span>
-            <input type="text" [(ngModel)]="company" [readonly]="isCompanyReadonly" id="company">
-            <button (click)="onClickResetCompany('company')">{{ifComponyResetSureClicked === true? "确认":"修改"}}</button>
+            <input type="text" [(ngModel)]="company" readonly *ngIf="!isEdits[1]">
+            <select [(ngModel)]="selectedCompanyId" *ngIf="isEdits[1]">
+                <option *ngFor="let item of companys" [value]="item.id">{{item.name}}</option>
+            </select>
+            <button (click)="onClickResetCompany()">修改</button>
         </li>
         <li>
             <span>所在职位：</span>
-            <input type="text" [(ngModel)]="position" [readonly]="isPositionReadonly" id="position">
-            <button (click)="onClickResetPosition('position')">{{ifPositionResetSureClicked === true? "确认":"修改"}}</button>
+            <input type="text" [(ngModel)]="position" [readonly]="isPositionReadonly" id="position" [ngClass]="{'edit': isEdits[2]}">
+            <button (click)="onClickResetPosition()">修改</button>
         </li>
         <li>
-            <span>手机号码：</span><input type="text" [(ngModel)]="mobile" readonly>
+            <span>手机号码：</span><input type="text" [(ngModel)]="allMes['mobile']" readonly>
         </li>
         <li>
             <span>实名认证：</span>
-            <span class="status">未认证</span>
+            <span class="status" [ngClass]="{'isPass': allMes['state'] === 'pass' ? true : false}">
+                {{allMes['state'] === 'pass' ? '已激活' : '未认证'}}
+            </span>
         </li>
         <li>
             <span>CA&nbsp;&nbsp;认证：</span>
-            <span class="status">未认证</span><span class="warning">请使用手机进行认证！</span>
+            <span class="status" [ngClass]="{'isPass': allMes['prevCAState'] === 'activated' ? true : false}">
+                {{allMes['prevCAState'] === 'activated' ? '已激活' : '未认证'}}
+            </span>
+            <span class="warning" *ngIf="allMes['prevCAState'] === 'activated' ? false : true">请使用手机进行认证！</span>
         </li>
+        <li class="sure" *ngIf="ifShowSubmitBtn"><button (click)="onResetMesSubmit()">确认</button></li>
     </ul>
 </app-page-iframe>

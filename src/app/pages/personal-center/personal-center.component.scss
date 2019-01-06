@@ -17,9 +17,16 @@ ul.h-content-layout {
             border-radius: 4px;
             background: #eeeef0;
             padding: 5px 10px;
-            &:focus {
+            &.edit {
                 background: #fff;
             }
+        }
+        select {
+            width: 280px;
+            height: 35px;
+            border: 1px solid #b9b5b5;
+            border-radius: 4px;
+            padding: 5px 10px;
         }
         button {
             height: 35px;
@@ -35,6 +42,9 @@ ul.h-content-layout {
             font-weight: bold;
             margin-right: 60px;
         }
+        span.status.isPass {
+            color: #00ecfe;
+        }
         span.warning {
             color: #03ccde;
         }
@@ -44,5 +54,20 @@ ul.h-content-layout {
         text-align: right;
         display: inline-block;
         margin-right: 10px;
+    }
+    li.sure {
+        text-align: center;
+        padding-top: 40px;
+        button {
+            background: #00ecfe;
+            color: #fff;
+            font-size: 18px;
+            margin: 0px;
+            width: 90px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            letter-spacing: 4px;
+        }
     }
 }
