@@ -2,15 +2,15 @@
   <div class="h-content-layout">
     <div class="h-content-top">
       <button>在建项目</button>
-      <input type="text" placeholder="搜索新闻">
+      <input type="text" placeholder="搜索项目" #input (keyup)="searchProjects()" [(ngModel)]="searchProjectName">
     </div>
     <p-carousel [value]="buildingPorjectsArr" numVisible=1>
       <ng-template let-projects pTemplate="item">
         <div class="ui-grid ui-grid-responsive">
           <div class="ui-grid-row">
             <div class="ui-grid-col-12 detailBox">
-              <div *ngFor="let item of projects">
-                <img src="assets/images/{{item.pic}}.png" alt="" (click)="scanProjectInformationDetail()">
+              <div *ngFor="let item of projects" [routerLink]="['/projectInformationDetail']" [queryParams]="{id: item.id}">
+                <img src="{{item.pic}}" alt="">
                 <p>{{item.name}}</p>
               </div>
             </div>

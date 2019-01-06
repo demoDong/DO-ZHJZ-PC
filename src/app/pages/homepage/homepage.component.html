@@ -41,20 +41,20 @@
                     <div class="ui-grid ui-grid-responsive">
                         <div class="ui-grid-row">
                             <div class="ui-grid-col-12 detailBox">
-                                <img src="assets/images/{{project.pic}}.png">
+                                <img src="{{project.pic}}">
                                 <div class="briefIntroduction">
                                     <ul>
-                                        <li>项目名称：{{project.name}}</li>
-                                        <li>建筑规模：{{project.area}}平方米</li>
-                                        <li>工程地址：{{project.address}}</li>
-                                        <li>计划工期：{{project.planDate}}</li>
-                                        <li>监理单位：{{project.supervision}}</li>
-                                        <li>施工单位信息：{{project.builder}}</li>
+                                        <li>项目名称：<span>{{project.name}}</span></li>
+                                        <li>建筑规模：<span>{{project.area}}</span></li>
+                                        <li>工程地址：<span>{{project.address}}</span></li>
+                                        <li>计划工期：<span>{{project.planDate}}</span></li>
+                                        <li>监理单位：<span>{{project.supervision}}</span></li>
+                                        <li>施工单位信息：<span>{{project.builder}}</span></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <button class="scanListMore" (click)="scanProjectInformationDetail()">查看更多详情</button>
+                        <button class="scanListMore" (click)="scanProjectInformationDetail(project.id)">查看更多详情</button>
                     </div>
                 </ng-template>
             </p-carousel>

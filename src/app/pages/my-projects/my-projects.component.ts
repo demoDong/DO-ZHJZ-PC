@@ -15,6 +15,7 @@ export class MyProjectsComponent implements OnInit {
   public NAV_INDEX: number;
   public projectProduce = {};
   public selectedFile: object;
+  public todoThingsNum: number;
   public projects: any = {
     building: [],
     finished: [],
@@ -26,156 +27,13 @@ export class MyProjectsComponent implements OnInit {
     this.ZH_TITLE = '我的项目';
     this.EN_TITLE = 'MY PROJECT';
     this.NAV_INDEX = 1;
-
-    // this.projects = {
-    //   'building': [
-    //     {
-    //       'label': '中关村声明科学院医药科技中心二标段',
-    //       'data': {
-    //         'pics': ['projectInformation'],
-    //         'name': '中关村声明科学院医药科技中心二标段',
-    //         'address': '北京市昌平区回龙观镇中关村国际生命医疗园东北部',
-    //         'area': '98000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
-    //       ]
-    //     },
-    //     {
-    //       'label': '中关村声明科学院医药科技中心一标段',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '中关村声明科学院医药科技中心一标段',
-    //         'address': '北京市昌平区回龙观镇中关村国际生命医疗园西北部',
-    //         'area': '80000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
-    //       ]
-    //     },
-    //     {
-    //       'label': '东城区西河沿房改带危改项目（幼儿园）',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '东城区西河沿房改带危改项目（幼儿园）',
-    //         'address': '北京市东城区',
-    //         'area': '86000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
-    //       ]
-    //     },
-    //     {
-    //       'label': '东城区西河沿房改带危改项目（东区）',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '东城区西河沿房改带危改项目（东区）',
-    //         'address': '北京市东城区',
-    //         'area': '86000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }]
-    //     },
-    //     {
-    //       'label': '东城区西河沿房改带危改项目（西区）',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '东城区西河沿房改带危改项目（西区）',
-    //         'address': '北京市东城区',
-    //         'area': '86000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }]
-    //     }
-    //   ],
-    //   'finished': [
-    //     {
-    //       'label': '中关村声明科学院医药科技中心二标段',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '中关村声明科学院医药科技中心二标段',
-    //         'address': '北京市昌平区回龙观镇中关村国际生命医疗园东北部',
-    //         'area': '98000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
-    //       ]
-    //     },
-    //     {
-    //       'label': '中关村声明科学院医药科技中心一标段',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '中关村声明科学院医药科技中心一标段',
-    //         'address': '北京市昌平区回龙观镇中关村国际生命医疗园西北部',
-    //         'area': '80000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #6 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #5 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #4 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #3 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
-    //       ]
-    //     },
-    //     {
-    //       'label': '东城区西河沿房改带危改项目（幼儿园）',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '东城区西河沿房改带危改项目（幼儿园）',
-    //         'address': '北京市东城区',
-    //         'area': '86000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }
-    //       ]
-    //     },
-    //     {
-    //       'label': '东城区西河沿房改带危改项目（东区）',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '东城区西河沿房改带危改项目（东区）',
-    //         'address': '北京市东城区',
-    //         'area': '86000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }]
-    //     },
-    //     {
-    //       'label': '东城区西河沿房改带危改项目（西区）',
-    //       'data': {
-    //         'pics': ['projectInformation', 'projectInformation', 'projectInformation'],
-    //         'name': '东城区西河沿房改带危改项目（西区）',
-    //         'address': '北京市东城区',
-    //         'area': '86000平方米',
-    //       },
-    //       'children': [
-    //         { 'label': '中关村声明科学院医药科技中心 #2 号楼' },
-    //         { 'label': '中关村声明科学院医药科技中心 #1 号楼' }]
-    //     }
-    //   ]
-    // };
-
+    this.http.get<any>(
+      '/ucenter/rest/v2/services/ucenter_CommonService/findPendingWork',
+      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+    ).subscribe(data => {
+      this.todoThingsNum = data.length;
+    });
+    // 初始化获取项目列表
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_ProjectGroupService/getProjectGroupsByLogin',
       { headers: { 'Authorization': `Bearer ${this.token._token}` } }

@@ -5,109 +5,19 @@
         </div>
         <ul class="h-content-botttom">
             <li class="contentTitle">
-                <h4>待办事项<span>10</span></h4>
+                <h4>待办事项<span>{{allTodoThings.length}}</span></h4>
             </li>
-            <li class="ui-g">
+            <li class="ui-g" *ngFor="let item of rencentPageTotoThings">
                 <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
+                    <div class="listDetail"><span>【任务审批通知】</span><span>{{item.taskState}}</span></div>
+                    <div class="listMes"><span>表单编号：{{item.formCode}}</span><span>表单名称：{{item.formName}}</span></div>
                 </div>
                 <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
-                </div>
-            </li>
-            <li class="ui-g">
-                <div class="ui-g-10">
-                    <div class="listDetail"><span>【任务审批通知】</span><span>新的《空调系统试运转调试记录》审批流程需要处理</span></div>
-                    <div class="listMes"><span>类型：审批流程</span><span>发送人：安静二</span></div>
-                </div>
-                <div class="ui-g-2 text-center">
-                    <button>查看详情</button>
-                    <p>2017-07-08</p>
+                    <button>马上办理</button>
+                    <p>{{item.startTime.split(' ')[0]}}</p>
                 </div>
             </li>
         </ul>
-        <p-paginator [rows]="5" [totalRecords]="18"></p-paginator>
+        <p-paginator [rows]="5" [totalRecords]="allTodoThings.length" (onPageChange)=onPageChange($event)></p-paginator>
     </div>
 </app-page-iframe>

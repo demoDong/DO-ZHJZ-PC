@@ -1,7 +1,7 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX" class="myProjects">
   <div class="h-content-layout">
     <div class="v-top text-right">
-      <button class="todoBtn" (click)="jumpTodopage()">待办事项<span>10</span></button>
+      <button class="todoBtn" (click)="jumpTodopage()">待办事项<span>{{todoThingsNum}}</span></button>
     </div>
     <div class="ui-g v-bottom">
       <div class="ui-g-5 allProjectsList">
@@ -34,9 +34,9 @@
         <h4 class="simpleProduce">项目简介</h4>
         <div class="underLine"></div>
         <ul class="v-projectDetail">
-          <li><span>工程名称：</span><span>{{projectProduce['name']}}</span></li>
-          <li><span>工程地址：</span><span>{{projectProduce['address']}}</span></li>
-          <li><span>建筑面积：</span><span>{{projectProduce['area']}}平方米</span></li>
+          <li><span>工程名称：</span><span>{{projectProduce['name'] ? projectProduce['name'] : ''}}</span></li>
+          <li><span>工程地址：</span><span>{{projectProduce['address'] ? projectProduce['address'] : ''}}</span></li>
+          <li><span>建筑面积：</span><span>{{projectProduce['area'] ? projectProduce['area'] + '平方米' : ''}}</span></li>
         </ul>
       </div>
 

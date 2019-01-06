@@ -11,6 +11,9 @@
      }
      ul.ui-tree-container {
          padding: 0 !important;
+         height: 36vh;
+         overflow: auto;
+         margin-right: 10px;
      }
      .ui-treenode-content {
          outline: none;
@@ -173,8 +176,6 @@
          background: #F4F4F4;
      }
      .projectsList {
-         min-height: 45vh;
-         padding-bottom: 2vh;
          h4 {
              font-size: 22px;
              margin: 2vh 2vw;
@@ -191,7 +192,7 @@
      }
      img {
          width: 100%;
-         height: 65vh;
+         height: 60vh;
      }
      .projectsDetail {
          padding: 0 0 0 2vw;
