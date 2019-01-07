@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { TokenService } from '../../shared/services/token.service';
+import { HttpApi } from '../../shared/services/http-api.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -15,7 +15,7 @@ export class MyProjectsTodoComponent implements OnInit {
   public newsArr: Array<object>;
   public allTodoThings: any;
   public rencentPageTotoThings: any;
-  constructor(private http: HttpClient, private token: TokenService) { }
+  constructor(private http: HttpApi, private token: TokenService) { }
 
   ngOnInit() {
     this.picture = 'personCenter.png';

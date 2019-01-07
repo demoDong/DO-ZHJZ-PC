@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { LinkService } from '../../shared/services/link.service';
 import { TokenService } from '../../shared/services/token.service';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { HttpApi } from '../../shared/services/http-api.service';
+
 
 declare const BMap: any;
 declare const BMAP_ANIMATION_BOUNCE: any;
 
 declare const AMap: any;
+
 
 @Component({
     selector: 'app-homepage',
@@ -32,7 +34,7 @@ export class HomepageComponent implements OnInit {
         private link: LinkService,
         private token: TokenService,
         private router: Router,
-        private http: HttpClient,
+        private http: HttpApi,
     ) {
         // this.buildingPorjectsArr = [
         //     {

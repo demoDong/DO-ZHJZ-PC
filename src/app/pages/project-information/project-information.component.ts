@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { TokenService } from '../../shared/services/token.service';
+import { HttpApi } from '../../shared/services/http-api.service';
 
 @Component({
   selector: 'app-project-information',
@@ -16,7 +16,7 @@ export class ProjectInformationComponent implements OnInit {
   public buildingPorjectsArr: any;
   public searchProjectName = '';
   private projectGroups: any;
-  constructor(private router: Router, private http: HttpClient, private token: TokenService) { }
+  constructor(private router: Router, private http: HttpApi, private token: TokenService) { }
 
   ngOnInit() {
     this.picture = 'projectInformationTop.png';

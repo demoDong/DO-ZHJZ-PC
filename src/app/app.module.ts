@@ -20,6 +20,7 @@ import { NewsBulletinDetailComponent } from './pages/news-bulletin-detail/news-b
 import { ProjectInformationDetailComponent } from './pages/project-information-detail/project-information-detail.component';
 import { MyProjectsTodoComponent } from './pages/my-projects-todo/my-projects-todo.component';
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
+import { HttpApi } from './shared/services/http-api.service';
 
 
 
@@ -48,7 +49,7 @@ import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
     DoEChartsModule,
     TreeModule,
   ],
-  providers: [],
+  providers: [HttpApi],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

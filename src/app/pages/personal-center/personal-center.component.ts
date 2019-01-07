@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { TokenService } from '../../shared/services/token.service';
 import * as jQuery from 'jquery';
+import { HttpApi } from '../../shared/services/http-api.service';
 
 @Component({
   selector: 'app-personal-center',
@@ -26,7 +26,7 @@ export class PersonalCenterComponent implements OnInit {
   public isEdits = [false, false, false];
   public companys: any;
 
-  constructor(private http: HttpClient, private token: TokenService) {
+  constructor(private http: HttpApi, private token: TokenService) {
   }
 
   ngOnInit() {

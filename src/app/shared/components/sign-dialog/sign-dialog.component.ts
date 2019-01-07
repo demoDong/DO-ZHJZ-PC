@@ -1,7 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { TokenService } from '../../services/token.service';
 import { CookieService } from '../../services/cookie.service';
-import { HttpClient } from '@angular/common/http';
+import * as jQuery from 'jquery';
+import { HttpApi } from '../../services/http-api.service';
 
 @Component({
   selector: 'app-sign-dialog',
@@ -17,8 +18,28 @@ export class SignDialogComponent implements OnInit {
   constructor(
     private token: TokenService,
     private cookie: CookieService,
-    private http: HttpClient) { }
+    private http: HttpApi) { }
   ngOnInit() {
+
+    // jQuery.ajax({
+    //   type: 'POST',
+    //   url: '/ucenter/idp/auth',
+    //   data: JSON.stringify({
+    //     username: '13811920519', password: 'qaz12345678',
+    //     responseType: 'application/json;chartset=utf-8',
+    //   }),
+    //   contentType: 'application/json;chartset=utf-8',
+    //   dataType: 'json',
+    //   success: function (data) {
+    //     console.log(data);
+    //   },
+    //   error: function (err) {
+    //     console.log(err);
+    //   }
+    // });
+
+
+
   }
   sign(e) {
     e.preventDefault();

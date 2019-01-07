@@ -1,7 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { HttpApi } from '../../services/http-api.service';
 import * as jQuery from 'jquery';
+import { environment } from '../../../../environments/environment';
+
 
 @Component({
   selector: 'app-regist-dialog',
@@ -19,7 +20,9 @@ export class RegistDialogComponent implements OnInit {
   public password: string;
   public repassword: string;
   public isReadedMes: boolean;
-  constructor(private http: HttpClient) { }
+  private url = environment.apiurl;
+
+  constructor(private http: HttpApi) { }
 
   ngOnInit() {
   }
@@ -27,34 +30,8 @@ export class RegistDialogComponent implements OnInit {
     if (!(/^1[3456789]\d{9}$/.test(this.phoneNum))) {
       alert('手机号码有误，请重新输入');
     } else {
-      // this.http.post(
-      //   '/ucenter-portal/api/sendCaptcha',
-      //   `phoneNum=${this.phoneNum}&captchaType=1`,
-      //   {
-      //     'headers': {
-      //       'Content-Type': 'application/x-www-form-urlencoded',
-      //     }
-      //   },
-      // ).subscribe(
-      //   data => {
-      //     if (data) {
-      //       this.ifshowTimeOut = !this.ifshowTimeOut;
-      //       const Timer = setTimeout(() => {
-      //         --this.second;
-      //         if (this.second === 0) {
-      //           clearTimeout(Timer);
-      //           this.second = 60;
-      //           this.ifshowTimeOut = !this.ifshowTimeOut;
-      //           this.yzmMes = '重新发送';
-      //         }
-      //       }, 1000);
-      //     }
-      //   },
-      //   err => { }
-      // );
-
       const settings = {
-        'url': '/ucenter-portal/api/sendCaptcha',
+        'url': `${this.url}/ucenter-portal/api/sendCaptcha`,
         'method': 'POST',
         'headers': {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -65,22 +42,25 @@ export class RegistDialogComponent implements OnInit {
         }
       };
       jQuery.ajax(settings).done(response => {
-        this.ifshowTimeOut = !this.ifshowTimeOut;
-        const Timer = setInterval(() => {
-          --this.second;
-          if (this.second === 0) {
-            clearInterval(Timer);
-            this.second = 60;
-            this.ifshowTimeOut = !this.ifshowTimeOut;
-            this.yzmMes = '重新发送';
-          }
-        }, 1000);
+        if (response === '验证码发送成功') {
+          this.ifshowTimeOut = !this.ifshowTimeOut;
+          const Timer = setInterval(() => {
+            --this.second;
+            if (this.second === 0) {
+              clearInterval(Timer);
+              this.second = 60;
+              this.ifshowTimeOut = !this.ifshowTimeOut;
+              this.yzmMes = '重新发送';
+            }
+          }, 1000);
+        }
+      }).fail(err => {
+        console.log(err);
       });
     }
   }
   regist(e) {
     e.preventDefault();
-    console.log(this.isReadedMes);
     if (!this.phoneNum || this.phoneNum === '') {
       alert('手机号不能为空');
     } else if (!this.yzmNum || this.yzmNum === '') {
@@ -94,24 +74,8 @@ export class RegistDialogComponent implements OnInit {
     } else if (!this.isReadedMes) {
       alert('请阅读并接受 《智慧建造用户协议》');
     } else {
-      // this.http.post(
-      //   'ucenter-portal/api/register',
-      //   `username=${this.phoneNum}&captcha=${this.yzmNum}&password=${this.password}`,
-      //   {
-      //     'headers': {
-      //       'Content-Type': 'application/x-www-form-urlencoded',
-      //     }
-      //   },
-      // ).subscribe(
-      //   data => {
-      //     console.log('succ:' + data);
-      //   },
-      //   err => {
-      //     console.log('err:' + err);
-      //   }
-      // );
       const settings = {
-        'url': '/ucenter-portal/api/register',
+        'url': `${this.url}/ucenter-portal/api/register`,
         'method': 'POST',
         'headers': {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -127,6 +91,8 @@ export class RegistDialogComponent implements OnInit {
         if (data === '注册成功') {
           this.clickRegist.emit();
         }
+      }).fail(err => {
+        console.log(err);
       });
     }
   }

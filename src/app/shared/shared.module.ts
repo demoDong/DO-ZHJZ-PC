@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { RegistDialogComponent } from './components/regist-dialog/regist-dialog.component';
 import { ForgetpwdDialogComponent } from './components/forgetpwd-dialog/forgetpwd-dialog.component';
 
+
 @NgModule({
   imports: [
     CommonModule,

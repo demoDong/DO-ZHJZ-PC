@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { TokenService } from '../../shared/services/token.service';
+import { HttpApi } from '../../shared/services/http-api.service';
 
 @Component({
   selector: 'app-project-information-detail',
@@ -17,7 +17,7 @@ export class ProjectInformationDetailComponent implements OnInit {
     detail: []
   };
   public isBuilding: boolean;
-  constructor(private http: HttpClient, private token: TokenService) { }
+  constructor(private http: HttpApi, private token: TokenService) { }
 
   ngOnInit() {
     this.picture = 'projectInformationTop.png';

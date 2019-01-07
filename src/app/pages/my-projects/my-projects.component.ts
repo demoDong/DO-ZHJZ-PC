@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { TokenService } from '../../shared/services/token.service';
+import { HttpApi } from '../../shared/services/http-api.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -20,7 +20,7 @@ export class MyProjectsComponent implements OnInit {
     building: [],
     finished: [],
   };
-  constructor(private router: Router, private http: HttpClient, private token: TokenService) { }
+  constructor(private router: Router, private http: HttpApi, private token: TokenService) { }
 
   ngOnInit() {
     this.picture = 'personCenter.png';
@@ -57,7 +57,7 @@ export class MyProjectsComponent implements OnInit {
           });
           this.http.get<any>(
             // tslint:disable-next-line:max-line-length
-            `http://59.110.112.210:10000/ucenter/rest/v2/services/ucenter_ProjectGroupService/findUserDuty?projectUrl=${entry}&projectId=${id}`,
+            `/ucenter/rest/v2/services/ucenter_ProjectGroupService/findUserDuty?projectUrl=${entry}&projectId=${id}`,
             { headers: { 'Authorization': `Bearer ${this.token._token}` } }
           ).subscribe(result => {
             result.forEach(buildingItem => {

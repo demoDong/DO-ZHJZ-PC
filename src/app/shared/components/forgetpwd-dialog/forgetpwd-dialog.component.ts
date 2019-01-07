@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import * as jQuery from 'jquery';
-import { HttpClient } from '@angular/common/http';
+import { HttpApi } from '../../services/http-api.service';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-forgetpwd-dialog',
@@ -18,13 +19,14 @@ export class ForgetpwdDialogComponent implements OnInit {
   public password: string;
   public repassword: string;
   public isReadedMes: boolean;
-  constructor(private http: HttpClient) { }
+  private url = environment.apiurl;
+  constructor(private http: HttpApi) { }
 
   ngOnInit() {
   }
   getVerificationCode() {
     const settings = {
-      'url': '/ucenter-portal/api/sendCaptcha',
+      'url': `${this.url}/ucenter-portal/api/sendCaptcha`,
       'method': 'POST',
       'headers': {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -35,16 +37,20 @@ export class ForgetpwdDialogComponent implements OnInit {
       }
     };
     jQuery.ajax(settings).done(response => {
-      this.ifshowTimeOut = !this.ifshowTimeOut;
-      const Timer = setInterval(() => {
-        --this.second;
-        if (this.second === 0) {
-          clearInterval(Timer);
-          this.second = 60;
-          this.ifshowTimeOut = !this.ifshowTimeOut;
-          this.yzmMes = '重新发送';
-        }
-      }, 1000);
+      if (response === '验证码发送成功') {
+        this.ifshowTimeOut = !this.ifshowTimeOut;
+        const Timer = setInterval(() => {
+          --this.second;
+          if (this.second === 0) {
+            clearInterval(Timer);
+            this.second = 60;
+            this.ifshowTimeOut = !this.ifshowTimeOut;
+            this.yzmMes = '重新发送';
+          }
+        }, 1000);
+      }
+    }).fail(err => {
+      console.log(err);
     });
   }
 
@@ -61,44 +67,31 @@ export class ForgetpwdDialogComponent implements OnInit {
     } else if (this.password !== this.repassword) {
       alert('两次密码不一样，请重新输入');
     } else {
-      // this.http.post(
-      //   '/ucenter/rest/v2/services/ucenter_UserService/resetPassword',
-      //   {
-      //     'code': this.yzmNum,
-      //     'mobile': this.phoneNum,
-      //     'newPassword': this.password
-      //   },
-      //   {
-      //     'headers': {
-      //       'Content-Type': 'application/json',
-      //     }
-      //   },
-      // ).subscribe(
-      //   data => {
-      //     console.log('succ:' + data);
-      //   },
-      //   err => {
-      //     console.log('err:' + err);
-      //   }
-      // );
-      const settings = {
-        'async': true,
-        'crossDomain': true,
-        'url': '/ucenter/rest/v2/services/ucenter_UserService/resetPassword',
-        'method': 'POST',
-        'headers': {
-          'Content-Type': 'application/json'
+      this.http.post(
+        '/ucenter/rest/v2/services/ucenter_UserService/resetPassword',
+        {
+          'code': this.yzmNum,
+          'mobile': this.phoneNum,
+          'newPassword': this.password
         },
-        'data': `{"code":${this.yzmNum},"mobile":${this.phoneNum},"newPassword":${this.password}}`
-      };
-      jQuery.ajax(settings).done(data => {
-        if (data['responseCode'] === 200) {
-          alert('密码重置成功');
-          this.clickResetPwd.emit();
-        } else {
-          alert('密码重置失败');
+        {
+          'headers': {
+            'Content-Type': 'application/json',
+          }
+        },
+      ).subscribe(
+        data => {
+          if (data['responseCode'] === 200) {
+            alert('密码重置成功');
+            this.clickResetPwd.emit();
+          } else {
+            alert('密码重置失败');
+          }
+        },
+        err => {
+          console.log('err:' + err);
         }
-      });
+      );
     }
   }
   returnSign() {
