@@ -4,10 +4,6 @@ import { TokenService } from '../../shared/services/token.service';
 import { Router } from '@angular/router';
 import { HttpApi } from '../../shared/services/http-api.service';
 
-
-declare const BMap: any;
-declare const BMAP_ANIMATION_BOUNCE: any;
-
 declare const AMap: any;
 
 
@@ -36,78 +32,6 @@ export class HomepageComponent implements OnInit {
         private router: Router,
         private http: HttpApi,
     ) {
-        // this.buildingPorjectsArr = [
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 1
-        //     },
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 2
-        //     },
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 3
-        //     },
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 4
-        //     },
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 5
-        //     },
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 6
-        //     },
-        //     {
-        //         name: '中关村生命科学园医药科技中心',
-        //         area: 98000,
-        //         address: '北京市昌平区中关村东北楼，东侧为科学院路',
-        //         planDate: '开工日期2017年2月12日',
-        //         supervision: '中关村生命科技监理部',
-        //         builder: '中关村生命科技建筑部',
-        //         pic: 'project',
-        //         id: 7
-        //     },
-        // ];
         this.newsArr = [
             { type: 'NEW', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' },
             { type: 'ADV', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' },
@@ -132,10 +56,28 @@ export class HomepageComponent implements OnInit {
             zoom: 5,
             center: [120.89101, 34.536594]
         });
+        let markerIcon;
+        let marker;
+        const markers = [];
         this.http.get<any>('/ucenter/rest/v2/services/ucenter_ProjectGroupService/getLimitProjectGroups').subscribe(
             data => {
                 data.forEach(projectGroupItem => {
                     projectGroupItem.projects.forEach(project => {
+                        if (project.location.longitude && project.location.latitude) {
+                            markerIcon = new AMap.Icon({
+                                size: new AMap.Size(70, 70),
+                                image: 'assets/images/marker.png',
+                                imageSize: new AMap.Size(70, 70),
+                                // imageOffset: new AMap.Pixel(-95, -3)
+                            });
+                            marker = new AMap.Marker({
+                                position: new AMap.LngLat(project.location.longitude, project.location.latitude),
+                                // position: new AMap.LngLat(116.45, 39.93),
+                                icon: markerIcon,
+                                offset: new AMap.Pixel(-13, -30)
+                            });
+                            markers.push(marker);
+                        }
                         this.buildingPorjectsArr.push({
                             name: project.name ? project.name : '',
                             area: project.constructionArea ? `${project.constructionArea}平方米` : '',
@@ -148,6 +90,7 @@ export class HomepageComponent implements OnInit {
                         });
                     });
                 });
+                map.add(markers);
             });
     }
     scanMoreProject() {
