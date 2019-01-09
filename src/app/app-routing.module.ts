@@ -9,18 +9,20 @@ import { NewsBulletinDetailComponent } from './pages/news-bulletin-detail/news-b
 import { ProjectInformationDetailComponent } from './pages/project-information-detail/project-information-detail.component';
 import { MyProjectsTodoComponent } from './pages/my-projects-todo/my-projects-todo.component';
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
+import { AuthGuard } from './auth-guard';
 
 const appRouters: Routes = [
   { path: 'homepage', component: HomepageComponent },
-  { path: 'myProjects', component: MyProjectsComponent },
-  { path: 'myProjectsTodo', component: MyProjectsTodoComponent },
+  { path: 'myProjects', component: MyProjectsComponent, canActivate: [AuthGuard] },
+  { path: 'myProjectsTodo', component: MyProjectsTodoComponent, canActivate: [AuthGuard] },
+  { path: 'personalCenter', component: PersonalCenterComponent, canActivate: [AuthGuard] },
+  { path: 'projectInformation', component: ProjectInformationComponent, canActivate: [AuthGuard] },
+  { path: 'projectInformationDetail', component: ProjectInformationDetailComponent, canActivate: [AuthGuard] },
   { path: 'newsAnnouncement', component: NewsAnnouncementComponent },
-  { path: 'personalCenter', component: PersonalCenterComponent },
-  { path: 'contactUs', component: ContactUsComponent },
-  { path: 'projectInformation', component: ProjectInformationComponent },
   { path: 'newsBulletinDetail', component: NewsBulletinDetailComponent },
-  { path: 'projectInformationDetail', component: ProjectInformationDetailComponent },
+  { path: 'contactUs', component: ContactUsComponent },
   { path: '', component: HomepageComponent },
+  { path: '**', component: HomepageComponent },
 ];
 const routerConfig: ExtraOptions = {
   useHash: true,

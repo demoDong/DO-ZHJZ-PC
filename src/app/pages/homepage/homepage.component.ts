@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LinkService } from '../../shared/services/link.service';
-import { TokenService } from '../../shared/services/token.service';
 import { Router } from '@angular/router';
 import { HttpApi } from '../../shared/services/http-api.service';
+import { VariablesService } from '../../shared/services/variables.service';
 
 declare const AMap: any;
 
@@ -27,8 +26,7 @@ export class HomepageComponent implements OnInit {
     public bigPic;
     public ifShowBigPic: boolean;
     constructor(
-        private link: LinkService,
-        private token: TokenService,
+        private variables: VariablesService,
         private router: Router,
         private http: HttpApi,
     ) {
@@ -48,7 +46,7 @@ export class HomepageComponent implements OnInit {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
         this.ifShowBigPic = false;
-        this.token._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
+        this.variables._token === '' ? this.ifShowPopup = true : this.ifShowPopup = false;
         const map = new AMap.Map('bmap', {
             zoomEnable: true,
             doubleClickZoom: true,
@@ -94,8 +92,8 @@ export class HomepageComponent implements OnInit {
             });
     }
     scanMoreProject() {
-        this.link._link = 'projectInformation';
-        if (this.token._token === '') {
+        this.variables._link = 'projectInformation';
+        if (this.variables._token === '') {
             this.ifShowDialog = true;
             this.ifShowSignContent = true;
         } else {
@@ -103,16 +101,16 @@ export class HomepageComponent implements OnInit {
         }
     }
     scanMoreNews() {
-        this.link._link = 'newsAnnouncement';
+        this.variables._link = 'newsAnnouncement';
         this.router.navigate(['newsAnnouncement']);
     }
     scanNewsBulletinDetail() {
-        this.link._link = 'newsBulletinDetail';
+        this.variables._link = 'newsBulletinDetail';
         this.router.navigate(['newsBulletinDetail']);
     }
     scanProjectInformationDetail(id) {
-        this.link._link = 'projectInformationDetail';
-        if (this.token._token === '') {
+        this.variables._link = `projectInformationDetail?id=${id}`;
+        if (this.variables._token === '') {
             this.ifShowDialog = true;
             this.ifShowSignContent = true;
         } else {

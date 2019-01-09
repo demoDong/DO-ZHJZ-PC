@@ -1,8 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
-import { TokenService } from '../../services/token.service';
-import { LinkService } from '../../services/link.service';
 import { CookieService } from '../../services/cookie.service';
+import { VariablesService } from '../../services/variables.service';
 
 @Component({
     selector: 'app-page-iframe',
@@ -23,7 +22,7 @@ export class PageIframeComponent implements OnInit {
     public ifShowResetpwdContent: boolean;
     public navArray: Array<object>;
     public ifNavClickedArr: Array<boolean>;
-    constructor(private router: Router, private token: TokenService, private link: LinkService, private cookie: CookieService) { }
+    constructor(private router: Router, private variables: VariablesService, private cookie: CookieService) { }
 
     ngOnInit() {
         window.location.port !== '4200' ? this.ifIsFirst = true : this.ifIsFirst = false;
@@ -42,8 +41,7 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignContent = false;
         this.ifShowRegistContent = false;
         this.ifShowResetpwdContent = false;
-        this.token._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
-
+        this.variables._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
     }
 
     navClicked(link) {
@@ -57,7 +55,7 @@ export class PageIframeComponent implements OnInit {
                 this.ifShowSignContent = true;
             }
         }
-        this.link._link = link;
+        this.variables._link = link;
     }
     showSignDialog() {
         this.ifShowDialog = true;
@@ -81,12 +79,16 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignButton = false;
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
+        console.log(this.variables._link);
         // tslint:disable-next-line:max-line-length
-        if (!this.link._link || this.link._link === 'homepage' || this.link._link === 'contactUs' || this.link._link === 'newsAnnouncement') {
+        if (!this.variables._link || this.variables._link === 'homepage' || this.variables._link === 'contactUs' || this.variables._link === 'newsAnnouncement') {
             this.router.navigate(['myProjects']);
-            this.link._link = 'myProjects';
+            this.variables._link = 'myProjects';
         } else {
-            this.router.navigate([this.link._link]);
+            this.variables._link.indexOf('id=') !== -1 ?
+                // tslint:disable-next-line:max-line-length
+                this.router.navigate([this.variables._link.split('?id=')[0]], { queryParams: { id: this.variables._link.split('?id=')[1] } }) :
+                this.router.navigate([this.variables._link]);
         }
     }
     clickRegist() {
@@ -106,15 +108,15 @@ export class PageIframeComponent implements OnInit {
         this.ifShowResetpwdContent = true;
     }
     exit() {
-        this.cookie.setCookie(('_idptickeToken'), '');
-        this.token._token = '';
+        this.cookie.setCookie(('_token'), '');
+        this.variables._token = '';
+        this.variables._idpTicket = '';
         this.ifShowSignButton = true;
-        console.log(this.link._link);
-        if (!this.link._link || this.link._link === 'homepage') {
+        if (!this.variables._link || this.variables._link === 'homepage') {
             window.location.reload();
         } else {
             this.router.navigate(['homepage']);
-            this.link._link = 'homepage';
+            this.variables._link = 'homepage';
         }
 
     }

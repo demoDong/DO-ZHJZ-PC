@@ -9,13 +9,11 @@
         <div class="projects-lauout">
           <div class="projectsList v-building-box">
             <h4><span></span>在建项目</h4>
-            <p-tree [value]="projects['building']" selectionMode="single" [(selection)]="selectedFile" (onNodeSelect)="nodeSelect($event)"
-              (onNodeCollapse)="onNodeCollapse($event)"></p-tree>
+            <p-tree [value]="projects['building']" selectionMode="single" [(selection)]="selectedFile" (onNodeSelect)="nodeSelect($event)"></p-tree>
           </div>
           <div class="projectsList v-finished-box">
             <h4><span></span>已完成项目</h4>
-            <p-tree [value]="projects['finished']" selectionMode="single" (onNodeSelect)="nodeSelect($event)"
-              (onNodeCollapse)="onNodeCollapse($event)"></p-tree>
+            <p-tree [value]="projects['finished']" selectionMode="single" (onNodeSelect)="nodeSelect($event)"></p-tree>
           </div>
         </div>
       </div>

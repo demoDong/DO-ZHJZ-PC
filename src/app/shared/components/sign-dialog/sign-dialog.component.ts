@@ -1,8 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { TokenService } from '../../services/token.service';
 import { CookieService } from '../../services/cookie.service';
-import * as jQuery from 'jquery';
 import { HttpApi } from '../../services/http-api.service';
+import { VariablesService } from '../../services/variables.service';
 
 @Component({
   selector: 'app-sign-dialog',
@@ -16,31 +15,10 @@ export class SignDialogComponent implements OnInit {
   public username: string;
   public password: string;
   constructor(
-    private token: TokenService,
+    private variables: VariablesService,
     private cookie: CookieService,
     private http: HttpApi) { }
-  ngOnInit() {
-
-    // jQuery.ajax({
-    //   type: 'POST',
-    //   url: '/ucenter/idp/auth',
-    //   data: JSON.stringify({
-    //     username: '13811920519', password: 'qaz12345678',
-    //     responseType: 'application/json;chartset=utf-8',
-    //   }),
-    //   contentType: 'application/json;chartset=utf-8',
-    //   dataType: 'json',
-    //   success: function (data) {
-    //     console.log(data);
-    //   },
-    //   error: function (err) {
-    //     console.log(err);
-    //   }
-    // });
-
-
-
-  }
+  ngOnInit() { }
   sign(e) {
     e.preventDefault();
     this.http.post(
@@ -54,9 +32,29 @@ export class SignDialogComponent implements OnInit {
       },
     ).subscribe(
       data => {
-        this.cookie.setCookie('_idptickeToken', data['access_token']);
-        this.token._token = data['access_token'];
-        this.clickSign.emit();
+        this.cookie.setCookie('_token', data['access_token']);
+        this.variables._token = data['access_token'];
+        this.http.post(
+          '/ucenter/dispatch/ticket',
+          {
+            'username': this.username,
+            'password': this.password,
+          },
+          {
+            'headers': {
+              'Content-Type': 'application/json',
+            }
+          },
+        ).subscribe(
+          result => {
+            this.variables._idpTicket = result['serviceProviderUrl'].split('?')[1];
+            this.clickSign.emit();
+          },
+          err => {
+            console.log('err:' + err);
+          }
+        );
+
       },
       err => {
         alert('用户名或密码错误，请重新输入');

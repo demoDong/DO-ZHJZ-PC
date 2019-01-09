@@ -1,5 +1,4 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dialog-head',
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 export class DialogHeadComponent implements OnInit {
   @Output() close: EventEmitter<any> = new EventEmitter<any>();
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }

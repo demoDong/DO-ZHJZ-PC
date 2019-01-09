@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { HttpApi } from '../../services/http-api.service';
 import * as jQuery from 'jquery';
 import { environment } from '../../../../environments/environment';
 
@@ -22,7 +21,7 @@ export class RegistDialogComponent implements OnInit {
   public isReadedMes: boolean;
   private url = environment.apiurl;
 
-  constructor(private http: HttpApi) { }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TokenService } from '../../shared/services/token.service';
 import { HttpApi } from '../../shared/services/http-api.service';
+import { VariablesService } from '../../shared/services/variables.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -15,7 +15,7 @@ export class MyProjectsTodoComponent implements OnInit {
   public newsArr: Array<object>;
   public allTodoThings: any;
   public rencentPageTotoThings: any;
-  constructor(private http: HttpApi, private token: TokenService) { }
+  constructor(private http: HttpApi, private variables: VariablesService) { }
 
   ngOnInit() {
     this.picture = 'personCenter.png';
@@ -25,7 +25,7 @@ export class MyProjectsTodoComponent implements OnInit {
     this.allTodoThings = [];
     this.http.get(
       '/ucenter/rest/v2/services/ucenter_CommonService/findPendingWork',
-      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+      { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(data => {
       this.allTodoThings = data;
       this.rencentPageTotoThings = this.allTodoThings.slice(0, 5);

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { TokenService } from '../../shared/services/token.service';
 import { HttpApi } from '../../shared/services/http-api.service';
+import { VariablesService } from '../../shared/services/variables.service';
 
 @Component({
   selector: 'app-project-information',
@@ -16,7 +15,7 @@ export class ProjectInformationComponent implements OnInit {
   public buildingPorjectsArr: any;
   public searchProjectName = '';
   private projectGroups: any;
-  constructor(private router: Router, private http: HttpApi, private token: TokenService) { }
+  constructor(private http: HttpApi, private variables: VariablesService) { }
 
   ngOnInit() {
     this.picture = 'projectInformationTop.png';
@@ -25,7 +24,7 @@ export class ProjectInformationComponent implements OnInit {
     this.NAV_INDEX = 2;
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_ProjectGroupService/getAllProjectGroups',
-      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+      { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(data => {
       this.projectGroups = data;
       // 项目列表初始化渲染

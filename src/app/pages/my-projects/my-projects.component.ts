@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { TokenService } from '../../shared/services/token.service';
 import { HttpApi } from '../../shared/services/http-api.service';
+import { VariablesService } from '../../shared/services/variables.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -20,7 +20,7 @@ export class MyProjectsComponent implements OnInit {
     building: [],
     finished: [],
   };
-  constructor(private router: Router, private http: HttpApi, private token: TokenService) { }
+  constructor(private router: Router, private http: HttpApi, private variables: VariablesService) { }
 
   ngOnInit() {
     this.picture = 'personCenter.png';
@@ -29,14 +29,14 @@ export class MyProjectsComponent implements OnInit {
     this.NAV_INDEX = 1;
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_CommonService/findPendingWork',
-      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+      { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(data => {
       this.todoThingsNum = data.length;
     });
     // 初始化获取项目列表
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_ProjectGroupService/getProjectGroupsByLogin',
-      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+      { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(data => {
       data.forEach(projectGroupItem => {
         projectGroupItem.projects.forEach(project => {
@@ -58,13 +58,22 @@ export class MyProjectsComponent implements OnInit {
           this.http.get<any>(
             // tslint:disable-next-line:max-line-length
             `/ucenter/rest/v2/services/ucenter_ProjectGroupService/findUserDuty?projectUrl=${entry}&projectId=${id}`,
-            { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+            { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
           ).subscribe(result => {
             result.forEach(buildingItem => {
+              let ucenter_url = '';
+              const idp_ticket = this.variables._idpTicket;
+              if (buildingItem.url.indexOf('?') !== -1) {
+                ucenter_url = `${buildingItem.url}&${idp_ticket}`;
+              } else {
+                ucenter_url = buildingItem.url.charAt(buildingItem.url.length - 1) === '/' ?
+                  `${buildingItem.url}?${idp_ticket}` :
+                  `${buildingItem.url}/?${idp_ticket}`;
+              }
               buildingProList.children.push({
                 'label': buildingItem.buildingName,
                 'data': {
-                  'url': buildingItem.url
+                  'url': ucenter_url
                 }
               });
             });
@@ -78,11 +87,10 @@ export class MyProjectsComponent implements OnInit {
   nodeSelect(e) {
     if (!e.node.parent) {
       this.projectProduce = e.node.data;
+    } else {
+      window.open(e.node.data.url);
     }
   }
-  onNodeCollapse(e) {
-  }
-
   jumpTodopage() {
     this.router.navigate(['myProjectsTodo']);
   }

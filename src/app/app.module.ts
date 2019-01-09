@@ -21,6 +21,7 @@ import { ProjectInformationDetailComponent } from './pages/project-information-d
 import { MyProjectsTodoComponent } from './pages/my-projects-todo/my-projects-todo.component';
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
 import { HttpApi } from './shared/services/http-api.service';
+import { AuthGuard } from './auth-guard';
 
 
 
@@ -49,7 +50,7 @@ import { HttpApi } from './shared/services/http-api.service';
     DoEChartsModule,
     TreeModule,
   ],
-  providers: [HttpApi],
+  providers: [HttpApi, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

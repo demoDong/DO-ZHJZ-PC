@@ -31,11 +31,15 @@
             </span>
         </li>
         <li>
-            <span>CA&nbsp;&nbsp;认证：</span>
+            <span>CA&nbsp;&nbsp;&nbsp;认证：</span>
             <span class="status" [ngClass]="{'isPass': allMes['prevCAState'] === 'activated' ? true : false}">
                 {{allMes['prevCAState'] === 'activated' ? '已激活' : '未认证'}}
             </span>
             <span class="warning" *ngIf="allMes['prevCAState'] === 'activated' ? false : true">请使用手机进行认证！</span>
+        </li>
+        <li class="QR">
+            <span>公&nbsp;&nbsp;众&nbsp;&nbsp;号：</span>
+            <iframe [src]="QRUrl" frameborder="0"></iframe>
         </li>
         <li class="sure" *ngIf="ifShowSubmitBtn"><button (click)="onResetMesSubmit()">确认</button></li>
     </ul>

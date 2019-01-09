@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { TokenService } from '../../shared/services/token.service';
 import * as jQuery from 'jquery';
 import { HttpApi } from '../../shared/services/http-api.service';
+import { VariablesService } from '../../shared/services/variables.service';
+import { HttpClient } from '@angular/common/http';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-personal-center',
@@ -25,8 +27,8 @@ export class PersonalCenterComponent implements OnInit {
   public ifShowSubmitBtn = false;
   public isEdits = [false, false, false];
   public companys: any;
-
-  constructor(private http: HttpApi, private token: TokenService) {
+  public QRUrl: SafeResourceUrl;
+  constructor(private httpClient: HttpClient, private http: HttpApi, private variables: VariablesService, private sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {
@@ -37,7 +39,7 @@ export class PersonalCenterComponent implements OnInit {
     // 获取所有公司
     this.http.get(
       '/ucenter/rest/v2/services/ucenter_CompanyService/getAllCompany',
-      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+      { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(
       data => {
         this.companys = data;
@@ -77,7 +79,7 @@ export class PersonalCenterComponent implements OnInit {
       {
         'headers': {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${this.token._token}`
+          'Authorization': `Bearer ${this.variables._token}`
         }
       },
     ).subscribe(
@@ -92,13 +94,19 @@ export class PersonalCenterComponent implements OnInit {
   getPersonalMes() {
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_UserService/getCurrentClient',
-      { headers: { 'Authorization': `Bearer ${this.token._token}` } }
+      { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(
       data => {
         this.allMes = data;
         this.name = data['name'];
         this.company = data['company'];
         this.position = data['user']['position'];
+        this.httpClient.get<any>(
+          // tslint:disable-next-line:max-line-length
+          `http://59.110.112.210/app/rest/v2/services/wechat_CreateQrcodeSceneStrLimitService/createQrcodeSceneStrLimit?userId=${data['mobile']}`
+        ).subscribe(result => {
+          this.QRUrl = this.sanitizer.bypassSecurityTrustResourceUrl(result.retutn_message);
+        });
         this.companys.forEach(element => {
           if (element.name === this.company) {
             this.selectedCompanyId = element.id;

@@ -70,4 +70,20 @@ ul.h-content-layout {
             letter-spacing: 4px;
         }
     }
+    li.QR {
+        span {
+            vertical-align: top;
+            margin-top: 10px;
+        }
+    }
+}
+
+iframe {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
