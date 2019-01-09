@@ -22,6 +22,27 @@
     .map {
         height: 100%;
         width: 100%;
+        /deep/ {
+            a.amap-info-close {
+                display: none;
+            }
+            .amap-info-sharp {
+                display: none;
+            }
+            .amap-info-content.amap-info-outer {
+                background: rgba(0, 255, 255, 0.7);
+                color: #fff;
+                font-size: 20px;
+                border-radius: 5px;
+                border: 1px solid #00ffff;
+            }
+            .amap-info-contentContainer {
+                position: absolute;
+                width: 300px;
+                left: 0px;
+                bottom: 10px;
+            }
+        }
     }
     .title-box {
         margin-top: 15vh;

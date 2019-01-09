@@ -57,6 +57,7 @@ export class HomepageComponent implements OnInit {
         let markerIcon;
         let marker;
         const markers = [];
+        const infoWindow = new AMap.InfoWindow({ offset: new AMap.Pixel(0, -30) });
         this.http.get<any>('/ucenter/rest/v2/services/ucenter_ProjectGroupService/getLimitProjectGroups').subscribe(
             data => {
                 data.forEach(projectGroupItem => {
@@ -66,13 +67,20 @@ export class HomepageComponent implements OnInit {
                                 size: new AMap.Size(70, 70),
                                 image: 'assets/images/marker.png',
                                 imageSize: new AMap.Size(70, 70),
-                                // imageOffset: new AMap.Pixel(-95, -3)
                             });
                             marker = new AMap.Marker({
                                 position: new AMap.LngLat(project.location.longitude, project.location.latitude),
-                                // position: new AMap.LngLat(116.45, 39.93),
                                 icon: markerIcon,
-                                offset: new AMap.Pixel(-13, -30)
+                                offset: new AMap.Pixel(-35, -35)
+                            });
+                            markers.push(marker);
+                            marker.content = project.name;
+                            marker.on('mouseover', (e) => {
+                                infoWindow.setContent(e.target.content);
+                                infoWindow.open(map, e.target.getPosition());
+                            });
+                            marker.on('mouseout', () => {
+                                infoWindow.close();
                             });
                             markers.push(marker);
                         }
