@@ -79,7 +79,6 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignButton = false;
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
-        console.log(this.variables._link);
         // tslint:disable-next-line:max-line-length
         if (!this.variables._link || this.variables._link === 'homepage' || this.variables._link === 'contactUs' || this.variables._link === 'newsAnnouncement') {
             this.router.navigate(['myProjects']);

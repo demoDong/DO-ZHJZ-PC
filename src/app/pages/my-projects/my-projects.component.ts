@@ -81,7 +81,7 @@ export class MyProjectsComponent implements OnInit {
           this.projects.building.push(buildingProList);
         });
       });
-      this.projectProduce = this.projects.building[0].data;
+      this.projectProduce = this.projects.building[0] && this.projects.building[0]['data'] ? this.projects.building[0]['data'] : {};
     });
   }
   nodeSelect(e) {

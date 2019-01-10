@@ -15,6 +15,7 @@ export class MyProjectsTodoComponent implements OnInit {
   public newsArr: Array<object>;
   public allTodoThings: any;
   public rencentPageTotoThings: any;
+  private idp_ticket: any;
   constructor(private http: HttpApi, private variables: VariablesService) { }
 
   ngOnInit() {
@@ -23,6 +24,7 @@ export class MyProjectsTodoComponent implements OnInit {
     this.EN_TITLE = 'MY PROJECT';
     this.NAV_INDEX = 1;
     this.allTodoThings = [];
+    this.idp_ticket = this.variables._idpTicket;
     this.http.get(
       '/ucenter/rest/v2/services/ucenter_CommonService/findPendingWork',
       { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
@@ -35,6 +37,15 @@ export class MyProjectsTodoComponent implements OnInit {
     e.page < e.pageCount - 1 ?
       this.rencentPageTotoThings = this.allTodoThings.slice(e.first, e.first + 5) :
       this.rencentPageTotoThings = this.allTodoThings.slice(e.first, this.allTodoThings.length + 1);
+  }
+  onGoResolveClick(url) {
+    let ucenter_url;
+    if (url.indexOf('?') !== -1) {
+      ucenter_url = `${url}&${this.idp_ticket}`;
+    } else {
+      ucenter_url = url.charAt(url.length - 1) === '/' ? `${url}?${this.idp_ticket}` : `${url}/?${this.idp_ticket}`;
+    }
+    window.open(ucenter_url);
   }
 
 }

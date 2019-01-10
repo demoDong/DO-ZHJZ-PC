@@ -13,7 +13,7 @@
                     <div class="listMes"><span>表单编号：{{item.formCode}}</span><span>表单名称：{{item.formName}}</span></div>
                 </div>
                 <div class="ui-g-2 text-center">
-                    <button>马上办理</button>
+                    <button (click)="onGoResolveClick(item.screenUrl)">马上办理</button>
                     <p>{{item.startTime.split(' ')[0]}}</p>
                 </div>
             </li>
