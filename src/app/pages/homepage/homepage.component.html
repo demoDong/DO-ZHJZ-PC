@@ -66,8 +66,8 @@
             <ul>
                 <li *ngFor="let item of newsArr">
                     <h4>{{item.type}}</h4>
-                    <p>{{item.content}}</p>
-                    <button (click)="scanNewsBulletinDetail()">查看详情</button>
+                    <p>{{item.simpleIntro}}</p>
+                    <button (click)="scanNewsBulletinDetail(item.id)">查看详情</button>
                 </li>
             </ul>
         </div>

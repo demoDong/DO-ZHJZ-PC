@@ -1,20 +1,20 @@
 <app-page-iframe [picture]="picture" [ZH_TITLE]="ZH_TITLE" [EN_TITLE]="EN_TITLE" [NAV_INDEX]="NAV_INDEX">
     <div class="h-content-layout">
         <div class="h-content-top">
-            <button [ngClass]="{companyNews: isConpanyNews}">公司新闻</button>
-            <button [ngClass]="{companyNews: !isConpanyNews}">行业新闻</button>
-            <input type="text" placeholder="搜索新闻">
+            <button [ngClass]="{companyNews: ifBtnClickedArr[i]}" *ngFor="let item of btns;index as i" (click)="onChangeTypeClick(i,item.type)">
+                {{item.field}}</button>
+            <input type="text" placeholder="搜索新闻" #input (keyup)="searchNews()" [(ngModel)]="searchNewsName">
         </div>
         <ul class="h-content-botttom">
             <li *ngFor="let item of newsArr">
-                <img src="assets/images/newsList.png" alt="" (click)="scanNewsBulletinDetail()">
+                <img src="assets/images/{{item['pic']}}" alt="" (click)="scanNewsBulletinDetail(item['id'])">
                 <div class="content">
                     <h4>{{item['title']}}</h4>
-                    <p>{{item['detail']}}</p>
+                    <p>{{item['content']}}</p>
                     <span>{{item['date']}}</span>
                 </div>
             </li>
         </ul>
-        <p-paginator [rows]="5" [totalRecords]="18"></p-paginator>
+        <p-paginator [rows]="5" [totalRecords]="filtersNews.length" (onPageChange)=onPageChange($event) [first]=0></p-paginator>
     </div>
 </app-page-iframe>

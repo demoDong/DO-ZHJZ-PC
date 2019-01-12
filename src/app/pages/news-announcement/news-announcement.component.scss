@@ -5,7 +5,9 @@
     border: none;
     font-size: 22px;
     margin-right: 40px;
-    &.companyNews {
+    outline: none;
+    &.companyNews,
+    &:hover {
         background: #00e9f3 !important;
     }
 }

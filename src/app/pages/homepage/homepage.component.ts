@@ -29,19 +29,13 @@ export class HomepageComponent implements OnInit {
         private variables: VariablesService,
         private router: Router,
         private http: HttpApi,
-    ) {
-        this.newsArr = [
-            { type: 'NEW', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' },
-            { type: 'ADV', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' },
-            { type: 'NEW', content: '中关村生命科学园医药科技中心在建项目已完成初步规划及项目前期准备工作......' }
-        ];
-        this.timgs = ['timg1', 'timg2', 'timg3'];
-    }
+    ) { }
 
     ngOnInit() {
         this.picture = 'personCenter.png';
         this.ZH_TITLE = '首页';
         this.EN_TITLE = 'MY PROJECT';
+        this.timgs = ['timg1', 'timg2', 'timg3'];
         this.NAV_INDEX = 0;
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
@@ -58,6 +52,9 @@ export class HomepageComponent implements OnInit {
         let marker;
         const markers = [];
         const infoWindow = new AMap.InfoWindow({ offset: new AMap.Pixel(0, -30) });
+        this.http.get<any>('/news.json').subscribe(data => {
+            this.newsArr = data.slice(0, 3);
+        });
         this.http.get<any>('/ucenter/rest/v2/services/ucenter_ProjectGroupService/getLimitProjectGroups').subscribe(
             data => {
                 data.forEach(projectGroupItem => {
@@ -112,9 +109,9 @@ export class HomepageComponent implements OnInit {
         this.variables._link = 'newsAnnouncement';
         this.router.navigate(['newsAnnouncement']);
     }
-    scanNewsBulletinDetail() {
+    scanNewsBulletinDetail(id) {
         this.variables._link = 'newsBulletinDetail';
-        this.router.navigate(['newsBulletinDetail']);
+        this.router.navigate(['newsBulletinDetail'], { queryParams: { id: id } });
     }
     scanProjectInformationDetail(id) {
         this.variables._link = `projectInformationDetail?id=${id}`;
