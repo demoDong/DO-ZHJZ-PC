@@ -192,8 +192,13 @@ ul.tools li:hover i {
     color: #00e9fe;
 }
 
+i.fa-mobile {
+    font-size: 35px;
+}
+
 ul.tools li:hover>*:first-child {
     visibility: visible;
+    color: #1dd2e2;
 }
 
 ul.tools li>*:first-child {
@@ -202,6 +207,26 @@ ul.tools li>*:first-child {
     visibility: hidden;
 }
 
-// .h-bottom::-webkit-scrollbar {
-//     width: 0px;
-// }
+.QR-box {
+    position: absolute;
+    top: 4vh;
+    width: 100%;
+    text-align: center;
+    height: 96vh;
+    line-height: 96vh;
+    background: rgba(8, 8, 8, 0.4);
+    z-index: 2;
+    span {
+        color: #fff;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        position: absolute;
+        border-radius: 15px;
+        background: #1dd2e2;
+        top: 10vh;
+        margin-left: 10px;
+    }
+}

@@ -21,12 +21,12 @@ export class ContactUsComponent implements OnInit {
     this.NAV_INDEX = 5;
     // 地图初始化
     const map = new BMap.Map('allmap');
-    const point = new BMap.Point(116.275238, 40.08451);
+    const point = new BMap.Point(116.34583, 39.929089);
     const opts = {
       position: point,
       offset: new BMap.Size(-50, -80),
     };
-    const label = new BMap.Label('友谊路39号', opts);
+    const label = new BMap.Label('国侨宾馆商务楼宇工作站', opts);
     map.centerAndZoom(point, 16);
     const marker = new BMap.Marker(point);
     map.addOverlay(marker);

@@ -35,12 +35,22 @@
     label.BMapLabel {
         border: 1px solid #c7c7c7 !important;
         border-radius: 4px;
-        width: 100px;
+        width: 200px;
         height: 25px;
         line-height: 22px !important;
         text-align: center;
         font-size: 15px !important;
         color: #000 !important;
         letter-spacing: 1px;
+        margin-left: -50px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .message h4 {
+        margin: 10px 0 5px;
+    }
+    .message p {
+        line-height: 20px;
     }
 }

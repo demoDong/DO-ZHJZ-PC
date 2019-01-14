@@ -7,7 +7,7 @@
         <button class="regist" (click)="showRegistDialog()">去注册</button>
       </div>
       <button class="exit" (click)="exit()" *ngIf="!ifShowSignButton">退出登录</button>
-      <button class="downloadApp text-right">下载APP</button>
+      <button class="downloadApp text-right" (click)="showQR()">下载APP</button>
     </div>
   </div>
   <div class="ui-g h-menubar">
@@ -41,9 +41,9 @@
             <a href="mailto:demo99134@163.com"><i class="fa fa-envelope-o"></i></a>
           </li>
           <li>
-            <img src="assets/images/wechat.png" alt="">
+            <span>18513900020</span>
             <br>
-            <i class="fa fa-weixin"></i>
+            <i class="fa fa-mobile"></i>
           </li>
         </ul>
       </div>
@@ -63,6 +63,10 @@
       </div>
     </div>
   </div>
+</div>
+<div class="QR-box" *ngIf="ifShowQR">
+  <img src="assets/images/QR.png" alt="">
+  <span (click)="ifShowQR=false">X</span>
 </div>
 <app-dialog-head (close)="closeDialog()" *ngIf="ifShowDialog">
   <app-sign-dialog (clickSign)="clickSign()" (clickShowRegistDialog)="clickShowRegistDialog()"

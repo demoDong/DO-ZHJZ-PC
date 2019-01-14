@@ -388,11 +388,20 @@
         width: 40px;
         text-align: center;
         height: 110px;
-        line-height: 50px;
+        line-height: 40px;
         border-radius: 5px;
         position: relative;
+        padding-top: 10px;
         a {
             color: #00e9f3;
+        }
+        .fa-mobile {
+            font-size: 37px;
+        }
+        .mobile span {
+            position: absolute;
+            left: -130px;
+            display: none;
         }
         img {
             position: absolute;
@@ -402,7 +411,7 @@
             width: 80px;
             display: none;
         }
-        .wchat:hover img {
+        .mobile:hover span {
             display: inline;
         }
     }

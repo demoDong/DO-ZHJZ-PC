@@ -22,10 +22,11 @@ export class PageIframeComponent implements OnInit {
     public ifShowResetpwdContent: boolean;
     public navArray: Array<object>;
     public ifNavClickedArr: Array<boolean>;
+    public ifShowQR: boolean;
     constructor(private router: Router, private variables: VariablesService, private cookie: CookieService) { }
 
     ngOnInit() {
-        window.location.port !== '4200' ? this.ifIsFirst = true : this.ifIsFirst = false;
+        window.location.host === 'oil.iccloudy.com' ? this.ifIsFirst = false : this.ifIsFirst = true;
         this.navArray = [
             { name: '首页', link: 'homepage' },
             { name: '我的项目', link: 'myProjects' },
@@ -41,6 +42,7 @@ export class PageIframeComponent implements OnInit {
         this.ifShowSignContent = false;
         this.ifShowRegistContent = false;
         this.ifShowResetpwdContent = false;
+        this.ifShowQR = false;
         this.variables._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
     }
 
@@ -58,16 +60,22 @@ export class PageIframeComponent implements OnInit {
         this.variables._link = link;
     }
     showSignDialog() {
+        this.ifShowQR = false;
         this.ifShowDialog = true;
         this.ifShowSignContent = true;
         this.ifShowRegistContent = false;
         this.ifShowResetpwdContent = false;
     }
     showRegistDialog() {
+        this.ifShowQR = false;
         this.ifShowDialog = true;
         this.ifShowSignContent = false;
         this.ifShowRegistContent = true;
         this.ifShowResetpwdContent = false;
+    }
+    showQR() {
+        this.ifShowDialog = false;
+        this.ifShowQR = true;
     }
     closeDialog() {
         this.ifShowDialog = false;
