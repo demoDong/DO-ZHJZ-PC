@@ -22,11 +22,15 @@ export class NewsBulletinDetailComponent implements OnInit {
     this.EN_TITLE = 'NEWS BULLETIN';
     this.NAV_INDEX = 3;
     const routeID = location.href.split('id=')[1];
+    /**
+      * 初始化根据ID过滤对应新闻详情
+      * 暂无接口，读取本地json模拟数据，json文件路径：assets/mock/news.json
+      */
     this.http.get<any>('/news.json').subscribe(data => {
       data.forEach(element => {
         if (element.id === routeID) {
           this.detailMes = element;
-          this.img = `assets/images/${this.detailMes['pic']}`;
+          this.img = `assets/images/news/${this.detailMes['pic']}`;
         }
       });
     });

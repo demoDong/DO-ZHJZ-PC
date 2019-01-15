@@ -26,14 +26,13 @@ export class ProjectInformationDetailComponent implements OnInit {
     this.NAV_INDEX = 2;
     this.isBuilding = true;
     const routeID = location.href.split('id=')[1];
-
+    // 初始化根据ID过滤对应工程信息
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_ProjectGroupService/getAllProjectGroups',
       { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
     ).subscribe(data => {
       data.forEach(projectGroupItem => {
         projectGroupItem.projects.forEach(project => {
-          // if (project.id === routeID && project.status === 'IN_PROGRESS') {
           if (project.id === routeID) {
             if (project.images.length === 0) {
               this.projectDetail.pics.push('assets/images/no.jpg');

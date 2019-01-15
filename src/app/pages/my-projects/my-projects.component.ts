@@ -27,6 +27,7 @@ export class MyProjectsComponent implements OnInit {
     this.ZH_TITLE = '我的项目';
     this.EN_TITLE = 'MY PROJECT';
     this.NAV_INDEX = 1;
+    // 初始化获取待办数
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_CommonService/findPendingWork',
       { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
@@ -84,6 +85,10 @@ export class MyProjectsComponent implements OnInit {
       this.projectProduce = this.projects.building[0] && this.projects.building[0]['data'] ? this.projects.building[0]['data'] : {};
     });
   }
+  /**
+   * 点击跳转楼体
+   * @param e 事件对象
+   */
   nodeSelect(e) {
     if (!e.node.parent) {
       this.projectProduce = e.node.data;
@@ -91,6 +96,7 @@ export class MyProjectsComponent implements OnInit {
       window.open(e.node.data.url);
     }
   }
+  // 跳转待办页
   jumpTodopage() {
     this.router.navigate(['myProjectsTodo']);
   }

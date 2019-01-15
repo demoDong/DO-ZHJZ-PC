@@ -25,6 +25,7 @@ export class MyProjectsTodoComponent implements OnInit {
     this.NAV_INDEX = 1;
     this.allTodoThings = [];
     this.idp_ticket = this.variables._idpTicket;
+    // 初始化获取待办列表
     this.http.get(
       '/ucenter/rest/v2/services/ucenter_CommonService/findPendingWork',
       { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
@@ -33,11 +34,19 @@ export class MyProjectsTodoComponent implements OnInit {
       this.rencentPageTotoThings = this.allTodoThings.slice(0, 5);
     });
   }
+  /**
+   * 点击翻页
+   * @param e 事件对象
+   */
   onPageChange(e) {
     e.page < e.pageCount - 1 ?
       this.rencentPageTotoThings = this.allTodoThings.slice(e.first, e.first + 5) :
       this.rencentPageTotoThings = this.allTodoThings.slice(e.first, this.allTodoThings.length + 1);
   }
+  /**
+   * 点击跳转待办系统
+   * @param url 待办地址
+   */
   onGoResolveClick(url) {
     let ucenter_url;
     if (url.indexOf('?') !== -1) {

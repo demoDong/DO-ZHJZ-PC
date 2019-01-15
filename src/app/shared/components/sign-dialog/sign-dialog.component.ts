@@ -19,6 +19,10 @@ export class SignDialogComponent implements OnInit {
     private cookie: CookieService,
     private http: HttpApi) { }
   ngOnInit() { }
+  /**
+   * 点击登录，获取token
+   * @param e 事件对象
+   */
   sign(e) {
     e.preventDefault();
     this.http.post(
@@ -62,9 +66,11 @@ export class SignDialogComponent implements OnInit {
     );
 
   }
+  // 点击注册新用户
   showRegistDialog() {
     this.clickShowRegistDialog.emit();
   }
+  // 点击忘记密码
   showResetpwdDialog() {
     this.clickShowResetpwdDialog.emit();
   }

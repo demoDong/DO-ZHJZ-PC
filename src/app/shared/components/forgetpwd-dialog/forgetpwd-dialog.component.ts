@@ -24,6 +24,7 @@ export class ForgetpwdDialogComponent implements OnInit {
 
   ngOnInit() {
   }
+  // 获取密码重置验证码
   getVerificationCode() {
     const settings = {
       'url': `${this.url}/ucenter-portal/api/sendCaptcha`,
@@ -53,7 +54,7 @@ export class ForgetpwdDialogComponent implements OnInit {
       console.log(err);
     });
   }
-
+  // 重置信息验证，通过后提交重置
   resetPwd(e) {
     e.preventDefault();
     if (!this.phoneNum || this.phoneNum === '') {
@@ -94,6 +95,7 @@ export class ForgetpwdDialogComponent implements OnInit {
       );
     }
   }
+  // 返回登录页
   returnSign() {
     this.clickReturnSign.emit();
   }

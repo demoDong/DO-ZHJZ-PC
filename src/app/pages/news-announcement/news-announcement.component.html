@@ -7,7 +7,7 @@
         </div>
         <ul class="h-content-botttom">
             <li *ngFor="let item of newsArr">
-                <img src="assets/images/{{item['pic']}}" alt="" (click)="scanNewsBulletinDetail(item['id'])">
+                <img src="assets/images/news/{{item['pic']}}" alt="" (click)="scanNewsBulletinDetail(item['id'])">
                 <div class="content">
                     <h4>{{item['title']}}</h4>
                     <p>{{item['content']}}</p>

@@ -35,7 +35,6 @@ export class HomepageComponent implements OnInit {
         this.picture = 'personCenter.png';
         this.ZH_TITLE = '首页';
         this.EN_TITLE = 'MY PROJECT';
-        this.timgs = ['timg1', 'timg2', 'timg3'];
         this.NAV_INDEX = 0;
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
@@ -52,9 +51,17 @@ export class HomepageComponent implements OnInit {
         let marker;
         const markers = [];
         const infoWindow = new AMap.InfoWindow({ offset: new AMap.Pixel(0, -30) });
-        this.http.get<any>('/news.json').subscribe(data => {
-            this.newsArr = data.slice(0, 3);
-        });
+        /**
+         * 初始化获取资质图
+         * 暂无接口，读取本地json模拟数据，json文件路径：assets/mock/timgs.json
+         */
+        this.http.get<any>('/timgs.json').subscribe(data => { this.timgs = data.timgs; });
+        /**
+         * 初始化获取首页新闻通告
+         * 暂无接口，读取本地json模拟数据，json文件路径：assets/mock/news.json
+         */
+        this.http.get<any>('/news.json').subscribe(data => { this.newsArr = data.slice(0, 3); });
+        // 初始化获取首页在建工程信息
         this.http.get<any>('/ucenter/rest/v2/services/ucenter_ProjectGroupService/getLimitProjectGroups').subscribe(
             data => {
                 data.forEach(projectGroupItem => {
@@ -96,6 +103,7 @@ export class HomepageComponent implements OnInit {
                 map.add(markers);
             });
     }
+    // 在建工程 -- 查看更多
     scanMoreProject() {
         this.variables._link = 'projectInformation';
         if (this.variables._token === '') {
@@ -105,14 +113,23 @@ export class HomepageComponent implements OnInit {
             this.router.navigate(['projectInformation']);
         }
     }
+    // 新闻通告-- 查看更多
     scanMoreNews() {
         this.variables._link = 'newsAnnouncement';
         this.router.navigate(['newsAnnouncement']);
     }
+    /**
+     * 新闻通告-- 查看详情
+     * @param id 新闻ID
+     */
     scanNewsBulletinDetail(id) {
         this.variables._link = 'newsBulletinDetail';
         this.router.navigate(['newsBulletinDetail'], { queryParams: { id: id } });
     }
+    /**
+    * 在建工程 -- 查看详情
+    * @param id 工程ID
+    */
     scanProjectInformationDetail(id) {
         this.variables._link = `projectInformationDetail?id=${id}`;
         if (this.variables._token === '') {
@@ -122,17 +139,24 @@ export class HomepageComponent implements OnInit {
             this.router.navigate(['projectInformationDetail'], { queryParams: { id: id } });
         }
     }
+    /**
+    * 查看资质放大图
+    * @param pic 资质图名
+    */
     showBigPic(pic) {
         this.bigPic = pic;
         this.ifShowBigPic = true;
     }
+    // 关闭登录框
     closeDialog() {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
     }
+    // 关闭悬浮框
     closePopup() {
         this.ifShowPopup = false;
     }
+    // 悬浮框 -- 去登陆
     goSign() {
         this.ifShowDialog = true;
         this.ifShowSignContent = true;

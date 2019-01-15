@@ -7,7 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { PaginatorModule } from 'primeng/paginator';
 import { CarouselModule } from 'primeng/carousel';
 import { SharedModule } from './shared/shared.module';
-import { DoEChartsModule } from './shared/do-echarts/do-echarts.module';
 import { TreeModule } from 'primeng/tree';
 
 import { AppComponent } from './app.component';
@@ -47,7 +46,6 @@ import { AuthGuard } from './auth-guard';
     SharedModule,
     PaginatorModule,
     CarouselModule,
-    DoEChartsModule,
     TreeModule,
   ],
   providers: [HttpApi, AuthGuard],

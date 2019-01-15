@@ -25,6 +25,7 @@ export class RegistDialogComponent implements OnInit {
 
   ngOnInit() {
   }
+  // 获取注册验证码
   getVerificationCode() {
     if (!(/^1[3456789]\d{9}$/.test(this.phoneNum))) {
       alert('手机号码有误，请重新输入');
@@ -58,6 +59,10 @@ export class RegistDialogComponent implements OnInit {
       });
     }
   }
+  /**
+   * 提交注册信息
+   * @param e 事件对象
+   */
   regist(e) {
     e.preventDefault();
     if (!this.phoneNum || this.phoneNum === '') {
@@ -95,6 +100,7 @@ export class RegistDialogComponent implements OnInit {
       });
     }
   }
+  // 已有账号，立即登录
   returnSign() {
     this.clickReturnSign.emit();
   }

@@ -26,7 +26,6 @@ export class PageIframeComponent implements OnInit {
     constructor(private router: Router, private variables: VariablesService, private cookie: CookieService) { }
 
     ngOnInit() {
-        window.location.host === 'oil.iccloudy.com' ? this.ifIsFirst = false : this.ifIsFirst = true;
         this.navArray = [
             { name: '首页', link: 'homepage' },
             { name: '我的项目', link: 'myProjects' },
@@ -43,9 +42,15 @@ export class PageIframeComponent implements OnInit {
         this.ifShowRegistContent = false;
         this.ifShowResetpwdContent = false;
         this.ifShowQR = false;
+        // 初始化根据域名切换版权
+        window.location.host === 'oil.iccloudy.com' ? this.ifIsFirst = false : this.ifIsFirst = true;
+        // 初始化根据token判断是否显示登录按钮
         this.variables._token === '' ? this.ifShowSignButton = true : this.ifShowSignButton = false;
     }
-
+    /**
+     * 导航切换
+     * @param link 页面path
+     */
     navClicked(link) {
         if (!this.ifShowSignButton) {
             this.router.navigate([link]);
@@ -59,6 +64,7 @@ export class PageIframeComponent implements OnInit {
         }
         this.variables._link = link;
     }
+    // 点击登录显示登录框
     showSignDialog() {
         this.ifShowQR = false;
         this.ifShowDialog = true;
@@ -66,6 +72,7 @@ export class PageIframeComponent implements OnInit {
         this.ifShowRegistContent = false;
         this.ifShowResetpwdContent = false;
     }
+    // 点击注册显示注册框
     showRegistDialog() {
         this.ifShowQR = false;
         this.ifShowDialog = true;
@@ -73,16 +80,19 @@ export class PageIframeComponent implements OnInit {
         this.ifShowRegistContent = true;
         this.ifShowResetpwdContent = false;
     }
+    // 点击下载APP显示二维码
     showQR() {
         this.ifShowDialog = false;
         this.ifShowQR = true;
     }
+    // 关闭弹框
     closeDialog() {
         this.ifShowDialog = false;
         this.ifShowSignContent = false;
         this.ifShowRegistContent = false;
         this.clickCloseDialog.emit();
     }
+    // 点击登录
     clickSign() {
         this.ifShowSignButton = false;
         this.ifShowDialog = false;
@@ -98,22 +108,27 @@ export class PageIframeComponent implements OnInit {
                 this.router.navigate([this.variables._link]);
         }
     }
+    // 点击注册
     clickRegist() {
         this.ifShowSignContent = true;
         this.ifShowRegistContent = false;
     }
+    // 点击重置密码
     clickResetPwd() {
         this.ifShowSignContent = true;
         this.ifShowResetpwdContent = false;
     }
+    // 登录框点击注册新用户
     clickShowRegistDialog() {
         this.ifShowSignContent = false;
         this.ifShowRegistContent = true;
     }
+    // 登录框点击忘记密码
     clickShowResetpwdDialog() {
         this.ifShowSignContent = false;
         this.ifShowResetpwdContent = true;
     }
+    // 退出登录
     exit() {
         this.cookie.setCookie(('_token'), '');
         this.variables._token = '';

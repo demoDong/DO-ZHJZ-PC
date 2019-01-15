@@ -33,12 +33,19 @@ export class NewsAnnouncementComponent implements OnInit {
     ];
     this.ifBtnClickedArr = new Array<boolean>(this.btns.length);
     this.filtersNews = [];
+    /**
+     * 初始化获取新闻通告
+     * 暂无接口，读取本地json模拟数据，json文件路径：assets/mock/news.json
+     */
     this.http.get('/news.json').subscribe(data => {
       this.responseData = data;
       this.onChangeTypeClick(0, 'NEW');
     });
   }
-
+  /**
+   * 新闻翻页
+   * @param e 事件对象
+   */
   onPageChange(e) {
     this.newsArr = this.filtersNews.slice(e.first, e.first + 5);
   }
@@ -58,7 +65,11 @@ export class NewsAnnouncementComponent implements OnInit {
       this.newsArr = this.filtersNews.slice(0, 5);
     }
   }
-
+  /**
+   * 点击切换新闻类型
+   * @param i 按钮序号
+   * @param type 新闻类型
+   */
   onChangeTypeClick(i, type) {
     this.ifBtnClickedArr.fill(false);
     this.ifBtnClickedArr[i] = true;
@@ -72,7 +83,10 @@ export class NewsAnnouncementComponent implements OnInit {
     this.filtersNews = this.allNews;
     this.newsArr = this.filtersNews.slice(0, 5);
   }
-
+  /**
+   * 点击图片查看新闻详情
+   * @param id 新闻ID
+   */
   scanNewsBulletinDetail(id) {
     this.router.navigate(['newsBulletinDetail'], { queryParams: { id: id } });
   }

@@ -12,6 +12,7 @@ export class DialogHeadComponent implements OnInit {
 
   ngOnInit() {
   }
+  // 关闭弹框
   closeDialog() {
     this.close.emit();
   }

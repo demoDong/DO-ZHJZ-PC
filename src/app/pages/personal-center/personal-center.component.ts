@@ -46,20 +46,20 @@ export class PersonalCenterComponent implements OnInit {
         this.getPersonalMes();
       });
   }
-
+  // 点击姓名修改
   onClickResetName() {
     this.isNameReadonly = false;
     this.isEdits[0] = true;
     this.ifShowSubmitBtn = true;
     jQuery('#name').focus();
   }
-
+  // 点击公司修改
   onClickResetCompany() {
     this.isEdits[1] = true;
     this.ifShowSubmitBtn = true;
     jQuery('#company').focus();
   }
-
+  // 点击职位修改
   onClickResetPosition() {
     this.isPositionReadonly = false;
     this.isEdits[2] = true;

@@ -22,6 +22,7 @@ export class ProjectInformationComponent implements OnInit {
     this.ZH_TITLE = '工程信息';
     this.EN_TITLE = 'PROJECT INFORMATION';
     this.NAV_INDEX = 2;
+    // 初始化获取所有项目
     this.http.get<any>(
       '/ucenter/rest/v2/services/ucenter_ProjectGroupService/getAllProjectGroups',
       { headers: { 'Authorization': `Bearer ${this.variables._token}` } }
