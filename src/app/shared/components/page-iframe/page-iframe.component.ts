@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from '../../services/cookie.service';
 import { VariablesService } from '../../services/variables.service';
+import * as jQuery from 'jquery';
 
 @Component({
     selector: 'app-page-iframe',
@@ -141,5 +142,12 @@ export class PageIframeComponent implements OnInit {
             this.variables._link = 'homepage';
         }
 
+    }
+
+    // 复制手机号
+    copyMobile() {
+        jQuery('#mobile').select();
+        document.execCommand('Copy');
+        alert('复制成功，可贴粘');
     }
 }

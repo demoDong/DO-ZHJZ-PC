@@ -200,13 +200,16 @@ i.fa-mobile {
 
 ul.tools li:hover>*:first-child {
     visibility: visible;
-    color: #1dd2e2;
 }
 
 ul.tools li>*:first-child {
     height: 6vh;
     display: inline-block;
     visibility: hidden;
+    background: none;
+    border: none;
+    color: #0ed8f3;
+    text-align: center;
 }
 
 .QR-box {

@@ -386,14 +386,20 @@
         padding-top: 10px;
         a {
             color: #00e9f3;
+            display: block;
         }
         .fa-mobile {
             font-size: 37px;
         }
-        .mobile span {
+        .mobile input {
             position: absolute;
             left: -130px;
-            display: none;
+            visibility: hidden; // width: 130px;
+            background: none;
+            border: none;
+            color: #0ed8f3;
+            height: 35px;
+            display: inline-block;
         }
         img {
             position: absolute;
@@ -403,8 +409,8 @@
             width: 80px;
             display: none;
         }
-        .mobile:hover span {
-            display: inline;
+        .mobile:hover input {
+            visibility: visible;
         }
     }
 }

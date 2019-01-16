@@ -79,8 +79,11 @@
     <button class="closePopup" (click)="closePopup()"></button>
     <button class="signBtn" (click)="goSign()"></button>
     <div class="tooltipBox">
-        <div class="mobile"><span>18513900020</span><i class="fa fa-mobile"></i></div>
+        <a class="mobile" title="点击复制" (click)="copyMobile()">
+            <input type="text" id="tel" value="18513900020" readonly>
+            <i class="fa fa-mobile"></i></a>
         <a href="mailto:icc@iccloudy.com"><i class="fa fa-envelope-o"></i></a>
     </div>
+
 
 </div>

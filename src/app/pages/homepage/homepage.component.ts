@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpApi } from '../../shared/services/http-api.service';
 import { VariablesService } from '../../shared/services/variables.service';
+import * as jQuery from 'jquery';
 
 declare const AMap: any;
+declare const Clipboard: any;
 
 
 @Component({
@@ -163,5 +165,11 @@ export class HomepageComponent implements OnInit {
     goSign() {
         this.ifShowDialog = true;
         this.ifShowSignContent = true;
+    }
+    // 复制手机号
+    copyMobile() {
+        jQuery('#tel').select();
+        document.execCommand('Copy');
+        alert('复制成功，可贴粘');
     }
 }
