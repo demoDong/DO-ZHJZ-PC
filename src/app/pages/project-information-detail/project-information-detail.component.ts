@@ -14,7 +14,16 @@ export class ProjectInformationDetailComponent implements OnInit {
   public NAV_INDEX: number;
   public projectDetail = {
     pics: [],
-    detail: []
+    name: '',
+    area: '',
+    address: '',
+    startDate: '',
+    endDate: '',
+    supervision: '',
+    designUnitName: '',
+    constructionUnitName: '',
+    builder: '',
+    description: ''
   };
   public isBuilding: boolean;
   constructor(private http: HttpApi, private variables: VariablesService) { }
@@ -38,10 +47,21 @@ export class ProjectInformationDetailComponent implements OnInit {
               this.projectDetail.pics.push('assets/images/no.jpg');
             } else {
               project.images.forEach(item => {
+                console.log(`${project.entry}images?id=${item.id}`);
                 this.projectDetail.pics.push(`${project.entry}images?id=${item.id}`);
               });
             }
-            this.projectDetail.detail.push(project.description ? project.description : '暂无信息');
+            this.projectDetail.name = project.name ? project.name : '';
+            this.projectDetail.area = project.constructionArea ? `${project.constructionArea}平方米` : '';
+            this.projectDetail.address = project.address ? project.address : '';
+            this.projectDetail.startDate = project.startDate ? project.startDate : '';
+            this.projectDetail.endDate = project.endDate ? project.endDate : '';
+            this.projectDetail.supervision = project.supervisionUnitName ? project.supervisionUnitName : '';
+            this.projectDetail.designUnitName = project.designUnitName ? project.designUnitName : '';
+            this.projectDetail.constructionUnitName = project.constructionUnitName ? project.constructionUnitName : '';
+            this.projectDetail.builder = project.buildUnitName ? project.buildUnitName : '';
+            this.projectDetail.builder = project.buildUnitName ? project.buildUnitName : '';
+            this.projectDetail.description = project.description ? project.description : '';
           }
         });
       });

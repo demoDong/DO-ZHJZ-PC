@@ -22,9 +22,9 @@
                     <li *ngFor="let item of timgs"><img src="assets/images/timgs/{{item}}" alt="点击查看大图" (click)="showBigPic(item)"></li>
                 </ul>
             </div>
-            <div *ngIf="ifShowBigPic" class="bigpicDialog">
+            <div class="bigpicDialog" *ngIf="ifShowBigPic">
                 <img src="assets/images/timgs/{{bigPic}}" alt="">
-                <button (click)="ifShowBigPic = !ifShowBigPic">X</button>
+                <span (click)="ifShowBigPic = false">X</span>
             </div>
         </div>
         <div class="publicity text-center">
@@ -47,9 +47,11 @@
                                         <li>项目名称：<span>{{project.name}}</span></li>
                                         <li>建筑规模：<span>{{project.area}}</span></li>
                                         <li>工程地址：<span>{{project.address}}</span></li>
-                                        <li>计划工期：<span>{{project.planDate}}</span></li>
+                                        <li>计划工期：<span>{{project.startDate}} ~ {{project.endDate}}</span></li>
+                                        <li>设计单位：<span>{{project.designUnitName}}</span></li>
+                                        <li>建设单位：<span>{{project.builder}}</span></li>
+                                        <li>施工单位：<span>{{project.constructionUnitName}}</span></li>
                                         <li>监理单位：<span>{{project.supervision}}</span></li>
-                                        <li>施工单位信息：<span>{{project.builder}}</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -78,7 +80,7 @@
     <button class="signBtn" (click)="goSign()"></button>
     <div class="tooltipBox">
         <div class="mobile"><span>18513900020</span><i class="fa fa-mobile"></i></div>
-        <a href="mailto:demo99134@163.com"><i class="fa fa-envelope-o"></i></a>
+        <a href="mailto:icc@iccloudy.com"><i class="fa fa-envelope-o"></i></a>
     </div>
 
 </div>

@@ -38,7 +38,7 @@
             <span class="warning" *ngIf="allMes['prevCAState'] === 'activated' ? false : true">请使用手机进行认证！</span>
         </li>
         <li class="QR">
-            <span>公&nbsp;&nbsp;众&nbsp;&nbsp;号：</span><a [href]="QRUrl" target="_blank">点击获取公众号二维码</a>
+            <span>公&nbsp;&nbsp;众&nbsp;&nbsp;号：</span><a [href]="QRUrl" target="_blank">点击绑定智慧建造公众号</a>
         </li>
         <li class="sure" *ngIf="ifShowSubmitBtn"><button (click)="onResetMesSubmit()">确认</button></li>
     </ul>

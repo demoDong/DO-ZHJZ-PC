@@ -92,8 +92,11 @@ export class HomepageComponent implements OnInit {
                             name: project.name ? project.name : '',
                             area: project.constructionArea ? `${project.constructionArea}平方米` : '',
                             address: project.address ? project.address : '',
-                            planDate: project.startDate ? project.startDate : '',
-                            supervision: project.supervisionUnitName ? `开工日期${project.supervisionUnitName}` : '',
+                            startDate: project.startDate ? project.startDate : '',
+                            endDate: project.endDate ? project.endDate : '',
+                            supervision: project.supervisionUnitName ? project.supervisionUnitName : '',
+                            designUnitName: project.designUnitName ? project.designUnitName : '',
+                            constructionUnitName: project.constructionUnitName ? project.constructionUnitName : '',
                             builder: project.buildUnitName ? project.buildUnitName : '',
                             pic: project.images[0] ? `${project.entry}images?id=${project['images'][0].id}` : 'assets/images/no.jpg',
                             id: project.id

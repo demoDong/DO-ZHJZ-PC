@@ -33,6 +33,7 @@
     .logo {
         background: url(../../../../assets/images/_logo.png) no-repeat;
         background-position: center left;
+        background-size: auto 100%;
     }
     h4 {
         padding: 0;
@@ -67,6 +68,7 @@
             flex: 1;
             color: #000;
             text-align: center;
+            cursor: pointer;
         }
         .navClicked,
         li:hover {
@@ -216,6 +218,9 @@ ul.tools li>*:first-child {
     line-height: 96vh;
     background: rgba(8, 8, 8, 0.4);
     z-index: 2;
+    img {
+        height: 50%;
+    }
     span {
         color: #fff;
         font-size: 18px;
@@ -226,8 +231,8 @@ ul.tools li>*:first-child {
         position: absolute;
         border-radius: 15px;
         background: #1dd2e2;
-        top: 15vh;
-        margin-left: 60px;
+        top: 18vh;
+        margin-left: 20px;
         cursor: pointer;
     }
 }

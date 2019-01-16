@@ -103,7 +103,7 @@ export class PersonalCenterComponent implements OnInit {
         this.position = data['user']['position'];
         this.httpClient.get<any>(
           // tslint:disable-next-line:max-line-length
-          `http://59.110.112.210/app/rest/v2/services/wechat_CreateQrcodeSceneStrLimitService/createQrcodeSceneStrLimit?userId=${data['mobile']}`
+          `http://59.110.112.210:8083/app/rest/v2/services/wechat_CreateQrcodeSceneStrLimitService/createQrcodeSceneStrLimit?userId=${data['mobile']}`
         ).subscribe(result => {
           this.QRUrl = this.sanitizer.bypassSecurityTrustResourceUrl(result.retutn_message);
         });

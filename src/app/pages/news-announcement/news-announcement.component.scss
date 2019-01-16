@@ -62,8 +62,19 @@ ul.h-content-botttom img {
 }
 
 .content span {
-    float: right;
+    float: left;
     color: #868686;
+    margin-top: 4vh;
+}
+
+.content button {
+    color: #2cc6d8;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    float: right;
     margin-top: 4vh;
 }
 
