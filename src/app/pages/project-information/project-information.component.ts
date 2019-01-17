@@ -39,15 +39,13 @@ export class ProjectInformationComponent implements OnInit {
     if (this.searchProjectName === '') {
       this.projectGroups.forEach(projectGroupItem => {
         projectGroupItem.projects.forEach(project => {
-          if (project.status === 'IN_PROGRESS') {
-            this.dataAnalyze(project);
-          }
+          this.dataAnalyze(project);
         });
       });
     } else {
       this.projectGroups.forEach(projectGroupItem => {
         projectGroupItem.projects.forEach(project => {
-          if (project.status === 'IN_PROGRESS' && project.name.indexOf(this.searchProjectName) !== -1) {
+          if (project.name.indexOf(this.searchProjectName) !== -1) {
             this.dataAnalyze(project);
           }
         });

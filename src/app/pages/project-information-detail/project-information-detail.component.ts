@@ -47,7 +47,6 @@ export class ProjectInformationDetailComponent implements OnInit {
               this.projectDetail.pics.push('assets/images/no.jpg');
             } else {
               project.images.forEach(item => {
-                console.log(`${project.entry}images?id=${item.id}`);
                 this.projectDetail.pics.push(`${project.entry}images?id=${item.id}`);
               });
             }
