@@ -84,7 +84,7 @@ export class NewsAnnouncementComponent implements OnInit {
     this.newsArr = this.filtersNews.slice(0, 5);
   }
   /**
-   * 点击图片查看新闻详情
+   * 查看新闻详情
    * @param id 新闻ID
    */
   scanNewsBulletinDetail(id) {
