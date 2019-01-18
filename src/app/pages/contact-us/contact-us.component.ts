@@ -17,7 +17,7 @@ export class ContactUsComponent implements OnInit {
   ngOnInit() {
     this.picture = 'contact.png';
     this.ZH_TITLE = '联系我们';
-    this.EN_TITLE = 'CPNTACT US';
+    this.EN_TITLE = 'CONTACT US';
     this.NAV_INDEX = 5;
     // 地图初始化
     const map = new BMap.Map('allmap');
